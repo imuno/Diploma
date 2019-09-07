@@ -21,9 +21,5 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', views.welcome, name='welcome'),
-    path('login/', views.login, name='login'),
-    path('admin/', admin.site.urls),
-    path('lesson/', include('lesson.urls')),
-    path('quiz/', include('quiz.urls')),
+    path('/login', views.welcome, name='welcome'),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

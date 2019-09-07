@@ -12,3 +12,6 @@ from django.http import HttpResponse
 
 def welcome(request):
     return render(request, 'diploma/welcome.html')
+
+def login(request):
+    return render(request, 'diploma/login.html')
