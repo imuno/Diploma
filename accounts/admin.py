@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import Group
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
-from . models import UserLesson
+from . models import UserLesson, UserQuiz
 
 from .forms import UserAdminCreationForm, UserAdminChangeForm
 
@@ -42,7 +42,14 @@ class UserLessonAdmin(admin.ModelAdmin):
     ordering = ('student',)
     filter_horizontal = ()
 
+class UserQuizAdmin(admin.ModelAdmin):
+    list_display = ('title', 'student', )
+    search_fields = ('title', 'student', )
+    ordering = ('student',)
+    filter_horizontal = ()
+
 admin.site.register(User, UserAdmin)
 # Remove Group Model from admin. We're not using it.
 admin.site.unregister(Group)
 admin.site.register(UserLesson, UserLessonAdmin)
+admin.site.register(UserQuiz, UserQuizAdmin)

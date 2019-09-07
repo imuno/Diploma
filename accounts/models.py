@@ -1,5 +1,6 @@
 from django.db import models
 from lesson.models import Lesson
+from quiz.models import Question
 from django.contrib.postgres.fields import ArrayField
 from django.contrib.auth.models import(
     AbstractBaseUser, BaseUserManager
@@ -85,5 +86,10 @@ class UserLesson(models.Model):
     student = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=250, blank=True)
     percent = models.FloatField(null=True, blank=True)
-    title = models.CharField(max_length=5000, blank=True)
     lesson_description = models.CharField(max_length=5000, blank=True)
+
+class UserQuiz(models.Model):
+    student = models.ForeignKey(User, on_delete=models.CASCADE)
+    title = models.CharField(max_length=250, blank=True)
+    percent = models.FloatField(null=True, blank=True)
+    questions = models.ManyToManyField(Question)
