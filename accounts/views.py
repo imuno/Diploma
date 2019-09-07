@@ -9,6 +9,7 @@ from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.contrib import auth
+from django.contrib.auth import authenticate
 import re, json
 
 # Create your views here.

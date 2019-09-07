@@ -7,6 +7,4 @@ from django.contrib.auth.views import PasswordResetView, PasswordResetDoneView, 
 
 urlpatterns = [
 
-    path('welcome/', views.welcome, name = 'welcome'),
-
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
