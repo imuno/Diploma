@@ -59,7 +59,7 @@ ROOT_URLCONF = 'Diploma.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['diploma/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

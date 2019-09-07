@@ -16,11 +16,13 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from lesson import views
+from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('', views.welcome, name='welcome'),
     path('admin/', admin.site.urls),
     path('lesson/', include('lesson.urls')),
+    path('quiz/', include('quiz.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
