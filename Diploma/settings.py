@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+AUTH_USER_MODEL = 'accounts.User'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -121,7 +123,7 @@ USE_TZ = True
 
 
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR, 'gradual/static')
+    os.path.join(BASE_DIR, 'diploma/static')
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
