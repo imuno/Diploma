@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.">
+  <meta name="author" content="Webpixels">
+  <title>Purpose Website UI Kit - Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="../assets/libs/@fortawesome/fontawesome-free/css/all.min.css"><!-- Purpose CSS -->
+  <link rel="stylesheet" href="../assets/css/purpose.css" id="stylesheet">
+  <!-- Docs CSS - used only for demo -->
+  <link rel="stylesheet" href="../assets/css/docs.css">
+</head>
+
+<body class="docs">
+  <!-- Nav -->
+  <header class="header fixed-top border-bottom">
+    <!-- Nav -->
+    <nav id="navbar-main" class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <!-- Brand logo -->
+        <a class="navbar-brand" href="../docs/index.html">
+          <img alt="Image placeholder" src="../assets/img/brand/dark.png" id="navbar-logo" style="width: 120px;">
+        </a>
+        <!-- Sidenav toggler -->
+        <button class="sidenav-toggler ml-auto mr-3" type="button" data-action="sidenav-pin" data-target="#sidenav-main">
+          <div class="sidenav-toggler-inner">
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+          </div>
+        </button>
+        <!-- Search form -->
+        <form class="navbar-search navbar-search-dark form-inline mr-sm-3 d-none" id="navbar-search-main">
+          <div class="form-group mb-0">
+            <div class="input-group input-group-merge">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control" placeholder="Search" type="text">
+            </div>
+          </div>
+          <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </form>
+        <!-- Navbar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../docs/getting-started/installation.html">Getting started</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../docs/components/index.html">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../docs/changelog.html">What's new</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../docs/support.html">Support</a>
+            </li>
+          </ul>
+          <a href="../index.html" class="btn btn-sm btn-primary btn-icon d-none d-lg-inline-flex">
+            <span class="btn-inner--icon"><i class="fas fa-eye"></i></span>
+            <span class="btn-inner--text">Live preview</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="px-3 scrollbar-inner">
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+        <!-- Navigation -->
+        <ul class="navbar-nav navbar-nav-docs">
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-getting-started" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-getting-started">
+              Getting started
+            </a>
+            <div class="collapse" id="navbar-getting-started">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../docs/getting-started/installation.html" class="nav-link">Installation</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/getting-started/file-structure.html" class="nav-link">File structure</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/getting-started/quick-start.html" class="nav-link">Quick start</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/getting-started/build-tools.html" class="nav-link">Build tools</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/getting-started/customization.html" class="nav-link">Customization</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/getting-started/skins.html" class="nav-link">Skins</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/getting-started/plugins.html" class="nav-link">Plugins</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-styleguide" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-styleguide">
+              Styleguide
+            </a>
+            <div class="collapse" id="navbar-styleguide">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../docs/styleguide/breakpoints.html" class="nav-link">Breakpoints</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/styleguide/colors.html" class="nav-link">Colors</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/styleguide/grid.html" class="nav-link">Grid</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/styleguide/icons.html" class="nav-link">Icons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/styleguide/spacing.html" class="nav-link">Spacing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/styleguide/typography.html" class="nav-link">Typography</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-components" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-components">
+              Components
+            </a>
+            <div class="collapse" id="navbar-components">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../docs/components/alerts.html" class="nav-link">Alerts</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/avatar.html" class="nav-link">Avatar</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/badge.html" class="nav-link">Badge</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/breadcrumb.html" class="nav-link">Breadcrumb</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/buttons.html" class="nav-link">Buttons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/card.html" class="nav-link">Card</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/carousel.html" class="nav-link">Carousel</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/collapse.html" class="nav-link">Collapse</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/countdown.html" class="nav-link">Countdown</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/counter.html" class="nav-link">Counter</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/divider.html" class="nav-link">Divider</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/dropdowns.html" class="nav-link">Dropdowns</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/forms.html" class="nav-link">Forms</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/icons.html" class="nav-link">Icons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/input-group.html" class="nav-link">Input group</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/list-group.html" class="nav-link">List group</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/jumbotron.html" class="nav-link">Jumbotron</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/media-object.html" class="nav-link">Media object</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/modal.html" class="nav-link">Modal</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/navs.html" class="nav-link">Navs</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/navbar.html" class="nav-link">Navbar</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/omnisearch.html" class="nav-link">Omnisearch</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/pagination.html" class="nav-link">Pagination</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/popovers.html" class="nav-link">Popovers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/progress.html" class="nav-link">Progress</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/spinners.html" class="nav-link">Spinners</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/tables.html" class="nav-link">Tables</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/toasts.html" class="nav-link">Toasts</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/tooltips.html" class="nav-link">Tooltips</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/components/tongues.html" class="nav-link">Tongues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-plugins" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-plugins">
+              Plugins
+            </a>
+            <div class="collapse" id="navbar-plugins">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../docs/plugins/animate.html" class="nav-link">Animate</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/autosize.html" class="nav-link">Autosize</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/datepicker.html" class="nav-link">Datepicker</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/fancybox.html" class="nav-link">Fancybox</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/google-maps.html" class="nav-link">Google maps</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/input-mask.html" class="nav-link">Input mask</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/list.html" class="nav-link">List</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/masonry.html" class="nav-link">Masonry</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/notify.html" class="nav-link">Notify</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/quill.html" class="nav-link">Quill</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/select.html" class="nav-link">Select</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/sweet-alert.html" class="nav-link">Sweet alert</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/swiper.html" class="nav-link">Swiper</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/tags.html" class="nav-link">Tags</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../docs/plugins/typed.html" class="nav-link">Typed</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <!-- Heading -->
+        <h6 class="navbar-heading text-muted mt-4">Resources</h6>
+        <!-- Navigation -->
+        <ul class="navbar-nav mb-md-3">
+          <li class="nav-item">
+            <a class="nav-link" href="../docs/support.html">
+              <i class="fas fa-question-circle"></i>Support
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com" target="_blank">
+              <i class="fab fa-twitter"></i>Bootstrap
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Page content -->
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-8">
+          <div class="docs-content">
+            <div class="docs-page-title">
+              <h2>Changelog</h2>
+            </div>
+            <p class="text-muted docs-lead">Here is the place where you can see what updates came out and did we bring new to the theme.</p>
+            <hr class="divider divider-fade" />
+            <h2 id="200---february-27th-2019">2.0.0 - February 27th 2019</h2>
+            <h3 id="major-add-ons-and-changes">Major add-ons and changes</h3>
+            <ul>
+              <li>Dark Mode</li>
+              <li>Blue color scheme (light and dark)</li>
+              <li>Apex charts</li>
+              <li>Navbar features (extended menu, submenu)</li>
+              <li>New components (see the Docs)</li>
+              <li>Fresh new documentation</li>
+              <li>Section explorer</li>
+              <li>New premium SVG icon set</li>
+              <li>Live customizer (enhance your experience live in your browser)</li>
+              <li>Gulp 4 and Laravel Mix</li>
+              <li>New utility pages (e.g. 404, coming soon)</li>
+              <li>Re-designed shop and product page</li>
+              <li>New authentication pages for login, register and recover password (basic, cover and simple variations)</li>
+              <li>Board and Listing pages (dashboard cards and tables)</li>
+              <li>Table pages for orders, projects and users</li>
+              <li>Optimized menu navigation</li>
+            </ul>
+            <h3 id="general">General</h3>
+            <ul>
+              <li>UPDATE: Bootstrap was updated to 4.3.1 (from 4.1.3)</li>
+              <li>UPDATE: Sass directory and files structures have been re-organized</li>
+              <li>UPDATE: theme.scss was renamed to purpose.scss</li>
+              <li>UPDATE: Changed the purpose.scss structure to import Bootstrap resources from node_modules</li>
+              <li>UPDATE: Sass and JS main files have been renamed to purpose.scss or purpose.js instead of theme.scss/theme.js</li>
+              <li>UPDATE: the <code class="highlighter-rouge">libs</code> folder from <code class="highlighter-rouge">assets/</code>, <code class="highlighter-rouge">scss/purpose/</code> and <code class="highlighter-rouge">assets/js/</code> has been renamed to <code class="highlighter-rouge">libs</code> to avoid issues caused by Github’s <code class="highlighter-rouge">.gitignore</code></li>
+            </ul>
+            <h3 id="components">Components</h3>
+            <ul>
+              <li>NEW: Added the extended dropdown menu (meganav)</li>
+              <li>NEW: Dropdown submenu (multilevel menu)</li>
+              <li>NEW: Dividers</li>
+              <li>NEW: Omnisearch</li>
+              <li>NEW: Custom navbar dropdown menus</li>
+              <li>NEW: Soft buttons</li>
+              <li>NEW: Soft badges</li>
+              <li>NEW: Modern alerts</li>
+              <li>NEW: Vertical modal</li>
+              <li>UPDATE: Caret symbol has been modified</li>
+            </ul>
+            <h3 id="plugins">Plugins</h3>
+            <ul>
+              <li>NEW: Apex Charts</li>
+              <li>NEW: Dropzone</li>
+              <li>NEW: List.js</li>
+              <li>NEW: Quill</li>
+              <li>NEW: Notify</li>
+              <li>NEW: Sweet alerts</li>
+              <li>NEW: SVG Injector</li>
+              <li>UPDATE: Flatpickr</li>
+              <li>DEPRECATED: Bootstrap Datepicker (replaced with Flatpickr))</li>
+            </ul>
+            <h3 id="classes">Classes</h3>
+            <ul>
+              <li>UPDATE: <code class="highlighter-rouge">btn-circle.</code> was removed. Use <code class="highlighter-rouge">.rounded-pill</code> modifier class instead</li>
+              <li>UPDATE: .<code class="highlighter-rouge">btn-zoom—hover</code> and <code class="highlighter-rouge">.btn-translate—hover</code> have been removed (use the hover utility classes instead <code class="highlighter-rouge">.hover-zoom</code> and <code class="highlighter-rouge">.hover-translate-y-n3</code>)</li>
+              <li>UPDATE: <code class="highlighter-rouge">.countdown--style-1</code> class was renamed to <code class="highlighter-rouge">.countdown-blocks</code></li>
+              <li>UPDATE: mt—2 negative classed were replaced with the new Bootstrap negative spacing classes mt-n1</li>
+              <li>UPDATE: data-accordion=“1” is not used anymore to style accordions; use the <code class="highlighter-rouge">.accordion</code> class instead</li>
+              <li>UPDATE: <code class="highlighter-rouge">.body-backdrop</code> modifier class was renamed to <code class="highlighter-rouge">.mask-body</code> for better name consistency</li>
+              <li>UPDATE: <code class="highlighter-rouge">.dropdown-menu-inverse</code> was renamed to <code class="highlighter-rouge">.dropdown-menu-dark</code> (use any background class modifier next to it: e.g bg-primary)</li>
+              <li>UPDATE: <code class="highlighter-rouge">.toggle-switch</code> was replaced with the new Bootstrap component named <code class="highlighter-rouge">.custom-switch</code></li>
+              <li>UPDATE: <code class="highlighter-rouge">.navbar-search</code> has been renamed to <code class="highlighter-rouge">.omnisearch</code></li>
+              <li>UPDATE: <code class="highlighter-rouge">.textarea-autosize</code> that activated the autosize plugin was replace with `data-toggle=“autosize” for better naming consistency</li>
+              <li>UPDATE: hover utility classes for shadows were renamed to <code class="highlighter-rouge">.hover-shadow-*</code> instead of <code class="highlighter-rouge">.shadow-*—hover</code> for better name consistency</li>
+              <li>UPDATE: <code class="highlighter-rouge">.avatar-ungroup--hover</code> was renamed to <code class="highlighter-rouge">.hover-avatar-ungroup</code> for better name consistency</li>
+              <li>UPDATE: <code class="highlighter-rouge">.shape-fill-*</code> and <code class="highlighter-rouge">.shape-stroke-*</code> modifier classes were renamed to <code class="highlighter-rouge">.fill-*</code> and <code class="highlighter-rouge">.stroke-*</code></li>
+              <li>UPDATE: <code class="highlighter-rouge">.blurable—hover</code> was renamed to <code class="highlighter-rouge">.hover-blurable</code> for better name consistency</li>
+              <li>UPDATE: <code class="highlighter-rouge">.milestone-count</code> was renamed to <code class="highlighter-rouge">.counter</code></li>
+              <li>UPDATE: <code class="highlighter-rouge">.mask—hover </code>was renamed to <code class="highlighter-rouge">.hover-mask</code></li>
+              <li>DEPRECATED: sm, md, lg and xl spacing classes were removed and replaced with 6, 7, 8, 9 (extending the default Bootstrap spacing modifier classes)</li>
+            </ul>
+            <h3 id="utilities">Utilities</h3>
+            <ul>
+              <li>NEW: added <code class="highlighter-rouge">transforms</code> utility classes for translate, scale, rotate and skew.</li>
+            </ul>
+            <h3 id="sass">Sass</h3>
+            <ul>
+              <li>UPDATE: Optimized and cleaned up mixin files</li>
+            </ul>
+            <h3 id="file-structure">File structure</h3>
+            <ul>
+              <li>Theme’s Sass and JS files have been moved in the resources folder located in the root folder</li>
+              <li>Bootstrap is imported directly from node_modules (see the Build Tools and Customisation pages from our docs)</li>
+            </ul>
+            <h3 id="build-tools">Build Tools</h3>
+            <ul>
+              <li>UPDATE: Updated Gulp to 4.0</li>
+              <li>UPDATE: New and optimized Gulp tasks</li>
+              <li>NEW: Laravel Mix was added to compile CSS and JS (learn more in the Docs)</li>
+              <li>NEW: Install packages via npm or Yarn</li>
+              <li>NEW: Create the libs folder automatically using Gulp (all plugins installed via NPM will be copied in the assets/libs folder)</li>
+            </ul>
+            <h3 id="docs">Docs</h3>
+            <ul>
+              <li>UPDATE: Updated documentation</li>
+              <li>ENHANCE: More documented components and features</li>
+              <li>NEW: Learn how to build your own styles and skins in the “Get started” section</li>
+              <li>NEW: Shortcodes Library - extensive collection of shortcodes - simply copy/pase it to your project</li>
+              <li>NEW: Sections Library - impressive collection of sections for multiple scenarios</li>
+            </ul>
+            <h2 id="112---october-4th-2018">1.1.2 - October 4th 2018</h2>
+            <ul>
+              <li>ENHANCE: will-change css property in sass files were removed for performance reasons.</li>
+              <li>ENHANCE: navbar sticky functionality was improved because the previous one was using the sticky.js plugin and it was causing some performance issues</li>
+              <li>ENHANCE: typewriter animation stops when it’s out of viewport (especially in mobile) so it doesn’t affect the readability of the page.</li>
+              <li>ENHANCE: added sourcemaps for the themes css and js</li>
+              <li>ENHANCE: made gulp generate sourcemaps for the theme’s files</li>
+              <li>ENHANCE: multiple optimisations for mobile resolutions</li>
+              <li>UPDATE: class .navbar-fixed-top has been replaced with .navbar-sticky in order to add a fixed-top functionality for the main menu</li>
+              <li>UPDATE: data-role=“tagsinput” was replaced with data-toggle=“tags”</li>
+              <li>UPDATE: .selectpicker was replaced with data-toggle=“select” in order to initialise the select2 plugin</li>
+              <li>UPDATE: .datepicker was replaced with data-toggle=“date” in order to initialise the bootstrap-datepicker plugin</li>
+              <li>UPDATE: created JS partials for each component and plugin (you can now create your own minified theme JS only with the scripts you need)</li>
+              <li>UPDATE: swiper data attributes have been renamed for better consistency</li>
+              <li>FIX: solved the issue for swipers with coverflow effect (e.g landing-event-music.html)</li>
+              <li>FIX: solved some responsive issues on the mobile resolutions</li>
+              <li>FIX: solved the popover that didn’t open in Safari browser</li>
+              <li>PLUGIN: bootstrap-select is deprecated. It was replace with the select2 plugin.</li>
+              <li>PLUGIN: in-view plugin was added for checking the presence of an element in the viewport</li>
+              <li>DEPRECATED: viewport checker has been removed (replaced with the in-view plugin)</li>
+            </ul>
+            <h2 id="111---september-6th-2018">1.1.1 - September 6th 2018</h2>
+            <h3 id="small-fixes">Small fixes</h3>
+            <ul>
+              <li>FIX: sticky navigation remaining stuck problem when the top bar was removed</li>
+              <li>FIX: some spacing optimization made on page headers</li>
+            </ul>
+            <h2 id="110---september-3th-2018">1.1.0 - September 3th 2018</h2>
+            <h3 id="highlights">Highlights</h3>
+            <ul>
+              <li>E-commerce module added (files begin with shop-*.html)</li>
+              <li>Board pages added (Overview, Projects, Tasks, Connections)</li>
+              <li>Public profile page added for registered users</li>
+              <li>Fixed tongue border that appeared sometimes</li>
+              <li>Added top bar feature for selecting language, search, cart and user account</li>
+              <li>Sticky navigation via class <code class="highlighter-rouge">.navbar-fixed-top</code> applied on the main navbar container</li>
+              <li>Togglable global search feature with suggestions from the navbar search button</li>
+            </ul>
+            <h3 id="header">Header</h3>
+            <ul>
+              <li>NEW: added top bar feature for selecting language, search, cart and user account</li>
+              <li>NEW: added <code class="highlighter-rouge">.dropdown-menu-arrow</code> modifier class for applying arrow indicators on any dropdown</li>
+              <li>NEW: Sticky navigation via class <code class="highlighter-rouge">.navbar-fixed-top</code> applied on the main navbar container</li>
+              <li>NEW: togglable global search feature with suggestions from the navbar search button</li>
+              <li>NEW: toggable slidebar for additional content such as user fast login or shopping cart</li>
+              <li>UPDATE: theme’s logo</li>
+              <li>UPDATE: class .navbar-transparent is depracated and was replaced with .header-transparent which is applied on the <code class="highlighter-rouge">header</code> tag that contains the top bar and the main navigation</li>
+              <li>UPDATE: the animation for dropdown-menu included in the main navbar, are made via class <code class="highlighter-rouge">.dropdown-animate</code> applied next to the <code class="highlighter-rouge">.dropdown</code></li>
+              <li>ENHANCE: the transparency of the header is now maintaned also on mobile resolutions</li>
+              <li>ENHANCE: removed class .list-group-item-action from the main navbar dropdown</li>
+              <li>ENHANCE: added dropdown menu toggle option on hover with animation (made default) via class <code class="highlighter-rouge">.dropdown-animate</code> with the <code class="highlighter-rouge">data-toggle="hover"</code> on</li>
+              <li>ENHANCE: the main navbar’s collapsing animation has been modified for a more smooth transition and ux</li>
+            </ul>
+            <h3 id="sections">Sections</h3>
+            <ul>
+              <li>UPDATE: removed the border-bottom-left-radius form .section-rotate on under large resolutions</li>
+            </ul>
+            <h3 id="background-image-holder-bg-img-holder">Background image holder (.bg-img-holder)</h3>
+            <ul>
+              <li>ENHANCE: added <code class="highlighter-rouge">data-bg-position</code> attribute on <code class="highlighter-rouge">.bg-img-holder</code> in order to easily position the background image (e.g data-bg-position=”center center”, data-bg-positon=”bottom 0”)</li>
+            </ul>
+            <h3 id="html">HTML</h3>
+            <ul>
+              <li>NEW: e-commerce module added (files begin with shop-*.html)</li>
+              <li>NEW: cart pages (cart items and empty cart)</li>
+              <li>NEW: e-commerce checkout pages (customer, shipping, payment)</li>
+              <li>NEW: Board pages (Overview, Projects, Tasks, Connections) - in Account Pages</li>
+              <li>NEW: Public profile page for registered users</li>
+              <li>NEW: Updates layout for the account pages (Profile, Settings, Billing, Notifications)</li>
+              <li>NEW: added password reset page for each login/register style (recover-*.html)</li>
+              <li>UPDATE: enhanced design for login and register pages</li>
+              <li>RENAME: account-settings.html renamed to account-profile.html</li>
+              <li>ENHANCE: the “Change avatar” button is now working as a file input</li>
+              <li>UPDATE: landing-1.html has been restyled</li>
+              <li>UPDATE: landing-2.html has been restyled</li>
+            </ul>
+            <h3 id="sass-1">SASS</h3>
+            <ul>
+              <li>UPDATE: _icons.scss was renamed to _icon.scss for better name consistency</li>
+              <li>NEW: added $icon-border-width for outlined icons (e.g 3px)</li>
+              <li>NEW: added icon mixin (purpose/mixins/_icon.scss) to add icon color variations (related to component _icon.scss)</li>
+              <li>NEW: icon modifier classes added next to .icon-shape in order to add a background or border (e.g icon-green or icon-outline-purple)</li>
+              <li>ENHANCE: new color palette for the main colors (red, blue, green, orange, yellow, pink, purple, teal) that affect also the status colors (warning, danger, info and success)</li>
+              <li>UPDATE: changed the $card-border-radius with the value of $border-radius-lg</li>
+              <li>UPDATE: changed the $body-color with the value of $gray-600</li>
+              <li>UPDATE: changed the $lead-font-size to 1.125rem</li>
+              <li>UPDATE: shape-fill-* and stroke-* were modified to take the colors from the $colors object and not the $theme-colors so you can benefit of all the available colors (e.g shape-fill-danger becamse shape-fill-red and so on)</li>
+              <li>UPDATE: <code class="highlighter-rouge">.alpha-*</code> modifier classes for opacities where renamed to <code class="highlighter-rouge">.opacity-*</code> for better name consistency and also moved to a sepparate utility file in utilities/_opacity.scss</li>
+              <li>NEW: added <code class="highlighter-rouge">.bg-absolute-cover</code> class for adding cover backgrounds inside relative sections that take the full size of its container</li>
+              <li>NEW: z-index utility classes added in the purpose/utitlies folder (e.g zindex-100) to add a z-index=100 on the desired element</li>
+              <li>NEW: new component created - collage, in purpose/_collage.scss with the corresponding class name <code class="highlighter-rouge">.collage</code> - that allows you to create modern overlayed images with SVG backgrounds (it’s still in progress, which means we still have a lot to do with it + new options to add)</li>
+              <li>NEW: product card with action buttons and color options</li>
+              <li>NEW: new component create - ribbon, in purpose/_ribbon.scss with the corresponding class name <code class="highlighter-rouge">.ribbon</code> - that allow you to apply ribbon on any card with many style to choose from</li>
+              <li>UPDATE: .timeline-axis-step was changed to .timeline-step</li>
+              <li>NEW: timeline step variations - .timeline-step-dot, .timeline-step-icon</li>
+              <li>UPDATE: avatars - .avatar-overlapped was renamed to .avatar-group</li>
+              <li>UPDATE: .card-icon-actions was renamed to .icon-actions</li>
+              <li>NEW: added a new utility file for images (utilities/_image.scss) for image alignment and filter management</li>
+              <li>UPDATE: [data-link=”1”] was replaced with the <code class="highlighter-rouge">.link-underline-*</code> modifier class that allows you to use any of the theme’s color</li>
+              <li>NEW: new mixin for links added in purpose/mixins/_link.scss</li>
+              <li>UPDATE: <code class="highlighter-rouge">.bg-img-holder</code> received new options that are activated with js. In order to use it (for previous versions) add also the <code class="highlighter-rouge">data-bg-size="contain"</code> on the same element.</li>
+              <li>UPDATED: modified $badge-padding-x value</li>
+            </ul>
+            <h3 id="plugins-1">Plugins</h3>
+            <ul>
+              <li>NEW: Font Awesome Pro is used for the preview version. If you want to get more icon styles, purchase a license from their official website or our docs</li>
+              <li>NEW: Wavify plugin added for custom wave animations (e.g: shop-products.html)</li>
+              <li>NEW: Datepicker plugin added with single and range options</li>
+              <li>NEW: 20 clothing SVG icons (assets/icons/clothing) used in the e-commerce module</li>
+              <li>UPDATE: updated Bootstrap to 4.1.3 (from 4.1.1)</li>
+              <li>UPDATE: Font Awesome to 5.2 (from 5.0.12)</li>
+            </ul>
+            <h3 id="files">Files</h3>
+            <ul>
+              <li>UPDATE: Bootstrap js files were moved to /assets/libse/bootstrap (was in /assets/js/)</li>
+            </ul>
+            <h2 id="101---june-21th-2018">1.0.1 - June 21th 2018</h2>
+            <h3 id="documentation">Documentation</h3>
+            <ul>
+              <li>UPDATE: updated File Structure section</li>
+            </ul>
+            <h3 id="build-tools-1">Build tools</h3>
+            <ul>
+              <li>UPDATE: Optimized the <code>gulp build</code> command</li>
+            </ul>
+            <h3 id="sass-2">SASS</h3>
+            <ul>
+              <li>FIX:Solved the <code class="highlighter-rouge">$icon-size</code> variable issue that was appearing in the compiled CSS file.</li>
+            </ul>
+            <h3 id="100">1.0.0</h3>
+            <ul>
+              <li>Initial release.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Purpose Scripts -->
+  <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+  <script src="../assets/js/purpose.core.js"></script>
+  <!-- Docs JS -->
+  <script src="../assets/libs/highlightjs/highlight.pack.min.js"></script>
+  <script src="../assets/libs/clipboard/dist/clipboard.min.js"></script>
+  <!-- Purpose JS -->
+  <script src="../assets/js/purpose.js"></script>
+  <!-- Demo JS - remove it when starting your project -->
+  <script src="../assets/js/demo.js"></script>
+</body>
+
+</html>

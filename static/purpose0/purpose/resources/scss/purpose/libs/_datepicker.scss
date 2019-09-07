@@ -1,0 +1,170 @@
+//
+// Datepicker
+// based on Flatplick plugin
+//
+
+
+.flatpickr-calendar {
+    border: 0;
+    width: auto;
+    margin-top: -2px;
+    user-select: none;
+    background: $dropdown-bg;
+    @include box-shadow($dropdown-box-shadow);
+    @include border-radius($input-border-radius);
+
+    &:before,
+    &:after {
+        display: none;
+    }
+}
+
+.flatpickr-months {
+    background-color: theme-color("primary");
+    @include border-top-radius($border-radius);
+
+    .flatpickr-month {
+        height: 60px;
+    }
+
+    .flatpickr-prev-month,
+    .flatpickr-next-month {
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: color-yiq(theme-color("primary"));
+        top: 13px;
+        @include transition($transition-bg);
+
+        svg {
+            fill: rgba(color-yiq(theme-color("primary")), .7);
+        }
+
+        &:hover {
+            color: color-yiq(theme-color("primary"));
+
+            svg {
+                fill: color-yiq(theme-color("primary"));
+            }
+        }
+    }
+
+    .flatpickr-prev-month {
+        margin-left: 15px;
+    }
+
+    .flatpickr-next-month {
+        margin-right: 15px;
+    }
+}
+
+.flatpickr-current-month {
+    font-size: 1.125rem;
+    color: color-yiq(theme-color("primary"));
+    padding-top: 18px;
+
+    span.cur-month,
+    input.cur-year {
+        // font-weight: $font-weight-bold;
+    }
+
+    span.cur-month:hover {
+        background-color: transparent;
+    }
+
+    .numInputWrapper {
+        &:hover {
+            background-color: transparent;
+        }
+
+        span {
+            border: 0;
+            right: -5px;
+            padding: 0;
+
+            &:after {
+                left: 3px;
+            }
+
+            &.arrowUp {
+                &:after {
+                    border-bottom-color: rgba(color-yiq(theme-color("primary")), .7);
+                }
+
+                &:hover {
+                    &:after {
+                        border-bottom-color: color-yiq(theme-color("primary"));
+                    }
+                }
+            }
+
+
+            &.arrowDown {
+                &:after {
+                    border-top-color: rgba(color-yiq(theme-color("primary")), .7);
+                }
+
+                &:hover {
+                    &:after {
+                        border-top-color: color-yiq(theme-color("primary"));
+                    }
+                }
+            }
+        }
+    }
+}
+
+span.flatpickr-weekday {
+    font-weight: $font-weight-bold;
+    color: $dropdown-heading-color;
+}
+
+.flatpickr-day {
+    font-size: $font-size-sm;
+    border: 0;
+    color: $dropdown-link-color;
+
+    &.today {
+        color: theme-color("primary") !important;
+
+        &:hover {
+            background-color: $dropdown-link-active-bg;
+            color: $dropdown-link-active-color;
+        }
+    }
+
+    &:hover {
+        background-color: $dropdown-link-hover-bg;
+        color: $dropdown-link-hover-color;
+    }
+
+    &.selected {
+        background-color: rgba(theme-color("primary"), .8);
+        color: color-yiq(theme-color("primary")) !important;
+
+        &:hover {
+            background-color: theme-color("primary");
+            color: color-yiq(theme-color("primary"));
+        }
+    }
+}
+
+.numInputWrapper {
+    span {
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}
+
+.flatpickr-time {
+    border-top: 1px solid $dropdown-divider-bg;
+}
+
+.flatpickr-innerContainer {
+    padding: 15px;
+}

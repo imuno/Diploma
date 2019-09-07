@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.">
+  <meta name="author" content="Webpixels">
+  <title>Purpose Website UI Kit - Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png">
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="../../assets/libs/@fortawesome/fontawesome-free/css/all.min.css"><!-- Purpose CSS -->
+  <link rel="stylesheet" href="../../assets/css/purpose.css" id="stylesheet">
+  <!-- Docs CSS - used only for demo -->
+  <link rel="stylesheet" href="../../assets/css/docs.css">
+</head>
+
+<body class="docs">
+  <!-- Nav -->
+  <header class="header fixed-top border-bottom">
+    <!-- Nav -->
+    <nav id="navbar-main" class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <!-- Brand logo -->
+        <a class="navbar-brand" href="../../docs/index.html">
+          <img alt="Image placeholder" src="../../assets/img/brand/dark.png" id="navbar-logo" style="width: 120px;">
+        </a>
+        <!-- Sidenav toggler -->
+        <button class="sidenav-toggler ml-auto mr-3" type="button" data-action="sidenav-pin" data-target="#sidenav-main">
+          <div class="sidenav-toggler-inner">
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+          </div>
+        </button>
+        <!-- Search form -->
+        <form class="navbar-search navbar-search-dark form-inline mr-sm-3 d-none" id="navbar-search-main">
+          <div class="form-group mb-0">
+            <div class="input-group input-group-merge">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control" placeholder="Search" type="text">
+            </div>
+          </div>
+          <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </form>
+        <!-- Navbar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/getting-started/installation.html">Getting started</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/components/index.html">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/changelog.html">What's new</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/support.html">Support</a>
+            </li>
+          </ul>
+          <a href="../../index.html" class="btn btn-sm btn-primary btn-icon d-none d-lg-inline-flex">
+            <span class="btn-inner--icon"><i class="fas fa-eye"></i></span>
+            <span class="btn-inner--text">Live preview</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="px-3 scrollbar-inner">
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+        <!-- Navigation -->
+        <ul class="navbar-nav navbar-nav-docs">
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-getting-started" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-getting-started">
+              Getting started
+            </a>
+            <div class="collapse" id="navbar-getting-started">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/installation.html" class="nav-link">Installation</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/file-structure.html" class="nav-link">File structure</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/quick-start.html" class="nav-link">Quick start</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/build-tools.html" class="nav-link">Build tools</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/customization.html" class="nav-link">Customization</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/skins.html" class="nav-link">Skins</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/plugins.html" class="nav-link">Plugins</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-styleguide" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-styleguide">
+              Styleguide
+            </a>
+            <div class="collapse" id="navbar-styleguide">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/breakpoints.html" class="nav-link">Breakpoints</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/colors.html" class="nav-link">Colors</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/grid.html" class="nav-link">Grid</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/icons.html" class="nav-link">Icons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/spacing.html" class="nav-link">Spacing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/typography.html" class="nav-link">Typography</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-components" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-components">
+              Components
+            </a>
+            <div class="collapse show" id="navbar-components">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/components/alerts.html" class="nav-link">Alerts</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/avatar.html" class="nav-link">Avatar</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/badge.html" class="nav-link">Badge</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/breadcrumb.html" class="nav-link">Breadcrumb</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/buttons.html" class="nav-link">Buttons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/card.html" class="nav-link">Card</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/carousel.html" class="nav-link">Carousel</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/collapse.html" class="nav-link">Collapse</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/countdown.html" class="nav-link">Countdown</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/counter.html" class="nav-link">Counter</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/divider.html" class="nav-link">Divider</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/dropdowns.html" class="nav-link">Dropdowns</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/forms.html" class="nav-link">Forms</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/icons.html" class="nav-link">Icons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/input-group.html" class="nav-link active">Input group</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/list-group.html" class="nav-link">List group</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/jumbotron.html" class="nav-link">Jumbotron</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/media-object.html" class="nav-link">Media object</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/modal.html" class="nav-link">Modal</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/navs.html" class="nav-link">Navs</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/navbar.html" class="nav-link">Navbar</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/omnisearch.html" class="nav-link">Omnisearch</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/pagination.html" class="nav-link">Pagination</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/popovers.html" class="nav-link">Popovers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/progress.html" class="nav-link">Progress</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/spinners.html" class="nav-link">Spinners</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/tables.html" class="nav-link">Tables</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/toasts.html" class="nav-link">Toasts</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/tooltips.html" class="nav-link">Tooltips</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/tongues.html" class="nav-link">Tongues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-plugins" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-plugins">
+              Plugins
+            </a>
+            <div class="collapse" id="navbar-plugins">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/plugins/animate.html" class="nav-link">Animate</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/autosize.html" class="nav-link">Autosize</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/datepicker.html" class="nav-link">Datepicker</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/fancybox.html" class="nav-link">Fancybox</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/google-maps.html" class="nav-link">Google maps</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/input-mask.html" class="nav-link">Input mask</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/list.html" class="nav-link">List</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/masonry.html" class="nav-link">Masonry</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/notify.html" class="nav-link">Notify</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/quill.html" class="nav-link">Quill</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/select.html" class="nav-link">Select</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/sweet-alert.html" class="nav-link">Sweet alert</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/swiper.html" class="nav-link">Swiper</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/tags.html" class="nav-link">Tags</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/typed.html" class="nav-link">Typed</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <!-- Heading -->
+        <h6 class="navbar-heading text-muted mt-4">Resources</h6>
+        <!-- Navigation -->
+        <ul class="navbar-nav mb-md-3">
+          <li class="nav-item">
+            <a class="nav-link" href="../../docs/support.html">
+              <i class="fas fa-question-circle"></i>Support
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com" target="_blank">
+              <i class="fab fa-twitter"></i>Bootstrap
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Page content -->
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <div class="col-lg-9 col-xl-8 offset-xl-1">
+          <div class="docs-content">
+            <div class="docs-page-title">
+              <h2>Input group</h2>
+            </div>
+            <p class="text-muted docs-lead">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
+            <a href="http://getbootstrap.com/docs/4.3/components/input-group" target="_blank">
+              <i class="fas fa-book mr-2"></i> Bootstrap Documentation</a>
+            <hr class="divider divider-fade" />
+            <h2 id="styles">Styles</h2>
+            <h3 id="default">Default</h3>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="input-groups-result-tab" data-toggle="tab" href="#input-groups-result" role="tab" aria-controls="input-groups-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="input-groups-html-tab" data-toggle="tab" href="#input-groups-html" role="tab" aria-controls="input-groups-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="input-groups-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="input-groups-result-tab">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" for="basic-url">Your vanity URL</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                      </div>
+                      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                      </div>
+                      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
+                      <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">With textarea</span>
+                      </div>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                  </div>
+                </div><!-- Code -->
+                <div id="input-groups-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="input-groups-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span> <span class="na">id=</span><span class="s">"basic-addon1"</span><span class="nt">&gt;</span>@<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Username"</span> <span class="na">aria-label=</span><span class="s">"Username"</span> <span class="na">aria-describedby=</span><span class="s">"basic-addon1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Recipient's username"</span> <span class="na">aria-label=</span><span class="s">"Recipient's username"</span> <span class="na">aria-describedby=</span><span class="s">"basic-addon2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span> <span class="na">id=</span><span class="s">"basic-addon2"</span><span class="nt">&gt;</span>@example.com<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-control-label"</span> <span class="na">for=</span><span class="s">"basic-url"</span><span class="nt">&gt;</span>Your vanity URL<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span> <span class="na">id=</span><span class="s">"basic-addon3"</span><span class="nt">&gt;</span>https://example.com/users/<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"basic-url"</span> <span class="na">aria-describedby=</span><span class="s">"basic-addon3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Amount (to the nearest dollar)"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>.00<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>With textarea<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"With textarea"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <h3 id="merged">Merged</h3>
+            <p>You can choose to merge input group elements by removing the border between them using the <code class="highlighter-rouge">.input-group-merge</code> modifier class.</p>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="input-groups-merged-result-tab" data-toggle="tab" href="#input-groups-merged-result" role="tab" aria-controls="input-groups-merged-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="input-groups-merged-html-tab" data-toggle="tab" href="#input-groups-merged-html" role="tab" aria-controls="input-groups-merged-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="input-groups-merged-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="input-groups-merged-result-tab">
+                  <div class="form-group">
+                    <div class="input-group input-group-merge">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-merge">
+                      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" for="basic-url">Your vanity URL</label>
+                    <div class="input-group input-group-merge">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                      </div>
+                      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-merge">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                      </div>
+                      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
+                      <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-merge">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">With textarea</span>
+                      </div>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                  </div>
+                </div><!-- Code -->
+                <div id="input-groups-merged-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="input-groups-merged-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-merge"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span> <span class="na">id=</span><span class="s">"basic-addon1"</span><span class="nt">&gt;</span>@<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Username"</span> <span class="na">aria-label=</span><span class="s">"Username"</span> <span class="na">aria-describedby=</span><span class="s">"basic-addon1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-merge"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Recipient's username"</span> <span class="na">aria-label=</span><span class="s">"Recipient's username"</span> <span class="na">aria-describedby=</span><span class="s">"basic-addon2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span> <span class="na">id=</span><span class="s">"basic-addon2"</span><span class="nt">&gt;</span>@example.com<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-control-label"</span> <span class="na">for=</span><span class="s">"basic-url"</span><span class="nt">&gt;</span>Your vanity URL<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-merge"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span> <span class="na">id=</span><span class="s">"basic-addon3"</span><span class="nt">&gt;</span>https://example.com/users/<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"basic-url"</span> <span class="na">aria-describedby=</span><span class="s">"basic-addon3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-merge"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Amount (to the nearest dollar)"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>.00<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-merge"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>With textarea<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"With textarea"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <h2 id="options">Options</h2>
+            <h3 id="sizing">Sizing</h3>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="input-group-sizing-result-tab" data-toggle="tab" href="#input-group-sizing-result" role="tab" aria-controls="input-group-sizing-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="input-group-sizing-html-tab" data-toggle="tab" href="#input-group-sizing-html" role="tab" aria-controls="input-group-sizing-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="input-group-sizing-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="input-group-sizing-result-tab">
+                  <div class="form-group">
+                    <div class="input-group input-group-sm">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                      </div>
+                      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                      </div>
+                      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-lg">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+                      </div>
+                      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" />
+                    </div>
+                  </div>
+                </div><!-- Code -->
+                <div id="input-group-sizing-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="input-group-sizing-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-sm"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span> <span class="na">id=</span><span class="s">"inputGroup-sizing-sm"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Sizing example input"</span> <span class="na">aria-describedby=</span><span class="s">"inputGroup-sizing-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span> <span class="na">id=</span><span class="s">"inputGroup-sizing-default"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Sizing example input"</span> <span class="na">aria-describedby=</span><span class="s">"inputGroup-sizing-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-lg"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span> <span class="na">id=</span><span class="s">"inputGroup-sizing-lg"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Sizing example input"</span> <span class="na">aria-describedby=</span><span class="s">"inputGroup-sizing-lg"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <h3 id="checkboxes-and-radios">Checkboxes and radios</h3>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="input-group-checkbox-radio-result-tab" data-toggle="tab" href="#input-group-checkbox-radio-result" role="tab" aria-controls="input-group-checkbox-radio-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="input-group-checkbox-radio-html-tab" data-toggle="tab" href="#input-group-checkbox-radio-html" role="tab" aria-controls="input-group-checkbox-radio-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="input-group-checkbox-radio-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="input-group-checkbox-radio-result-tab">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <input type="checkbox" aria-label="Checkbox for following text input" />
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" aria-label="Text input with checkbox" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <input type="radio" aria-label="Radio button for following text input" />
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" aria-label="Text input with radio button" />
+                    </div>
+                  </div>
+                </div><!-- Code -->
+                <div id="input-group-checkbox-radio-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="input-group-checkbox-radio-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">aria-label=</span><span class="s">"Checkbox for following text input"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Text input with checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">aria-label=</span><span class="s">"Radio button for following text input"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Text input with radio button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <h3 id="multiple-inputs">Multiple inputs</h3>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="input-group-multiple-inputs-result-tab" data-toggle="tab" href="#input-group-multiple-inputs-result" role="tab" aria-controls="input-group-multiple-inputs-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="input-group-multiple-inputs-html-tab" data-toggle="tab" href="#input-group-multiple-inputs-html" role="tab" aria-controls="input-group-multiple-inputs-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="input-group-multiple-inputs-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="input-group-multiple-inputs-result-tab">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">First and last name</span>
+                    </div>
+                    <input type="text" aria-label="First name" class="form-control" />
+                    <input type="text" aria-label="Last name" class="form-control" />
+                  </div>
+                </div><!-- Code -->
+                <div id="input-group-multiple-inputs-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="input-group-multiple-inputs-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>First and last name<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-label=</span><span class="s">"First name"</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-label=</span><span class="s">"Last name"</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <h3 id="multiple-addons">Multiple addons</h3>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="inpug-group-multiple-addons-result-tab" data-toggle="tab" href="#inpug-group-multiple-addons-result" role="tab" aria-controls="inpug-group-multiple-addons-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="inpug-group-multiple-addons-html-tab" data-toggle="tab" href="#inpug-group-multiple-addons-html" role="tab" aria-controls="inpug-group-multiple-addons-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="inpug-group-multiple-addons-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="inpug-group-multiple-addons-result-tab">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">$</span>
+                      <span class="input-group-text">0.00</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" />
+                  </div>
+                  <div class="input-group">
+                    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" />
+                    <div class="input-group-append">
+                      <span class="input-group-text">$</span>
+                      <span class="input-group-text">0.00</span>
+                    </div>
+                  </div>
+                </div><!-- Code -->
+                <div id="inpug-group-multiple-addons-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="inpug-group-multiple-addons-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>0.00<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Dollar amount (with dot and two decimal places)"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Dollar amount (with dot and two decimal places)"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>0.00<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <h3 id="button-addons">Button addons</h3>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="input-group-buttons-result-tab" data-toggle="tab" href="#input-group-buttons-result" role="tab" aria-controls="input-group-buttons-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="input-group-buttons-html-tab" data-toggle="tab" href="#input-group-buttons-html" role="tab" aria-controls="input-group-buttons-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="input-group-buttons-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="input-group-buttons-result-tab">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-primary" type="button" id="button-addon1">Button</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-primary" type="button" id="button-addon2">Button</button>
+                    </div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend" id="button-addon3">
+                      <button class="btn btn-outline-primary" type="button">Button</button>
+                      <button class="btn btn-outline-primary" type="button">Button</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons" aria-describedby="button-addon3" />
+                  </div>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4" />
+                    <div class="input-group-append" id="button-addon4">
+                      <button class="btn btn-outline-primary" type="button">Button</button>
+                      <button class="btn btn-outline-primary" type="button">Button</button>
+                    </div>
+                  </div>
+                </div><!-- Code -->
+                <div id="input-group-buttons-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="input-group-buttons-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"button-addon1"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">aria-label=</span><span class="s">"Example text with button addon"</span> <span class="na">aria-describedby=</span><span class="s">"button-addon1"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Recipient's username"</span> <span class="na">aria-label=</span><span class="s">"Recipient's username"</span> <span class="na">aria-describedby=</span><span class="s">"button-addon2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"button-addon2"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span> <span class="na">id=</span><span class="s">"button-addon3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">aria-label=</span><span class="s">"Example text with two button addons"</span> <span class="na">aria-describedby=</span><span class="s">"button-addon3"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Recipient's username"</span> <span class="na">aria-label=</span><span class="s">"Recipient's username with two button addons"</span> <span class="na">aria-describedby=</span><span class="s">"button-addon4"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span> <span class="na">id=</span><span class="s">"button-addon4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xl-3 border-left">
+          <div class="h-100 p-4">
+            <div data-toggle="sticky" data-sticky-offset="120">
+              <h6 class="mb-3">Summary</h6>
+              <ul class="section-nav">
+                <li class="toc-entry toc-h2"><a href="#styles">Styles</a>
+                  <ul>
+                    <li class="toc-entry toc-h3"><a href="#default">Default</a></li>
+                    <li class="toc-entry toc-h3"><a href="#merged">Merged</a></li>
+                  </ul>
+                </li>
+                <li class="toc-entry toc-h2"><a href="#options">Options</a>
+                  <ul>
+                    <li class="toc-entry toc-h3"><a href="#sizing">Sizing</a></li>
+                    <li class="toc-entry toc-h3"><a href="#checkboxes-and-radios">Checkboxes and radios</a></li>
+                    <li class="toc-entry toc-h3"><a href="#multiple-inputs">Multiple inputs</a></li>
+                    <li class="toc-entry toc-h3"><a href="#multiple-addons">Multiple addons</a></li>
+                    <li class="toc-entry toc-h3"><a href="#button-addons">Button addons</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Purpose Scripts -->
+  <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+  <script src="../../assets/js/purpose.core.js"></script>
+  <!-- Docs JS -->
+  <script src="../../assets/libs/highlightjs/highlight.pack.min.js"></script>
+  <script src="../../assets/libs/clipboard/dist/clipboard.min.js"></script>
+  <!-- Purpose JS -->
+  <script src="../../assets/js/purpose.js"></script>
+  <!-- Demo JS - remove it when starting your project -->
+  <script src="../../assets/js/demo.js"></script>
+</body>
+
+</html>

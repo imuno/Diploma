@@ -1,0 +1,32 @@
+//
+// Pricing
+//
+
+
+.card-pricing {
+    .card-header {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .list-unstyled li {
+        padding: .5rem 0;
+    }
+
+    &.popular {
+        z-index: 1;
+    }
+
+    &.scale-110 {
+        border: $card-border-width solid $card-border-color !important;
+        @include border-radius($card-border-radius !important);
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .card-pricing {
+        &.scale-110 {
+            transform: scale(1) !important;
+        }
+    }
+}

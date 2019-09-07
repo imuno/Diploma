@@ -1,0 +1,9 @@
+//
+// Alert messages
+// container to stack multiple alert messages
+//
+
+
+.alert-messages:not(:last-child) {
+    margin-bottom: 1.25rem
+}

@@ -1,0 +1,29 @@
+//
+// Footer rotate
+//
+
+
+.footer-rotate {
+    max-width: 1990px;
+    overflow: hidden;
+    margin-top: -26rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 26rem;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        background: $footer-rotate-bg no-repeat scroll center center/100% 100% border-box;
+        right: calc(50% - 1000px);
+        display: block;
+        min-width: 2000px;
+        height: 1000px;
+        pointer-events: none;
+        position: absolute;
+        width: calc(100% + 10px);
+        z-index: 10;
+        top: 0;
+    }
+}

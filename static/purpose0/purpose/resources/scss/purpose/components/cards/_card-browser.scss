@@ -1,0 +1,41 @@
+.card-browser {
+    background-color: $dark;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(40deg, transparent 0%, $gray-900 100%);
+        content: "";
+        border-radius: 6px;
+        will-change: transform;
+    }
+
+    .card-header {
+        position: relative;
+        background-color: lighten(rgba($dark, .8), 10%);
+        border: 0;
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 3px;
+        }
+    }
+
+    .card-body {
+        min-height: 300px;
+        position: relative;
+        overflow-x: hidden;
+
+        pre {
+            color: $white;
+            margin: 0;
+        }
+    }
+}

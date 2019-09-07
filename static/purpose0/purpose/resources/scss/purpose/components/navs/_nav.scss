@@ -1,0 +1,13 @@
+//
+// Nav
+//
+
+
+.nav-link {
+    color: $nav-link-color;
+
+    &:hover,
+    &.active {
+        color: theme-color("primary");
+    }
+}

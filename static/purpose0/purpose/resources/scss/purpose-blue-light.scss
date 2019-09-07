@@ -1,0 +1,48 @@
+/*
+
+Theme: Purpose - Website UI Kit
+Product Page: https://themes.getbootstrap.com/product/purpose-website-ui-kit/
+Author: Webpixels
+Author URI: https://www.webpixels.io
+
+---
+
+Copyright 2018-2019 Webpixels
+
+*/
+
+// Bootstrap functions
+@import '../../node_modules/bootstrap/scss/functions';
+
+// Skin
+ @import "skins/blue/light";
+
+// Custom variables
+@import "custom/variables";
+
+// Purpose functions
+@import "purpose/functions";
+@import "purpose/variables";
+
+// Custom fonts
+@import "custom/fonts";
+
+// Bootstrap core
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Purpose mixins
+@import "purpose/mixins";
+
+// Bootstrap components
+@import 'purpose/bootstrap';
+
+// Purpose components
+@import 'purpose/reboot';
+@import 'purpose/utilities';
+@import 'purpose/components';
+@import 'purpose/libs';
+
+// Custom styles
+@import 'custom/styles';

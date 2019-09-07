@@ -1,0 +1,49 @@
+//
+// Positions
+// Can be used on absolute/relative positioned elements
+//
+
+
+@each $size, $length in $spacers {
+	.top-#{$size} {
+		top: $length;
+	}
+	.right-#{$size} {
+		right: $length;
+	}
+	.bottom-#{$size} {
+		bottom: $length;
+	}
+	.left-#{$size} {
+		left: $length;
+	}
+}
+
+// Negative positioning
+
+@each $size, $length in $spacers {
+	@if $size != 0 {
+		.top-n#{$size} {
+			top: -$length;
+		}
+		.right-n#{$size} {
+			right: -$length;
+		}
+		.bottom-n#{$size} {
+			bottom: -$length;
+		}
+		.left-n#{$size} {
+			left: -$length;
+		}
+  	}
+}
+
+.center {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.middle {
+	top: 50%;
+	transform: translateY(-50%);
+}

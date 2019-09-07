@@ -1,0 +1,80 @@
+//
+// Product card
+//
+
+
+.card-product {
+    overflow: hidden;
+
+    .card-image {
+        padding: 1.5rem;
+
+        img {
+            transform: scale(1);
+            @include transition($transition-base);
+            transition-delay: .2s;
+        }
+    }
+
+    &:hover {
+        .card-image {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .card-title {
+        font-size: $h6-font-size;
+        font-weight: $font-weight-bold;
+    }
+
+    .card-price {
+        font-size: $font-size-base;
+        font-weight: $font-weight-bold;
+        display: block;
+    }
+
+    .product-colors {
+        a {
+            display: inline-block;
+            float: none !important;
+            width: 1rem;
+            height: 1rem;
+            margin-right: 3px;
+            margin-bottom: 0;
+            border-radius: 50%;
+            @include transition($transition-base);
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    // Product actions
+
+    .actions {
+        opacity: 0;
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        &.in {
+            opacity: 1;
+        }
+
+        &.animated {
+            animation-duration: .5s;
+        }
+
+        .action-item {
+            display: inline-block;
+            float: left;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+}

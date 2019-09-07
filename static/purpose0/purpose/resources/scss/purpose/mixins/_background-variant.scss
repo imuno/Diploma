@@ -1,0 +1,29 @@
+// Gradient background variations
+
+@mixin bg-gradient-variant($parent, $color) {
+    #{$parent} {
+        background: linear-gradient(50deg, $color 0, adjust-hue($color, 18%) 100%) !important;
+    }
+}
+
+// Translucent background variations
+
+@mixin bg-translucent-variant($parent, $color) {
+    #{$parent} {
+        background-color: darken(rgba($color, $translucent-color-opacity), 7%) !important;
+    }
+    a#{$parent},
+    button#{$parent} {
+        @include hover-focus {
+            background-color: darken(rgba($color, $translucent-color-opacity), 12%) !important;
+        }
+    }
+}
+
+// Section background variations
+
+@mixin bg-section-variant($parent, $color) {
+    #{$parent} {
+        background-color: $color !important;
+    }
+}

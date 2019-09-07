@@ -1,0 +1,50 @@
+//
+// Transforms
+//
+
+
+.transform-none { transform: none !important; }
+
+.translate-y-n3, .hover-translate-y-n3:hover { transform: translateY(-3px) !important; }
+.translate-y-n10, .hover-translate-y-n10:hover { transform: translateY(-10px) !important; }
+.translate-x-50, .hover-translate-x-50:hover { transform: translateX(50%) !important; }
+.translate-y-50 { transform: translateY(50%) !important; }
+.translate-x-100 { transform: translateX(100%) !important; }
+.translate-y-100 { transform: translateY(100%) !important; }
+
+.translate-x-n50 { transform: translateX(-50%) !important; }
+.translate-y-n50 { transform: translateY(-50%) !important; }
+.translate-x-n100 {  transform: translateX(-100%) !important; }
+.translate-y-n100 { transform: translateY(-100%) !important; }
+
+.scale-90 { transform: scale(.9) !important; }
+.scale-x-90 { transform: scaleX(.9) !important; }
+.scale-y-90 { transform: scaleY(.9) !important; }
+
+.scale-100 { transform: scale(1) !important; }
+.scale-x-100 { transform: scaleX(1) !important; }
+.scale-y-100 { transform: scaleY(1) !important; }
+
+.scale-110, .hover-scale-110:hover { transform: scale(1.1) !important; }
+.scale-x-110, .hover-scale-x-110:hover { transform: scaleX(1.1) !important; }
+.scale-y-110 { transform: scaleY(1.1) !important; }
+
+.rotate-90, .hover-rotate-90:hover { transform: rotate(90deg) !important; }
+.rotate-180, .hover-rotate-180:hover { transform: rotate(180deg) !important; }
+.rotate-270, .hover-rotate-270:hover { transform: rotate(270deg) !important; }
+.rotate-360, .hover-rotate-360:hover { transform: rotate(360deg) !important; }
+.rotate-n90, .hover-rotate-n90:hover { transform: rotate(-90deg) !important; }
+
+.skew-x-5 { transform: skewX(5deg) !important; }
+.skew-y-5 { transform: skewY(5deg) !important; }
+
+.skew-x-n10 { transform: skewX(-10deg) !important; }
+.skew-y-n10 { transform: skewY(-10deg) !important; }
+
+.perspective-left { transform: scale(1) perspective(2000px) rotateY(11deg) rotateX(2deg) rotate(-2deg); }
+.perspective-right { transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg); }
+
+.transform-origin-t { transform-origin: 50% 0% !important; }
+.transform-origin-r { transform-origin: 100% 50% !important; }
+.transform-origin-b { transform-origin: 50% 100% !important; }
+.transform-origin-l { transform-origin: 0% 50% !important; }

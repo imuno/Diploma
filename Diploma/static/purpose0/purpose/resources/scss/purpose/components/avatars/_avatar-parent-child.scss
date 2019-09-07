@@ -1,0 +1,60 @@
+//
+// Avatar parent child
+//
+
+
+.avatar-parent-child {
+	display: inline-block;
+	position: relative;
+}
+
+.avatar-child {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	border: $avatar-stack-gutter solid $avatar-stack-border-color;
+	@include border-radius($avatar-border-radius-sm);
+}
+
+.avatar.rounded-circle + .avatar-child {
+	@include border-radius(50%);
+}
+
+// Sizing
+
+.avatar + .avatar-child {
+	width: 20px;
+	height: 20px;
+}
+
+.avatar-lg + .avatar-child {
+	width: 24px;
+	height: 24px;
+}
+
+.avatar-sm + .avatar-child {
+	width: 16px;
+	height: 16px;
+}
+
+.avatar + .avatar-badge {
+	width: 14px;
+	height: 14px;
+	right: -6px;
+	bottom: 15px;
+}
+
+.avatar-lg + .avatar-badge {
+	width: 16px;
+	height: 16px;
+	right: -5px;
+    bottom: 20px;
+}
+
+.avatar-sm + .badge {
+	width: 12px;
+	height: 12px;
+	right: -6px;
+    bottom: 10px;
+}

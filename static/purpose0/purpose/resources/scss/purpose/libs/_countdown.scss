@@ -1,0 +1,120 @@
+.countdown-item {
+    display: inline-block;
+}
+
+.countdown-label {
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+
+
+// Size variation
+
+.countdown-sm .countdown-digit,
+.countdown-sm .countdown-label {
+    font-size: 1.4rem;
+}
+
+.countdown-sm .countdown-label {
+    font-size: 0.875rem;
+    padding: 0 10px;
+}
+
+
+// Toggle visibility for various elements
+
+[data-countdown-label="hide"] .countdown-label:not(.countdown-days) {
+    display: none;
+}
+
+[data-countdown-label="show"] .countdown-separator {
+    display: none;
+}
+
+
+// Variations
+
+.countdown-hero {
+    .countdown-item {
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .countdown-digit {
+        display: block;
+        padding: 0 1.5rem;
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+        color: $headings-color;
+        cursor: default;
+   }
+
+    .countdown-label {
+       display: block;
+       margin-top: 5px;
+       text-align: center;
+       font-size: $font-size-sm;
+       text-transform: capitalize;
+       font-weight: 600;
+    }
+
+    .countdown-separator {
+       display: none;
+    }
+
+    @include media-breakpoint-down(md) {
+        .countdown-digit {
+            font-size: 2rem;
+        }
+    }
+}
+
+.countdown-hero-dark {
+    .countdown-digit,
+    .countdown-label {
+        color: $white;
+    }
+}
+
+// Blocks style
+
+.countdown-blocks {
+    .countdown-item {
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .countdown-digit {
+        display: block;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        background: theme-color("primary");
+        color: color-yiq(theme-color("primary"));
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+        border-radius: $border-radius;
+        cursor: default;
+   }
+
+    .countdown-label {
+       display: block;
+       margin-top: 5px;
+       text-align: center;
+       font-size: $font-size-sm;
+       text-transform: capitalize;
+       font-weight: 600;
+    }
+
+    .countdown-separator {
+       display: none;
+    }
+}

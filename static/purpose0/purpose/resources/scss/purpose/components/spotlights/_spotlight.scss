@@ -1,0 +1,31 @@
+//
+// Spotlight
+//
+
+
+.spotlight {
+	position: relative;
+
+	.container {
+		height: 100%;
+	}
+
+	.animated {
+	    opacity: 0;
+
+		&.animation-ended {
+		    opacity: 1
+		}
+	}	
+}
+
+@include media-breakpoint-up(md) {
+	.spotlight-overlay-img {
+		position: relative;
+
+		img {
+			position: absolute;
+			z-index: 10;
+		}
+	}
+}

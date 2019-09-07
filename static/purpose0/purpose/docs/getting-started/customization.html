@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.">
+  <meta name="author" content="Webpixels">
+  <title>Purpose Website UI Kit - Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png">
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="../../assets/libs/@fortawesome/fontawesome-free/css/all.min.css"><!-- Purpose CSS -->
+  <link rel="stylesheet" href="../../assets/css/purpose.css" id="stylesheet">
+  <!-- Docs CSS - used only for demo -->
+  <link rel="stylesheet" href="../../assets/css/docs.css">
+</head>
+
+<body class="docs">
+  <!-- Nav -->
+  <header class="header fixed-top border-bottom">
+    <!-- Nav -->
+    <nav id="navbar-main" class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <!-- Brand logo -->
+        <a class="navbar-brand" href="../../docs/index.html">
+          <img alt="Image placeholder" src="../../assets/img/brand/dark.png" id="navbar-logo" style="width: 120px;">
+        </a>
+        <!-- Sidenav toggler -->
+        <button class="sidenav-toggler ml-auto mr-3" type="button" data-action="sidenav-pin" data-target="#sidenav-main">
+          <div class="sidenav-toggler-inner">
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+          </div>
+        </button>
+        <!-- Search form -->
+        <form class="navbar-search navbar-search-dark form-inline mr-sm-3 d-none" id="navbar-search-main">
+          <div class="form-group mb-0">
+            <div class="input-group input-group-merge">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control" placeholder="Search" type="text">
+            </div>
+          </div>
+          <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </form>
+        <!-- Navbar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/getting-started/installation.html">Getting started</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/components/index.html">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/changelog.html">What's new</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/support.html">Support</a>
+            </li>
+          </ul>
+          <a href="../../index.html" class="btn btn-sm btn-primary btn-icon d-none d-lg-inline-flex">
+            <span class="btn-inner--icon"><i class="fas fa-eye"></i></span>
+            <span class="btn-inner--text">Live preview</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="px-3 scrollbar-inner">
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+        <!-- Navigation -->
+        <ul class="navbar-nav navbar-nav-docs">
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-getting-started" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-getting-started">
+              Getting started
+            </a>
+            <div class="collapse show" id="navbar-getting-started">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/installation.html" class="nav-link">Installation</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/file-structure.html" class="nav-link">File structure</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/quick-start.html" class="nav-link">Quick start</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/build-tools.html" class="nav-link">Build tools</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/customization.html" class="nav-link active">Customization</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/skins.html" class="nav-link">Skins</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/plugins.html" class="nav-link">Plugins</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-styleguide" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-styleguide">
+              Styleguide
+            </a>
+            <div class="collapse" id="navbar-styleguide">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/breakpoints.html" class="nav-link">Breakpoints</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/colors.html" class="nav-link">Colors</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/grid.html" class="nav-link">Grid</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/icons.html" class="nav-link">Icons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/spacing.html" class="nav-link">Spacing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/typography.html" class="nav-link">Typography</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-components" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-components">
+              Components
+            </a>
+            <div class="collapse" id="navbar-components">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/components/alerts.html" class="nav-link">Alerts</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/avatar.html" class="nav-link">Avatar</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/badge.html" class="nav-link">Badge</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/breadcrumb.html" class="nav-link">Breadcrumb</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/buttons.html" class="nav-link">Buttons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/card.html" class="nav-link">Card</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/carousel.html" class="nav-link">Carousel</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/collapse.html" class="nav-link">Collapse</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/countdown.html" class="nav-link">Countdown</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/counter.html" class="nav-link">Counter</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/divider.html" class="nav-link">Divider</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/dropdowns.html" class="nav-link">Dropdowns</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/forms.html" class="nav-link">Forms</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/icons.html" class="nav-link">Icons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/input-group.html" class="nav-link">Input group</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/list-group.html" class="nav-link">List group</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/jumbotron.html" class="nav-link">Jumbotron</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/media-object.html" class="nav-link">Media object</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/modal.html" class="nav-link">Modal</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/navs.html" class="nav-link">Navs</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/navbar.html" class="nav-link">Navbar</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/omnisearch.html" class="nav-link">Omnisearch</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/pagination.html" class="nav-link">Pagination</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/popovers.html" class="nav-link">Popovers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/progress.html" class="nav-link">Progress</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/spinners.html" class="nav-link">Spinners</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/tables.html" class="nav-link">Tables</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/toasts.html" class="nav-link">Toasts</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/tooltips.html" class="nav-link">Tooltips</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/tongues.html" class="nav-link">Tongues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-plugins" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-plugins">
+              Plugins
+            </a>
+            <div class="collapse" id="navbar-plugins">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/plugins/animate.html" class="nav-link">Animate</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/autosize.html" class="nav-link">Autosize</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/datepicker.html" class="nav-link">Datepicker</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/fancybox.html" class="nav-link">Fancybox</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/google-maps.html" class="nav-link">Google maps</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/input-mask.html" class="nav-link">Input mask</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/list.html" class="nav-link">List</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/masonry.html" class="nav-link">Masonry</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/notify.html" class="nav-link">Notify</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/quill.html" class="nav-link">Quill</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/select.html" class="nav-link">Select</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/sweet-alert.html" class="nav-link">Sweet alert</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/swiper.html" class="nav-link">Swiper</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/tags.html" class="nav-link">Tags</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/typed.html" class="nav-link">Typed</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <!-- Heading -->
+        <h6 class="navbar-heading text-muted mt-4">Resources</h6>
+        <!-- Navigation -->
+        <ul class="navbar-nav mb-md-3">
+          <li class="nav-item">
+            <a class="nav-link" href="../../docs/support.html">
+              <i class="fas fa-question-circle"></i>Support
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com" target="_blank">
+              <i class="fab fa-twitter"></i>Bootstrap
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Page content -->
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <div class="col-lg-9 col-xl-8 offset-xl-1">
+          <div class="docs-content">
+            <div class="docs-page-title">
+              <h2>Cutomization</h2>
+            </div>
+            <p class="text-muted docs-lead">Learn how to create your own style without changing the theme’s core files so you can take advantage of future updates.</p>
+            <hr class="divider divider-fade" />
+            <h2 id="prerequisites">Prerequisites</h2>
+            <p>Make sure you have the followed the steps from the <a href="build-tools.html">Build tools</a> page. You should have already installed the following:</p>
+            <ul>
+              <li>Node.js</li>
+              <li>Gulp or Laravel Mix</li>
+            </ul>
+            <h2 id="sass">SASS</h2>
+            <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world. To learn more <a href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html" target="blank">click here</a> to see the official documentation.</p>
+            <h3 id="file-structure">File structure</h3>
+            <p>The Sass structure is built from two main folders:</p>
+            <ul>
+              <li><strong>purpose</strong>, which contains the extended components based on Bootstrap and also the custom built ones</li>
+              <li><strong>skins</strong>, which contains folders with different custom variables that allow you to change the theme’s appearance with ease.</li>
+              <li><strong>custom</strong>, which contains a basic structure made from a style, a font and a variable files in order to get you started with the customization process nice and easy</li>
+            </ul>
+            <div class="alert alert-info">
+              <p><strong>Heads up!</strong> Bootstrap is automatically loaded from the node_modules folder in the <code class="highlighter-rouge">purpose.scss</code> file. It is installed via <code class="highlighter-rouge">npm install</code> and compiled using the build tools.</p>
+            </div>
+            <p>Remember, you are not limited to use the structure we have included in the <code class="highlighter-rouge">resources/scss/user</code> folder. If you have a more complex project you can choose to follow the directory structure we have made for Purpose. This will help you create modular components easily extendable and re-usable.</p>
+            <p>Below is the main structure you will be able to see inside the main SCSS folder:</p>
+            <div class="docs-example">
+              <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">purpose-website-ui-kit/
+├── resources/
+└── ├── scss/
+    │   ├── purpose/
+    │   ├── ├── animations/
+    │   ├── ├── components/
+    │   ├── ├── mixins/
+    │   ├── ├── utilities/
+    │   ├── ├── libs/
+    │   │   ├── _animations.scss
+    │   │   ├── _components.scss
+    │   │   ├── _functions.scss
+    │   │   ├── _mixins.scss
+    │   │   ├── _reboot.scss
+    │   │   ├── _utilities.scss
+    │   │   ├── _libs.scss
+    │   │   └── _variables.scss
+    ├── ├── skins/
+    │   │   ├── default/
+    │   │   ├── blue/
+    │   │   ├── red/
+    │   │   ├── vibrant/
+    └── └── user/
+    │   │   ├── _styles.scss
+    │   │   └── _variables.scss
+    └── └── purpose.scss</code></pre>
+              </figure>
+            </div>
+            <div class="alert alert-warning">
+              <p><strong>Important!</strong> We highly recommend to not make changes to the purpose folder. It includes core files and components that can be updated in the future. If you want to take advantage of future updates you may want to have a more Bootstrap-ish approach, meaning you should create new styles or components to override styles, extend or add new components in the <code class="highlighter-rouge">custom</code> folder.</p>
+            </div>
+            <h3 id="variable-defaults">Variable defaults</h3>
+            <p>Every Sass variable in Bootstrap 4 and Purpose includes the <code class="highlighter-rouge">!default</code> flag allowing you to override the variable’s default value in your own Sass without modifying Purpose’s source code. Copy and paste variables as needed, modify their values, and remove the !default flag. If a variable has already been assigned, then it won’t be re-assigned by the default values in Bootstrap.</p>
+            <p>You will find the complete list of Purpose’s variables in <code class="highlighter-rouge">resources/scss/purpose/_variables.scss</code>.</p>
+            <h3 id="changing-variables">Changing variables</h3>
+            <p>In order to make Sass features modular and re-usable each component has its own styles and its own set of variables. Variables should follow the <code class="highlighter-rouge">$component-state-property-size</code> formula for consistent naming.</p>
+            <p>Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.</p>
+            <p>Let’s say you need to change the primary color with the one you use for you brand. All you have to do is to:</p>
+            <ul>
+              <li>open the <code class="highlighter-rouge">purpose/_variables.scss</code>, look for the <code class="highlighter-rouge">$primary</code> variable and copy it</li>
+              <li>open the <code class="highlighter-rouge">custom/_variables.scss</code> and paste the variable with its value</li>
+              <li>replace the value and remove the <code class="highlighter-rouge">!default</code> flag</li>
+              <li>make sure you are running Gulp or Laravel Mix watch tasks described in the <a href="build-tools.html" target="\_blank">build tools</a> page</li>
+            </ul>
+            <div class="alert alert-info">
+              <p>Try following the same variable succession order. Especially, colors, typography and other fundamental variables need to be declared at the beginning of the file so they can be accessible to the components that may follow afterwards.</p>
+            </div>
+            <h3 id="creating-components">Creating components</h3>
+            <p>Creating components is easy. It is even easier if you follow the guidelines we are suggesting. This we’ll keep make your code look clean and be easy to read and to work with. Also you will make sure you have results at the same level of quality as Purpose or Bootstrap.</p>
+            <p>There are a few steps:</p>
+            <p>First, determine which component are you going to develop next. Even though it already exists, let’s say you want to create an <code class="highlighter-rouge">alert</code> component.
+              Determining exactly the component and its purpose you help you to find a name very easily.</p>
+            <p>So, in this case the class name for <code class="highlighter-rouge">alert</code> will be <code class="highlighter-rouge">.alert</code>. Other variations or modifier classes will begin with <code class="highlighter-rouge">.alert-*</code> (e.g: .alert-danger, which will change the background and text color accordingly).</p>
+            <p>Also, all variables associated to the class <code class="highlighter-rouge">.alert</code> will begin with <code class="highlighter-rouge">$alert</code>, <code class="highlighter-rouge">$alert-*</code>. Basically, you will need to follow the naming convention Bootstrap and Purpose use: <code class="highlighter-rouge">$name-state-property-modifier</code>, where:</p>
+            <ul>
+              <li><code class="highlighter-rouge">name</code> is the component name corresponding to the given class name (e.g .alert)</li>
+              <li><code class="highlighter-rouge">state</code> is the pseudo-class used to define a special state of an element (e.g: hover, active, checked etc)</li>
+              <li><code class="highlighter-rouge">property</code> is the given CSS property in order to achieve the results you need (e.g: color, background, display)</li>
+              <li><code class="highlighter-rouge">modifier</code> is used to define additional information for the current property, like sizes, axis (e.g alert-sm, alert-padding-y)</li>
+            </ul>
+            <p>To wrap it up, you should have in the end something like this:</p>
+            <p><strong>In custom/_variables.scss</strong></p>
+            <div class="docs-example">
+              <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">$alert-padding-y:   1rem;
+$alert-padding-x:   1.5rem;
+$alert-color:       #FFF;
+$alert-bg:          #000;
+$alert-hover-bg:    lighten($alert-bg, 10%);</code></pre>
+              </figure>
+            </div>
+            <p><strong>In custom/_styles.scss</strong></p>
+            <div class="docs-example">
+              <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">.alert {
+    padding: $alert-padding-y $alert-padding-x;
+    color: $alert-color;
+    background-color: $alert-bg;
+
+    &amp;:hover {
+        background-color: $alert-hover-bg;
+    }
+}</code></pre>
+              </figure>
+            </div>
+            <div class="alert alert-info">
+              <p><strong>Remember!</strong> You can modify the structure inside the user’s folder. You can make separate files for each newly created component and import them one by one in the <code class="highlighter-rouge">_styles.scss</code> file. They will be automatically loaded and compiled in the main Sass file.</p>
+            </div>
+            <h2 id="js">JS</h2>
+            <h3 id="file-structure-1">File structure</h3>
+            <p>You will find in Purpose a special structure for the JS files. We did this to sort each script by its scope. In the <code class="highlighter-rouge">resources/js</code> folder you will find the following file structure:</p>
+            <div class="docs-example">
+              <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">purpose-website-ui-kit/
+├── resources/
+└── ├── js/
+    │   ├── components/
+    │   │   ├── charts/
+    │   │   ├── custom/
+    │   │   ├── init/
+    │   │   ├── maps/
+    │   │   ├── libs/</code></pre>
+              </figure>
+            </div>
+            <ul>
+              <li><strong>custom</strong> contains all the custom scripts made by us for Purpose</li>
+              <li><strong>init</strong> contains all the scripts needed to initialize the Purpose’s components or third-party plugins</li>
+              <li><strong>maps</strong> contains map scripts needed to customize the default Google Map style or other map library</li>
+              <li><strong>libs</strong> contains all the scripts needed to initialize third-party plugins</li>
+              <li><strong>layout.js</strong> is a file where we put the code needed to develop global layout actions</li>
+            </ul>
+            <h3 id="making-changes">Making changes</h3>
+            <p>Most of the JS files are just a starting point in order to make the components function properly. This means that you will need to change them accordingly, add options, create more functions and so on. All the plugins are well documented and each one has the link that will point you to the official documentations.</p>
+            <p>Also, when starting a new project you can install only the plugins you need.</p>
+            <div class="alert alert-info">
+              <p><strong>Note!</strong> When starting modifying JS files make sure you keep an eye on those you edited, because Purpose will be constantly updated.</p>
+            </div>
+            <h3 id="compiling">Compiling</h3>
+            <p>Wether you chose to use Gulp or Laravel Mix, the mechanism behind gets the same result. All JS resources will be bundled in a single file. For the <code class="highlighter-rouge">watch</code> commands, each time you make a change, the file will be automatically regenerated and injected in the browser. Learn more about the <a href="build-tools.html">build tools</a>.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xl-3 border-left">
+          <div class="h-100 p-4">
+            <div data-toggle="sticky" data-sticky-offset="120">
+              <h6 class="mb-3">Summary</h6>
+              <ul class="section-nav">
+                <li class="toc-entry toc-h2"><a href="#prerequisites">Prerequisites</a></li>
+                <li class="toc-entry toc-h2"><a href="#sass">SASS</a>
+                  <ul>
+                    <li class="toc-entry toc-h3"><a href="#file-structure">File structure</a></li>
+                    <li class="toc-entry toc-h3"><a href="#variable-defaults">Variable defaults</a></li>
+                    <li class="toc-entry toc-h3"><a href="#changing-variables">Changing variables</a></li>
+                    <li class="toc-entry toc-h3"><a href="#creating-components">Creating components</a></li>
+                  </ul>
+                </li>
+                <li class="toc-entry toc-h2"><a href="#js">JS</a>
+                  <ul>
+                    <li class="toc-entry toc-h3"><a href="#file-structure-1">File structure</a></li>
+                    <li class="toc-entry toc-h3"><a href="#making-changes">Making changes</a></li>
+                    <li class="toc-entry toc-h3"><a href="#compiling">Compiling</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Purpose Scripts -->
+  <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+  <script src="../../assets/js/purpose.core.js"></script>
+  <!-- Docs JS -->
+  <script src="../../assets/libs/highlightjs/highlight.pack.min.js"></script>
+  <script src="../../assets/libs/clipboard/dist/clipboard.min.js"></script>
+  <!-- Purpose JS -->
+  <script src="../../assets/js/purpose.js"></script>
+  <!-- Demo JS - remove it when starting your project -->
+  <script src="../../assets/js/demo.js"></script>
+</body>
+
+</html>

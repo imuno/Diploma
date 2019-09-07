@@ -1,0 +1,28 @@
+//
+// Profile card
+//
+
+
+.card-profile {
+    .card-profile-image {
+        width: 7rem;
+        height: 7rem;
+        border: .1875rem solid $card-bg;
+        transform: translateY(-50%);
+
+        &:hover {
+            transform: scale(1.1) translateY(-50%);
+        }
+    }
+
+    .card-body {
+        position: relative;
+        z-index: 2;
+        margin-top: -3.5rem;
+    }
+}
+
+.card-profile-cover {
+    max-height: 300px;
+    overflow: hidden;
+}

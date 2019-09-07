@@ -1,0 +1,229 @@
+//
+// Navbar
+//
+
+
+.navbar {
+    position: relative;
+    z-index: 101;
+
+    .container {
+        position: relative;
+    }
+}
+
+.navbar-nav {
+    .nav-link {
+        font-size: $navbar-nav-link-font-size;
+        font-weight: $navbar-nav-link-font-weight;
+        text-transform: $navbar-nav-link-text-transform;
+        letter-spacing: $navbar-nav-link-letter-spacing;
+        @include transition($navbar-transition);
+
+        i, svg, img {
+            margin-right: .5rem;
+        }
+    }
+
+    .nav-link {
+        img {
+            width: auto;
+            height: 14px;
+            margin-right: .5rem;
+            position: relative;
+            top: -1px;
+        }
+    }
+}
+
+.navbar-text {
+    font-size: $navbar-nav-link-font-size;
+}
+
+// Transition to main navbar to topbar
+
+.header,
+.navbar,
+.navbar-top {
+    @include transition($transition-base);
+}
+
+// Borders
+.border-bottom {
+    &.navbar-dark {
+        border-color: rgba($white, .1) !important;
+    }
+
+    &.navbar-light {
+        border-color: rgba($black, .04) !important;
+    }
+}
+
+// Transparent navbar
+.header-transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .navbar-top {
+        &:not(.navbar-collapsed) {
+            background-color: transparent !important;
+        }
+
+        border: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .navbar:not(.sticky):not(.navbar-collapsed) {
+        background-color: transparent !important;
+        border: 0;
+        box-shadow: none;
+    }
+
+    + main section:first-child:not([data-spotlight]) {
+        .container {
+            padding-top: 5rem;
+        }
+    }
+}
+
+// Header
+// class used to create a fullscreen container for the main navs
+
+.header-collapse-show {
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+// Sticky navbar
+.navbar-sticky {
+    position: -webkit-sticky;
+
+    &.sticky {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: -100px;
+        transform: translateY(100px);
+        z-index: $zindex-fixed;
+        border-top: 0;
+        @include transition($transition-base);
+    }
+}
+
+// Top navbar
+.navbar-top {
+    position: relative;
+    z-index: 110;
+    display: flex;
+    align-items: center;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+
+    .navbar-nav {
+        flex-direction: row;
+
+        .nav-item:last-child {
+            margin-right: 0;
+        }
+
+        .nav-link {
+            padding: .5rem .5rem;
+        }
+    }
+}
+
+
+// Generate series of `.navbar-expand-*` responsive classes for configuring
+// where your navbar collapses.
+
+.navbar-expand {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        $next: breakpoint-next($breakpoint, $grid-breakpoints);
+        $infix: breakpoint-infix($next, $grid-breakpoints);
+
+        &#{$infix} {
+            @include media-breakpoint-down($breakpoint) {
+
+                &.navbar-collapsed {
+                    height: 100vh;
+                    align-items: start;
+                    overflow-y: scroll;
+                }
+
+                .navbar-nav {
+                    .nav-link {
+                        padding: .625rem 0;
+                    }
+
+                    .dropdown-menu {
+                        box-shadow: none;
+                        min-width: auto;
+
+                        .media {
+                            svg {
+                                width: 30px;
+                            }
+                        }
+                    }
+                }
+
+                .navbar-collapse {
+                    z-index: 1050;
+                    height: auto !important;
+                    opacity: 0;
+                }
+
+                // Collapse animation
+
+                .navbar-collapse.collapsing,
+                .navbar-collapse.show {
+                    animation: show-navbar-collapse .2s ease forwards;
+                    animation-delay: .15s;
+                }
+
+                .navbar-collapse.collapsing-out {
+                    opacity: 0;
+                    transition: opacity .3s linear;
+                    animation-delay: 0;
+                    animation: none;
+                }
+            }
+
+            @include media-breakpoint-up($next) {
+                .navbar-nav {
+                    .nav-item {
+                        margin-right: .5rem;
+                    }
+                    .nav-link {
+                        padding-top: $navbar-nav-link-padding-y;
+                        padding-bottom: $navbar-nav-link-padding-y;
+                        border-radius: $navbar-nav-link-border-radius;
+                    }
+
+                    .nav-link-icon {
+                        border-radius: $navbar-nav-link-border-radius;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Keyframes
+
+@keyframes show-navbar-collapse {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,25 @@
+//
+// Flush tables
+//
+
+
+.table-flush {
+    th, td {
+        border-left: 0;
+        border-right: 0;
+    }
+
+    tr {
+        &:first-child {
+            th, td {
+                border-top: 0;
+            }
+        }
+
+        &:last-child {
+            th, td {
+                border-bottom: 0;
+            }
+        }
+    }
+}

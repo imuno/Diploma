@@ -1,0 +1,87 @@
+//
+// Section rotate
+//
+
+
+.section-rotate {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    overflow: hidden;
+    background: transparent;
+    position: relative;
+    z-index: 0;
+
+    //rotated-bg
+    .section-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .section-rotate {
+        min-height: 880px;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+
+        .section-inner {
+            background: inherit;
+            overflow: hidden;
+
+            & + .container {
+                position: relative;
+                z-index: 0;
+            }
+        }
+
+        .section-inner-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .section-rotate {
+        padding-top: 8rem;
+        padding-bottom: 12rem;
+
+        .section-inner {
+            top: -40%;
+            left: -1rem;
+            width: 130%;
+            height: 124%;
+            transform: rotate(-7deg);
+            border-bottom-left-radius: 3rem;
+
+            & + .container {
+                padding-left: 2rem;
+            }
+        }
+
+        .container {
+            position: relative;
+        }
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .section-rotate {
+        .section-inner {
+            top: -40%;
+            left: -1rem;
+            width: 120%;
+            height: 118%;
+    
+        }
+
+        .container {
+            position: relative;
+        }
+    }
+}
