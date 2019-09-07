@@ -11,62 +11,15 @@
   <!-- Favicon -->
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../../assets/libs/@fortawesome/fontawesome-free/css/all.min.css"><!-- Purpose CSS -->
+  <link rel="stylesheet" href="{% static 'purpose/purpose/assets/libs/@fortawesome/fontawesome-free/css/all.min.css' %}"><!-- Purpose CSS -->
   <link rel="stylesheet" href="{% static 'purpose/purpose/css/purpose.css' %}" id="stylesheet">
-
-    <link rel="icon" href="{% static 'purpose/purpose/assets/img/brand/favicon.png' %}" type="image/png">
+  <link rel="icon" href="{% static 'purpose/purpose/assets/img/brand/favicon.png' %}" type="image/png">
 </head>
 
 <body>
   <header class="header header-transparent" id="header-main">
     <!-- Topbar -->
-    <div id="navbar-top-main" class="navbar-top  navbar-light bg-white border-bottom">
-      <div class="container px-0">
-        <div class="navbar-nav align-items-center">
-          <div class="d-none d-lg-inline-block">
-            <span class="navbar-text mr-3">Purpose - Website UI Kit</span>
-          </div>
-          <div>
 
-          </div>
-          <div class="ml-auto">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="../../pages/utility/support.html">Support</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link" data-action="omnisearch-open" data-target="#omnisearch"><i class="fas fa-search"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../pages/shop/checkout-cart.html"><i class="fas fa-shopping-cart"></i></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-user-circle"></i>
-                </a>
-                <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-                  <h6 class="dropdown-header">User menu</h6>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-user"></i>Account
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <span class="float-right badge badge-primary">4</span>
-                    <i class="fas fa-envelope"></i>Messages
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-cog"></i>Settings
-                  </a>
-                  <div class="dropdown-divider" role="presentation"></div>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-sign-out-alt"></i>Sign out
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Main navbar -->
     <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light bg-white" id="navbar-main">
       <div class="container px-lg-0">
@@ -83,11 +36,11 @@
           <ul class="navbar-nav align-items-lg-center">
             <!-- Home - Overview  -->
             <li class="nav-item ">
-              <a class="nav-link" href="../../index.html">Overview</a>
+              <a class="nav-link" href="../../index.html">Curriculum</a>
             </li>
             <!-- Pages menu -->
             <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quizzes</a>
               <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow p-0">
                 <ul class="list-group list-group-flush">
                   <li class="dropdown dropdown-animate dropdown-submenu" data-toggle="hover">
