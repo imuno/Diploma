@@ -1,0 +1,30 @@
+//
+// Header 
+//
+
+
+#header-main {
+	+ section {
+		padding-top: 7rem !important;
+	}
+
+	+ .header-1 {
+		padding-top: 14rem !important;
+	}
+}
+
+.header-account-page {
+	@include media-breakpoint-up(md) {
+		height: 350px;
+	}
+
+	@include media-breakpoint-down(md) {
+		padding-top: 9rem;
+	}
+
+	.btn-group-nav {
+		position: relative;
+		z-index: 1;
+		transform: translateY(50%);
+	}
+}

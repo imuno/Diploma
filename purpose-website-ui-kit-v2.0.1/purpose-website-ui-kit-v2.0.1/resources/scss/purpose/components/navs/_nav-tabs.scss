@@ -1,0 +1,24 @@
+//
+// Nav tabs
+//
+
+
+.nav-tabs .nav-item .nav-link {
+    padding: .75rem 1rem;
+    transition: color .35s ease, border-color .35s ease;
+    border: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+
+    &.active {
+        color: theme-color("primary");
+        border-color: theme-color("primary");
+    }
+
+    &:not(.active) {
+        color: $gray-700;
+
+        &:hover {
+            // color: $gray-700;
+        }
+    }
+}

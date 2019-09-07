@@ -1,0 +1,60 @@
+//
+// Modal dialog vertical
+//
+
+.modal-dialog-vertical {
+    height: 100%;
+    max-width: $modal-dialog-vertical-width;
+    margin: 0;
+
+    .modal-content {
+        height: inherit;
+        border-width: 0 $modal-content-border-width 0 0;
+        border-radius: 0;
+    }
+
+    .modal-header {
+        border-radius: inherit;
+    }
+
+    .modal-body {
+        height: inherit;
+        overflow-y: auto;
+    }
+}
+
+.modal {
+    &.fade {
+        .modal-dialog-vertical {
+            transform: translateX(-100%);
+        }
+    }
+
+    &.show {
+        .modal-dialog-vertical {
+            transform: translateX(0);
+        }
+    }
+}
+
+// Positioning
+
+.modal.fixed-right {
+    padding-right: 0 !important;
+
+    .modal-dialog-vertical {
+        margin-left: auto;
+    }
+
+    &.fade {
+        .modal-dialog-vertical {
+            transform: translateX(100%);
+        }
+    }
+
+    &.show {
+        .modal-dialog-vertical {
+            transform: translateX(0);
+        }
+    }
+}

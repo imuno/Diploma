@@ -1,0 +1,47 @@
+//
+// Alert group
+// additional alert elements such as: icons, buttons and more
+//
+
+
+.alert-group {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .alert-group-prepend {
+        display: inline-flex;
+        vertical-align: middle;
+        margin-right: .5rem;
+    }
+
+    .alert-group-prepend,
+    .alert-content,
+    .alert-action {
+        padding-top: $alert-padding-y;
+        padding-bottom: $alert-padding-y;
+    }
+
+    .alert-action {
+        margin-left: auto;
+    }
+
+    .btn {
+        padding: .25rem .75rem;
+        font-size: $font-size-sm;
+        line-height: 1.6;
+    }
+
+    &[class*="alert-outline"] {
+        .alert-group-prepend {
+            margin-right:  $alert-padding-x;
+        }
+    }
+}
+
+.alert-group-icon {
+    display: inline-block;
+    min-width: 26px;
+    text-align: center;
+}

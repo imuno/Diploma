@@ -1,0 +1,237 @@
+//
+// Components
+//
+
+// Actions
+
+@import "components/actions/actions";
+
+// Alerts
+
+@import "components/alerts/alert";
+@import "components/alerts/alert-messages";
+@import "components/alerts/alert-notify";
+@import "components/alerts/alert-group";
+@import "components/alerts/alert-dismissible";
+
+// Avatars
+
+@import "components/avatars/avatar";
+@import "components/avatars/avatar-group";
+@import "components/avatars/avatar-parent-child";
+@import "components/avatars/avatar-connect";
+
+// Badges
+
+@import "components/badges/badge";
+@import "components/badges/badge-dot";
+@import "components/badges/badge-circle"; 
+@import "components/badges/badge-floating";
+
+// Backgrounds
+
+@import 'components/backgrounds/background-shapes';
+
+// Breadcrumbs
+
+@import 'components/breadcrumbs/breadcrumb';
+
+// Buttons
+
+@import "components/buttons/button";
+@import "components/buttons/button-icon";
+@import "components/buttons/button-animated";
+@import "components/buttons/button-labeled";
+@import "components/buttons/button-app";
+@import "components/buttons/button-group";
+
+// Cards
+
+@import "components/cards/card";
+@import "components/cards/card-group";
+@import "components/cards/card-columns";
+@import "components/cards/card-translucent";
+@import "components/cards/card-comment";
+@import "components/cards/card-profile";
+@import "components/cards/card-pricing";
+@import "components/cards/card-product";
+@import "components/cards/card-browser";
+@import "components/cards/card-overlay";
+@import "components/cards/card-accordion";
+
+// Clients
+
+@import "components/clients/client";
+
+// Closes
+
+@import "components/closes/close";
+
+// Collages
+
+@import "components/collages/collage";
+
+// Cards
+
+@import "components/custom-forms/custom-forms";
+@import "components/custom-forms/custom-checkbox";
+@import "components/custom-forms/custom-radio";
+@import "components/custom-forms/custom-color";
+@import "components/custom-forms/custom-alphanumeric";
+@import "components/custom-forms/custom-file";
+@import "components/custom-forms/custom-switch";
+
+// Dropdown
+
+@import 'components/dividers/divider';
+@import 'components/dividers/divider-fade';
+@import 'components/dividers/divider-icon';
+@import 'components/dividers/divider-vertical';
+
+// Dropdown
+
+@import 'components/dropdowns/dropdown';
+@import 'components/dropdowns/dropdown-submenu';
+@import 'components/dropdowns/dropdown-extend';
+
+// Footers
+
+@import 'components/footers/footer';
+@import 'components/footers/footer-rotate';
+
+// Forms
+
+@import 'components/forms/form';
+@import 'components/forms/form-label';
+@import 'components/forms/form-stacked';
+
+// Frames
+
+@import 'components/frames/frame-laptop';
+
+// Headers
+
+@import 'components/headers/header';
+
+// Icons
+
+@import 'components/icons/icon';
+@import 'components/icons/icon-shape';
+@import 'components/icons/icon-actions';
+@import 'components/icons/icon-floating';
+
+// Input group
+
+@import 'components/input-groups/input-group';
+@import 'components/input-groups/input-group-merge';
+
+// Layout
+
+@import 'components/layout/content';
+
+// List groups
+
+@import 'components/list-groups/list-group';
+
+// Lists
+
+@import 'components/lists/list';
+
+// Maps
+
+@import 'components/maps/map';
+
+// Masks
+
+@import 'components/masks/mask';
+@import 'components/masks/mask-body';
+
+// Media objects
+
+@import 'components/media-objects/media';
+@import 'components/media-objects/media-comment';
+
+//  Modals
+
+@import 'components/modals/modal';
+@import 'components/modals/modal-vertical';
+
+//  Navs
+
+@import 'components/navs/nav';
+@import 'components/navs/nav-pills';
+@import 'components/navs/nav-tabs';
+@import 'components/navs/nav-dots';
+
+// Navbars
+
+@import 'components/navbars/navbar';
+@import 'components/navbars/navbar-vertical';
+@import 'components/navbars/navbar-dropdown';
+@import 'components/navbars/navbar-search';
+
+// Paginations
+
+@import 'components/paginations/pagination';
+@import 'components/paginations/pagination-circle';
+
+// Omnisearches
+
+@import 'components/omnisearches/omnisearch';
+
+// Popovers
+
+@import 'components/popovers/popover';
+
+// Progresses
+
+@import 'components/progresses/progress';
+@import 'components/progresses/progress-tooltip';
+@import 'components/progresses/progress-label';
+
+// Ratings
+
+@import 'components/ratings/rating';
+
+// Ribbons
+
+@import 'components/ribbons/ribbon';
+
+// Sections
+
+@import 'components/sections/section';
+@import 'components/sections/section-rotate';
+@import 'components/sections/section-half-rounded';
+@import 'components/sections/section-process';
+@import 'components/sections/section-floating-icons';
+
+// Sidebars
+
+@import 'components/sidebars/sidebar-sticky';
+
+// Spotlights
+
+@import 'components/spotlights/spotlight';
+
+// Tables
+
+@import 'components/tables/table';
+@import 'components/tables/table-flush';
+@import 'components/tables/table-cards';
+@import 'components/tables/table-sortable';
+
+// Timelines
+
+@import 'components/timelines/timeline';
+
+// Tongues
+
+@import 'components/tongues/tongue';
+
+// Type
+
+@import 'components/type/type';
+
+// Other
+
+@import 'components/other/customizer';
