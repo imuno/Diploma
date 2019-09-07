@@ -105,7 +105,7 @@
                   <form role="form" method="POST" action="{% url 'login' %}">
                     {% csrf_token %}
                     <div class="form-group">
-                      <label class="form-control-label">Email address</label>
+                      <label class="form-control-label">Username</label>
                       <div class="input-group input-group-merge">
                         <div class="input-group-prepend">
                           <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -118,9 +118,7 @@
                         <div>
                           <label class="form-control-label">Password</label>
                         </div>
-                        <div class="mb-2">
-                          <a href="#!" class="small text-muted text-underline--dashed border-primary">Lost password?</a>
-                        </div>
+
                       </div>
                       <div class="input-group input-group-merge">
                         <div class="input-group-prepend">
@@ -135,13 +133,12 @@
                       </div>
                     </div>
                     <div class="mt-4"><input type="submit" class="btn btn-sm btn-primary btn-icon rounded-pill" value="Login">
-                        <span class="btn-inner--text">Sign in</span>
-                        <span class="btn-inner--icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                        <!-- <span class="btn-inner--icon"><i class="fas fa-long-arrow-alt-right"></i></span> -->
                       </button></div>
                   </form>
                 </div>
                 <div class="card-footer px-md-5"><small>Not registered?</small>
-                  <a href="#" class="small font-weight-bold">Create account</a></div>
+                  <a href="{% url 'getstarted' %}" class="small font-weight-bold">Create account</a></div>
               </div>
             </div>
             <div class="col-lg-5 order-lg-1 d-none d-lg-block">
