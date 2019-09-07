@@ -3,18 +3,18 @@
 
 <head>
   {% load staticfiles %}
-  
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.">
   <meta name="author" content="Webpixels">
   <title>Purpose Website UI Kit - Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</title>
   <!-- Favicon -->
-  <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png">
+  <link rel="icon" href="{% static 'purpose/purpose/assets/img/brand/favicon.png' %}" type="image/png">
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../../assets/libs/@fortawesome/fontawesome-free/css/all.min.css"><!-- Purpose CSS -->
-  <link rel="stylesheet" href="../../assets/css/purpose.css" id="stylesheet">
+  <link rel="stylesheet" href="{% static 'purpose/purpose/assets/libs/@fortawesome/fontawesome-free/css/all.min.css' %}"><!-- Purpose CSS -->
+  <link rel="stylesheet" href="{% static 'purpose/purpose/assets/css/purpose.css' %}" id="stylesheet">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
       <div class="container px-lg-0">
         <!-- Logo -->
         <a class="navbar-brand mr-lg-5" href="../../index.html">
-          <img alt="Image placeholder" src="../../assets/img/brand/dark.png" id="navbar-logo" style="height: 50px;">
+          <img alt="Image placeholder" src="{% static 'purpose/purpose/assets/img/brand/dark.png' %}" id="navbar-logo" style="height: 50px;">
         </a>
         <!-- Navbar collapse trigger -->
         <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
                       <div class="media d-flex align-items-center">
                         <!-- SVG icon -->
                         <figure style="width: 50px;">
-                          <img alt="Image placeholder" src="../../assets/img/icons/essential/detailed/Code_2.svg" class="svg-inject img-fluid" style="height: 50px;">
+                          <img alt="Image placeholder" src="{% static 'purpose/purpose/assets/img/icons/essential/detailed/Code_2.svg' %}" class="svg-inject img-fluid" style="height: 50px;">
                         </figure>
                         <!-- Media body -->
                         <div class="media-body ml-3">
@@ -129,7 +129,7 @@
                       <div class="media d-flex align-items-center">
                         <!-- SVG icon -->
                         <figure style="width: 50px;">
-                          <img alt="Image placeholder" src="../../assets/img/icons/essential/detailed/Code.svg" class="svg-inject img-fluid" style="height: 50px;">
+                          <img alt="Image placeholder" src="{% static 'purpose/purpose/assets/img/icons/essential/detailed/Code.svg' %}" class="svg-inject img-fluid" style="height: 50px;">
                         </figure>
                         <!-- Media body -->
                         <div class="media-body ml-3">
@@ -231,7 +231,7 @@
                       <div class="media d-flex align-items-center">
                         <!-- SVG icon -->
                         <figure style="width: 50px;">
-                          <img alt="Image placeholder" src="../../assets/img/icons/essential/detailed/Secure_Files.svg" class="svg-inject img-fluid" style="height: 50px;">
+                          <img alt="Image placeholder" src="{% static 'purpose/purpose/assets/img/icons/essential/detailed/Secure_Files.svg' %}" class="svg-inject img-fluid" style="height: 50px;">
                         </figure>
                         <!-- Media body -->
                         <div class="media-body ml-3">
@@ -298,7 +298,7 @@
                       <div class="media d-flex align-items-center">
                         <!-- SVG icon -->
                         <figure style="width: 50px;">
-                          <img alt="Image placeholder" src="../../assets/img/icons/essential/detailed/Task.svg" class="svg-inject img-fluid" style="height: 50px;">
+                          <img alt="Image placeholder" src="{% static 'purpose/purpose/assets/img/icons/essential/detailed/Task.svg' %}" class="svg-inject img-fluid" style="height: 50px;">
                         </figure>
                         <!-- Media body -->
                         <div class="media-body ml-3">
@@ -380,7 +380,7 @@
                       <div class="media d-flex align-items-center">
                         <!-- SVG icon -->
                         <figure style="width: 50px;">
-                          <img alt="Image placeholder" src="../../assets/img/icons/essential/detailed/Cart_Add_2.svg" class="svg-inject img-fluid" style="height: 50px;">
+                          <img alt="Image placeholder" src="{% static 'purpose/purpose/assets/img/icons/essential/detailed/Cart_Add_2.svg' %}" class="svg-inject img-fluid" style="height: 50px;">
                         </figure>
                         <!-- Media body -->
                         <div class="media-body ml-3">
@@ -440,7 +440,7 @@
                       <div class="media d-flex align-items-center">
                         <!-- SVG icon -->
                         <figure style="width: 50px;">
-                          <img alt="Image placeholder" src="../../assets/img/icons/essential/detailed/Cog_Wheels.svg" class="svg-inject img-fluid" style="height: 50px;">
+                          <img alt="Image placeholder" src="{% static 'purpose/purpose/assets/img/icons/essential/detailed/Cog_Wheels.svg' %}" class="svg-inject img-fluid" style="height: 50px;">
                         </figure>
                         <!-- Media body -->
                         <div class="media-body ml-3">
@@ -494,7 +494,7 @@
                     <a href="../../sections.html" class="list-group-item list-group-item-action" role="button">
                       <div class="media d-flex align-items-center">
                         <figure style="width: 50px;">
-                          <img alt="Image placeholder" src="../../assets/img/icons/essential/detailed/Apps.svg" class="svg-inject img-fluid" style="height: 50px;">
+                          <img alt="Image placeholder" src="{% static 'purpose/purpose/assets/img/icons/essential/detailed/Apps.svg' %}" class="svg-inject img-fluid" style="height: 50px;">
                         </figure>
                         <div class="media-body ml-3">
                           <h6 class="mb-1">Explore all sections</h6>
@@ -550,7 +550,7 @@
                       <div class="media d-flex align-items-center">
                         <!-- SVG icon -->
                         <figure style="width: 50px;">
-                          <img alt="Image placeholder" src="../../assets/img/icons/essential/detailed/DOC_File.svg" class="svg-inject img-fluid" style="height: 50px;">
+                          <img alt="Image placeholder" src="{% static 'purpose/purpose/assets/img/icons/essential/detailed/DOC_File.svg' %}" class="svg-inject img-fluid" style="height: 50px;">
                         </figure>
                         <!-- Media body -->
                         <div class="media-body ml-3">
@@ -565,7 +565,7 @@
                       <div class="media d-flex align-items-center">
                         <!-- SVG icon -->
                         <figure style="width: 50px;">
-                          <img alt="Image placeholder" src="../../assets/img/icons/essential/detailed/Mobile_UI.svg" class="svg-inject img-fluid" style="height: 50px;">
+                          <img alt="Image placeholder" src="{% static 'purpose/purpose/assets/img/icons/essential/detailed/Mobile_UI.svg' %}" class="svg-inject img-fluid" style="height: 50px;">
                         </figure>
                         <!-- Media body -->
                         <div class="media-body ml-3">
@@ -669,7 +669,7 @@
       <!-- SVG background -->
       <div class="bg-absolute-cover bg-size--contain d-none d-lg-block">
         <figure class="w-100">
-          <img alt="Image placeholder" src="../../assets/img/svg/backgrounds/bg-3.svg" class="svg-inject">
+          <img alt="Image placeholder" src="{% static 'purpose/purpose/assets/img/svg/backgrounds/bg-3.svg' %}" class="svg-inject">
         </figure>
       </div>
       <div class="container py-5 px-md-0 d-flex align-items-center">
@@ -739,11 +739,11 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="../../assets/js/purpose.core.js"></script>
+  <script src="{% static 'purpose/purpose/assets/js/purpose.core.js' %}"></script>
   <!-- Purpose JS -->
-  <script src="../../assets/js/purpose.js"></script>
+  <script src="{% static 'purpose/purpose/assets/js/purpose.js' %}"></script>
   <!-- Demo JS - remove it when starting your project -->
-  <script src="../../assets/js/demo.js"></script>
+  <script src="{% static 'purpose/purpose/assets/js/demo.js' %}"></script>
 </body>
 
 </html>
