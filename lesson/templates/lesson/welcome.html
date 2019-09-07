@@ -9,59 +9,17 @@
   <meta name="author" content="Webpixels">
   <title>Purpose Website UI Kit - Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</title>
   <!-- Favicon -->
-  <link rel="icon" href="{% static 'purpose/purpose/assets/img/brand/favicon.png' %}" type="image/png">
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="{% static 'purpose/purpose/assets/libs/@fortawesome/fontawesome-free/css/all.min.css' %}"><!-- Purpose CSS -->
-  <link rel="stylesheet" href="{% static 'purpose/purpose/assets/css/purpose.css' %}" id="stylesheet">
+  <link rel="stylesheet" href="{% static 'purpose/purpose/css/purpose.css' %}" id="stylesheet">
+  <link rel="icon" href="{% static 'purpose/purpose/assets/img/brand/favicon.png' %}" type="image/png">
 </head>
 
 <body>
   <header class="header header-transparent" id="header-main">
     <!-- Topbar -->
-    <div id="navbar-top-main" class="navbar-top  navbar-light bg-white border-bottom">
-      <div class="container px-0">
-        <div class="navbar-nav align-items-center">
 
-          <div>
-
-          </div>
-          <div class="ml-auto">
-            <ul class="nav">
-
-              <li class="nav-item">
-                <a href="#" class="nav-link" data-action="omnisearch-open" data-target="#omnisearch"><i class="fas fa-search"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../pages/shop/checkout-cart.html"><i class="fas fa-shopping-cart"></i></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-user-circle"></i>
-                </a>
-                <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-                  <h6 class="dropdown-header">User menu</h6>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-user"></i>Account
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <span class="float-right badge badge-primary">4</span>
-                    <i class="fas fa-envelope"></i>Messages
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-cog"></i>Settings
-                  </a>
-                  <div class="dropdown-divider" role="presentation"></div>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-sign-out-alt"></i>Sign out
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Main navbar -->
     <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light bg-white" id="navbar-main">
       <div class="container px-lg-0">
@@ -78,11 +36,11 @@
           <ul class="navbar-nav align-items-lg-center">
             <!-- Home - Overview  -->
             <li class="nav-item ">
-              <a class="nav-link" href="../../index.html">Overview</a>
+              <a class="nav-link" href="../../index.html">Curriculum</a>
             </li>
             <!-- Pages menu -->
             <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quizzes</a>
               <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow p-0">
                 <ul class="list-group list-group-flush">
                   <li class="dropdown dropdown-animate dropdown-submenu" data-toggle="hover">
@@ -508,7 +466,11 @@
                           Faq
                         </a>
                       </li>
-
+                      <li>
+                        <a class="dropdown-item" href="../../pages/utility/support.html">
+                          Support
+                        </a>
+                      </li>
                       <li>
                         <a class="dropdown-item" href="../../pages/utility/topic.html">
                           Topic
@@ -627,7 +589,7 @@
                       <a href="../../docs/getting-started/plugins.html" class="dropdown-item">Using plugins</a>
                       <a href="../../docs/components/index.html" class="dropdown-item">Components</a>
                       <a href="../../docs/plugins/animate.html" class="dropdown-item">Plugins</a>
-
+                      <a href="../../docs/support.html" class="dropdown-item">Support</a>
                     </div>
                   </div>
                 </div>
@@ -1026,7 +988,7 @@
             <ul class="list-unstyled">
               <li><a href="#">Terms</a></li>
               <li><a href="#">Privacy</a></li>
-
+              <li><a href="#">Support</a></li>
             </ul>
           </div>
         </div>
@@ -1066,13 +1028,12 @@
   </footer>
   <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="{% static 'purpose/purpose/assets/js/purpose.core.js' %}"></script>
   <!-- Purpose JS -->
   <script src="{% static 'purpose/purpose/assets/js/purpose.js' %}"></script>
-  <!-- Demo JS - remove it when starting your project -->
-  <script src="{% static 'purpose/purpose/assets/js/demo.js' %}"></script>
+
 </body>
 
 </html>
