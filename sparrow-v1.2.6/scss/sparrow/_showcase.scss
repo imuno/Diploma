@@ -1,0 +1,110 @@
+/*-----------------------------------------------
+|   Showcase
+-----------------------------------------------*/
+.devices-wrapper{
+  transform: translateY(-50%) rotate(45deg);
+  transform-origin: center;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 56.25rem;
+  height: 56.25rem;
+  @include media-breakpoint-up(sm) {
+    left: 70%;
+    width: 31.25rem;
+    height: 31.25rem;
+  }
+  @include media-breakpoint-up(md) {
+    left: 60%;
+    width: 75rem;
+    height: 75rem;
+  }
+  @include media-breakpoint-up(lg) {
+    left: 50%;
+    width: 68.75rem;
+    height: 68.75rem;
+  }
+  @include media-breakpoint-up(xl) {
+    left: 40%;
+    width: 75rem;
+    height: 75rem;
+  }
+  @media (min-width: 1400px){
+    left: 25%;
+    width: 100rem;
+    height: 100rem;
+  }
+
+  .device{
+    width: 100% !important;
+    border-radius: 0.5rem;
+    border: 0.25rem solid rgba($gray-400, 0.1);
+    box-shadow: 0.125rem 0.125rem 1.25rem 0 rgba($black, 0.3);
+    width: 6.25rem;
+    transition: transform 2s cubic-bezier(.77,0,.18,1);
+  }
+  [class*="iphone-"]{
+    width: 10%;
+    position: absolute;
+  }
+  [class*="iphone--l-"]{
+    width: 29.5%;
+    position: absolute;
+  }
+  [class*="ipad--l-"]{
+    width: 28%;
+    position: absolute;
+  }
+  [class*="ipad--p-"]{
+    width: 21%;
+    position: absolute;
+  }
+  [class*="macbook-"]{
+    width: 44%;
+    position: absolute;
+  }
+  .iphone-1{
+    left: 27%;
+    top: 40%;
+  }
+  .iphone-2{
+    left: 69%;
+    top: 40%;
+  }
+  .iphone-3{
+    left: 55%;
+    top: -14%;
+  }
+  .iphone--l-1{
+    left: 42%;
+    top: 93%;
+  }
+  .iphone-4{
+    left: 88%;
+    top: 63%;
+  }
+  .ipad--l-1{
+    left: -3%;
+    top: 40%;
+  }
+  .ipad--l-2{
+    left: 39%;
+    top: 40%;
+  }
+  .ipad--l-3{
+    left: 81%;
+    top: 40%;
+  }
+  .ipad--p-1{
+    left: 69%;
+    top: 10%;
+  }
+  .macbook-1{
+    left: 42%;
+    top: 63%;
+  }
+  .macbook-2{
+    left: 22%;
+    top: 10%;
+  }
+}

@@ -1,0 +1,312 @@
+/*-----------------------------------------------
+|   Fancynav
+-----------------------------------------------*/
+.fancynavbar {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+  font-family: $font-family-sans-serif;
+  
+  @include media-breakpoint-up($fancynav-breakpoint-up) {
+    right: 0;
+    height: 100vh;
+    width: $fancynav-width;
+    
+    &.fancynavbar-left{
+      left: 0;
+      right: auto;
+    }
+  }
+}
+
+
+/*-----------------------------------------------
+|   Fancy Navbar
+-----------------------------------------------*/
+.fancynavbar-togglerbar {
+  display: flex;
+  justify-content: space-between;
+  @include media-breakpoint-down($fancynav-breakpoint-down) {
+    align-items: center;
+    height: $fancynavHeight;
+  }
+  @include media-breakpoint-up($fancynav-breakpoint-up) {
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+    background-color: $black;
+    padding-top: map_get($spacers, 2);
+    padding-bottom: map_get($spacers, 2);
+  }
+}
+
+
+/*-----------------------------------------------
+|   Fancy Navbar Brand
+-----------------------------------------------*/
+.fancynavbar-brand {
+  color: $white;
+  padding: map_get($spacers, 2) map_get($spacers, 3);
+}
+.fancynavbar-brand-img { opacity: 1 !important; }
+
+
+/*-----------------------------------------------
+|   Fancy Navbar Toggler
+-----------------------------------------------*/
+.fancynavbar-toggler {
+  cursor: pointer;
+  width: $fancynav-width;
+  height: $fancynav-width;
+  opacity: 1 !important;
+  @include media-breakpoint-down($fancynav-breakpoint-down) { transform: translateY(4%); }
+}
+.fancynavbar-toggler-icon {
+  path {
+    fill: none;
+    stroke: $white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+  }
+}
+
+
+/*-----------------------------------------------
+|   Fancy Navbar Addon
+-----------------------------------------------*/
+.fancynavbar-addon {
+  @include media-breakpoint-down($fancynav-breakpoint-down) { display: none !important; }
+  padding-left: 0;
+}
+.fancynavbar-addon-item {
+  display: block;
+  color: $light;
+  margin-top: map_get($spacers, 2);
+  font-size: map_get($font-sizes, 1);
+  transition: $transition-base;
+  
+  //@include hover-focus { color: $gray-500; }
+  @include hover-focus { color: rgba($light, 0.75); }
+}
+
+
+/*-----------------------------------------------
+|   Fancy Navbar Collapse
+-----------------------------------------------*/
+.fancynavbar-collapse {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  overflow: auto;
+  position: absolute;
+  text-align: left;
+  width: calc(50vw - #{$fancynav-width / 2});
+  right: calc(50% + #{$fancynav-width / 2});
+  transform: translateX(100%);
+  top: 0;
+  padding: 0;
+  z-index: -1;
+  backdrop-filter: blur(20px);
+  background-color: $fancynav-collapse-bg;
+  opacity: 0.92;
+
+  @include media-breakpoint-down($fancynav-breakpoint-down) {
+    width: 100vw;
+    top: $fancynavHeight;
+    right: 0;
+    height: calc(100vh - #{$fancynavHeight});
+  }
+
+  @include media-breakpoint-up($fancynav-breakpoint-up) {
+    padding-left: $fancynav-width;
+    padding-right: $fancynav-width;
+  }
+}
+.fancynavbar-left .fancynavbar-collapse {
+  left: calc(50% + #{$fancynav-width / 2});
+  right: auto;
+  @include media-breakpoint-down($fancynav-breakpoint-down){
+    left: 0;
+  }
+}
+
+
+/*-----------------------------------------------
+|   Fancy Navbar Nav
+-----------------------------------------------*/
+.fancynavbar-nav {
+  height: auto;
+  width: 100%;
+  list-style-type: none;
+  list-style-image: none;
+  padding-left: map_get($spacers, 3);
+  padding-right: map_get($spacers, 3);
+  margin: auto 0;
+  @include media-breakpoint-up($fancynav-breakpoint-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+/*-----------------------------------------------
+|   Fancy Navbar Link
+-----------------------------------------------*/
+.fancynav-link {
+  position: relative;
+  display: block;
+
+  font-size: map_get($font-sizes, 2);
+  @include media-breakpoint-between(sm, $fancynav-breakpoint-down) { font-size: map_get($font-sizes, 3); }
+  @include media-breakpoint-up(xl) { font-size: map_get($font-sizes, 3); }
+
+  @include media-breakpoint-up($fancynav-breakpoint-up) {
+    padding-right: map_get($spacers, 5);
+    padding-left: map_get($spacers, 5);
+  }
+
+  &:before {
+    //@include media-breakpoint-up($fancynav-breakpoint-up) { content: ''; }
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 2px;
+    transition: all 0.5s;
+    background-color: rgba($fancynav-link-color, 0.5);
+    z-index: 0;
+  }
+
+  &.fancy-dropdown-toggle .fancynav-link-content {
+    padding-right: map_get($spacers, 5);
+
+    &:after {
+      position: absolute;
+      left: calc(100% - #{$fancynav-width / 2});
+      top: 0;
+      transform: translateY(-50%);
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.33 7.03"><defs><style>.cls-1{fill:#{rgba($fancynav-link-color, 0.85)};}</style></defs><title>Asset 9sparrow</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><path class="cls-1" d="M6.17,7a.86.86,0,0,1-.61-.25L.25,1.47A.86.86,0,1,1,1.47.25L6.17,4.95,10.86.25a.86.86,0,0,1,1.22,1.22l-5.3,5.3A.86.86,0,0,1,6.17,7Z"/></g></g></svg>');
+      text-align: center;
+      color: white;
+      width: 15px;
+      height: 10px;
+      background-color: transparent;
+      z-index: 99;
+    }
+  }
+
+  &.show {
+    &:before { width: 100%; }
+    .fancynav-link-content:after { content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.5 9.41"><defs><style>.cls-1{fill:#{rgba($fancynav-link-color, 0.85)};}</style></defs><title>Asset 6sparrow</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><path class="cls-1" d="M8.25,0a1.15,1.15,0,0,1,.82.34l7.09,7.09a1.16,1.16,0,0,1-1.63,1.63L8.25,2.79,2,9.07A1.16,1.16,0,1,1,.34,7.43L7.43.34A1.15,1.15,0,0,1,8.25,0Z"/></g></g></svg>'); }
+  }
+}
+
+
+/*-----------------------------------------------
+|   Fancy Navbar Link Content
+-----------------------------------------------*/
+.fancynav-link-content {
+  color: rgba($fancynav-link-color, 0.85);
+  background-color: $fancynav-collapse-bg;
+  display: inline-block;
+  padding-left: map_get($spacers, 3);
+  padding-right: map_get($spacers, 3);
+  position: relative;
+  z-index: 1;
+}
+
+
+/*-----------------------------------------------
+|   Fancy Navbar Item
+-----------------------------------------------*/
+.fancynav-item {
+  overflow: hidden;
+  transition: height 0.4s cubic-bezier(.77, 0, .18, 1);
+  
+  height: 41px;
+  @include media-breakpoint-between(sm, $fancynav-breakpoint-down) { height: 54px; }
+  @include media-breakpoint-up(xl) { height: 54px; }
+  
+  @include hover-focus {
+    .fancynav-link-content {
+      text-decoration: none;
+      color: $fancynav-link-color;
+    }
+    .fancynav-link:before { width: 100%; }
+  }
+}
+
+
+/*-----------------------------------------------
+|   Fancy Dropdown
+-----------------------------------------------*/
+.fancy-dropdown-menu {
+  transition: height 0.2s cubic-bezier(.77, 0, .18, 1);
+
+  @include media-breakpoint-down($fancynav-breakpoint-down) {
+    margin-left: map_get($spacers, 2);
+    margin-right: map_get($spacers, 2);
+    padding-right: map_get($spacers, 4);
+    padding-left: map_get($spacers, 4);
+  }
+
+  @include media-breakpoint-up($fancynav-breakpoint-up) {
+    padding-right: map_get($spacers, 6);
+    padding-left: map_get($spacers, 6);
+  }
+}
+
+
+/*-----------------------------------------------
+|   Fancy Dropdown Item
+-----------------------------------------------*/
+.fancy-dropdown-item {
+  color: rgba($fancynav-link-color, 0.6);
+  font-weight: 700;
+  display: block;
+  transition: $transition-base;
+
+  @include hover-focus {
+    color: $fancynav-link-color;
+    text-decoration: none;
+  }
+}
+
+
+
+/*-----------------------------------------------
+|   Adjusting the page Layout
+-----------------------------------------------*/
+
+.has-sidemenu {
+  .main { @include media-breakpoint-up($fancynav-breakpoint-up) { width: calc(100% - (#{$fancynav-width} - 0.0625rem)); } }
+
+  @include media-breakpoint-up($fancynav-breakpoint-up) {
+    .footer { width: calc(100% - #{$fancynav-width}); }
+    .remodal { right: #{$fancynav-width / 2}; }
+  }
+}
+.has-sidemenu-left { .main, .footer { @include media-breakpoint-up($fancynav-breakpoint-up) { margin-left: $fancynav-width; } } }
+
+
+/*-----------------------------------------------
+|   IE Fix
+-----------------------------------------------*/
+.ie {
+  .fancynav {
+    .fancynavbar {
+      height: 100vh;
+      @include media-breakpoint-down($fancynav-breakpoint-down) { height: calc(100vh - #{$fancynavHeight}); }
+
+      .fancynavbar-content {
+        height: 100vh;
+        @include media-breakpoint-down($fancynav-breakpoint-down) { height: calc(100vh - #{$fancynavHeight}); }
+      }
+    }
+  }
+}

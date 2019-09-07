@@ -1,0 +1,8 @@
+/*-----------------------------------------------
+|   Dropdowns
+-----------------------------------------------*/
+.dropdown-menu{ font-size: $dropdown-font-size; }
+.dropdown-item{
+  transition: $transition-base;
+  font-weight: $font-weight-bold;
+}

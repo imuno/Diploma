@@ -1,0 +1,61 @@
+{
+  "author": "Medium Rare",
+  "private": true,
+  "name": "pipeline",
+  "version": "1.2.0",
+  "description": "A visual template for project management apps.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp",
+    "postinstall": "gulp deps"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "es6": true,
+      "browser": true,
+      "jquery": true
+    }
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "homepage": "http://pipeline.mediumra.re/index.html",
+  "dependencies": {
+    "@shopify/draggable": "~1.0.0-beta.8",
+    "autosize": "~4.0.2",
+    "bootstrap": "~4.3.1",
+    "dropzone": "~5.5.1",
+    "flatpickr": "~4.5.7",
+    "inter-ui": "~3.5.1",
+    "jquery": "~3.4.1",
+    "list.js": "~1.5.0",
+    "popper.js": "~1.15.0",
+    "prismjs": "~1.16.0"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "~7.4.4",
+    "@babel/preset-env": "~7.4.4",
+    "babel-plugin-transform-es2015-modules-strip": "~0.1.1",
+    "babel-plugin-transform-strict-mode": "~6.24.1",
+    "browser-sync": "~2.26.5",
+    "del": "~4.1.1",
+    "eslint": "~5.16.0",
+    "eslint-config-airbnb-base": "~13.1.0",
+    "eslint-plugin-import": "~2.17.3",
+    "gulp": "~4.0.2",
+    "gulp-autoprefixer": "~6.1.0",
+    "gulp-clean-css": "~4.2.0",
+    "gulp-eslint": "~5.0.0",
+    "gulp-newer": "~1.4.0",
+    "gulp-rename": "~1.4.0",
+    "gulp-sass": "~4.0.2",
+    "gulp-sourcemaps": "~2.6.1",
+    "node-sass-css-importer": "~0.0.3",
+    "rollup": "~1.12.1",
+    "rollup-plugin-babel": "~4.3.2",
+    "rollup-plugin-commonjs": "~10.0.0",
+    "rollup-plugin-node-resolve": "~5.0.0",
+    "rollup-plugin-uglify": "~6.0.1",
+    "yamljs": "~0.3.0"
+  }
+}

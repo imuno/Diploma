@@ -1,0 +1,19 @@
+/*-----------------------------------------------
+|   Avatar
+-----------------------------------------------*/
+.avatar{ 
+  width: 3.5rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+
+  /*-----------------------------------------------
+  |   Egg shaped avatar
+  -----------------------------------------------*/
+  &.avatar-egg{
+    height: 12.5rem;
+    width: 11rem;
+    border: ($border-width * 3) solid $white;
+    box-shadow: 0 0 0 0.5rem rgba($gray-300, 0.7);
+  }
+}

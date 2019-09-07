@@ -1,0 +1,19 @@
+/*-----------------------------------------------
+|   Object fit and Z-index
+-----------------------------------------------*/
+.fit-cover{ object-fit: cover; }
+.z-index-1{ z-index: 1; }
+
+/*-----------------------------------------------
+|   Zanimation
+-----------------------------------------------*/
+*[data-zanim-trigger]{ opacity: 0; }
+
+/*-----------------------------------------------
+|   Puppeteer
+-----------------------------------------------*/
+.puppeteer{
+  .fancynavbar{ display: none !important; }
+  .main, .footer{ width: 100vw !important;  }
+  *[data-zanim-trigger]{ opacity: 1 !important; }
+}

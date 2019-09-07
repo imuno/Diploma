@@ -1,0 +1,35 @@
+/*-----------------------------------------------
+|   Pre-loader
+-----------------------------------------------*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10001;
+  background-color: $white;
+  opacity: 1;
+  transition: opacity 0.8s cubic-bezier(.77, 0, .18, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media-breakpoint-up(lg){
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: map_get($spacers, 8);
+    padding-bottom: map_get($spacers, 6);
+  ;
+  }
+  &.loaded{
+    opacity: 0;
+  }
+}
+
+.line-scale-pulse-out-rapid{
+  div{
+    background-color: $black;
+    width: 0.125rem;
+    border-radius: $border-radius;
+  }
+}

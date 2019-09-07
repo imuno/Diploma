@@ -1,0 +1,185 @@
+/*-----------------------------------------------
+|   Form
+-----------------------------------------------*/
+label{
+  font-size: map_get($font-sizes, '-1');
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.02em;
+}
+
+/*-----------------------------------------------
+|   Input File
+-----------------------------------------------*/
+input.zinput-file[type='file']{ display: none; }
+.zinput-file + label{
+  svg{
+    fill: currentColor;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+}
+
+/*-----------------------------------------------
+|   Checkbox iso toggle
+-----------------------------------------------*/
+.ios-toggle{
+  &, &:active{
+    height:0;
+    width:0;
+    opacity: 0;
+  }
+  &:checked + .checkbox-label{
+    box-shadow:inset 0 0 0 1.25rem $primary, 0 0 0 0.0625rem $primary;
+    &:before{
+      left:calc(100% - 2rem);
+      box-shadow:0 0 0 0.0625rem transparent, -0.1875rem 0 0.1875rem rgba(0,0,0,.1);
+    }
+    &:after{
+      content:attr(data-on);
+      left: 4.375rem;
+      width: 2rem;
+    }
+  }
+}
+
+.checkbox-label{
+  display: block;
+  position: relative;
+  padding: 0.625rem;
+  margin-bottom: 1rem;
+  font-size: map_get($font-sizes, '-1');
+  line-height: 1rem;
+  width: 4.375rem;
+  height: 2rem;
+  border-radius: $border-radius-capsule;
+  background-color: map-get($theme-colors, 1100);
+  cursor:pointer;
+  box-shadow: inset 0 0 0 0 $primary, 0 0 0 0.0625rem $gray-300;
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    top: 0;
+    left: 0;
+    right: auto;
+    background-color: white;
+    border-radius:  $border-radius-capsule;
+    box-shadow: 0.1875rem 0 0.1875rem rgba(0,0,0,.1), 0 0 0 0.0625rem $gray-300;
+    transition:  all 0.2s ease-in-out;
+  }
+  &:after{
+    content: attr(data-off);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -18.75rem;
+    padding: 0.625rem;
+    height: 100%;
+    width: 18.75rem;
+    text-align: right;
+    color: map-get($grays, 200);
+    white-space: nowrap;
+  }
+  &.rounded{
+    border-radius: $border-radius;
+    &:before{ border-radius: $border-radius; }
+  }
+}
+
+/*-----------------------------------------------
+|   Checkbox and Radio
+-----------------------------------------------*/
+@mixin zinput-variant($type, $radius){
+  input[type='#{$type}']{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    cursor: pointer;
+    &:checked + label:before{ border-color: transparent; }
+    & + label:before{ border-radius: $radius; }
+  }
+}
+
+.zinput{
+  position: relative;
+  label{
+    display: inline-block;
+    position: relative;
+    padding-left: map_get($spacers, 5);
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    &:before{
+      width: 2rem;
+      height: 2rem;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      position: absolute;
+      cursor: pointer;
+      content: '';
+      border: $border-width solid $gray-300;
+      transition: box-shadow 0.2s ease-in-out;
+      box-shadow: inset 0 0 0 0 $primary,0 0 0 0 $gray-300;
+    }
+  }
+  &.zradio{
+    padding: map_get($spacers, 3) 0;
+    @include zinput-variant('radio', $border-radius-capsule);
+    input[type='radio']{ &:checked + label:before{ box-shadow:inset 0 0 0 0.5625rem $primary, 0 0 0 0 $primary; } }
+  }
+  &.zcheckbox{
+    padding: map_get($spacers, 3) 0;
+    @include zinput-variant('checkbox', $border-radius);
+    input[type='checkbox']{ &:checked + label:before{ box-shadow:inset 0 0 0 1.25rem $primary, 0 0 0 0 $primary; } }
+  }
+  svg{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 50%;
+    transform: translateY(-65%);
+    left: 0.5rem;
+    pointer-events: none;
+
+    path{
+      stroke: $white;
+      stroke-width: 1.125rem;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+  }
+}
+
+
+/*-----------------------------------------------
+|   Input with icon
+-----------------------------------------------*/
+.input-iconic{
+  position: relative;
+  button{
+    outline: 0;
+    background-color: transparent;
+    color: $gray-600;
+    border: 0;
+  }
+  .input-icon{
+    position: absolute;
+    z-index: 99;
+    right: map_get($spacers, 4);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .form-control{
+    padding-right: map_get($spacers, 5);
+    border-color: $gray-300;
+  }
+}
