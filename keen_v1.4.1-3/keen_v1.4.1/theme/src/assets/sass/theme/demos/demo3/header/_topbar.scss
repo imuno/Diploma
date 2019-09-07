@@ -1,0 +1,399 @@
+//
+// Topbar
+//
+
+
+
+
+$kt-topbar-icon-border-color:  rgba(#fff, 0.2);
+$kt-topbar-icon-border-hover-color:  rgba(#fff, 0.5);
+$kt-topbar-icon-color: #fff;
+
+$kt-topbar-minimize-icon-border-color: #e7e8f4;
+$kt-topbar-minimize-icon-border-hover-color: #d7d8e9;
+
+$kt-topbar-icon-size: 46px;
+$kt-topbar-minimize-icon-size: 36px;
+$kt-topbar-mobile-icon-size: 30px;
+
+// General mode
+.kt-header__topbar {
+	display: flex;
+	align-items: stretch;
+	padding: 0;
+	align-content: flex-end;
+
+	// Item
+	.kt-header__topbar-item {
+		display: flex;
+		align-items: stretch;
+		margin: 0 0.5rem;
+
+		// Wrapper	
+		.kt-header__topbar-wrapper {
+			cursor: pointer;
+			display: flex;
+			align-items: stretch;
+
+			.kt-badge {
+				position: absolute;
+				left: 50%;
+				width: 18px;
+				height: 18px;
+				background-clip: padding-box; /* Firefox 4+, Opera, for IE9+, Chrome */
+				margin-left: -9px;
+				top: -9px;
+			}
+
+			.kt-header__topbar-icon {
+				display: flex;
+				align-items: center;
+				align-self: center;
+				justify-content: center;
+				height: $kt-topbar-icon-size;
+				width: $kt-topbar-icon-size;
+				border-radius: 50%;
+				border: 1px solid $kt-topbar-icon-border-color;
+
+				cursor: pointer;
+				background: transparent; 
+				@include kt-transition();
+
+				i {
+					line-height: 0;
+					font-size: 1.3rem;
+					color: $kt-topbar-icon-color;
+				}	
+			}		
+		}		
+
+		// Hover state
+		&:hover,
+		&.show {
+			.kt-header__topbar-icon {
+				@include kt-transition();
+				background-color: kt-brand-color();
+				border: 1px solid kt-brand-color();
+				
+				i {
+					color: kt-brand-color(inverse) !important;
+				}	
+			}
+		}		
+
+		// User profile
+		&.kt-header__topbar-item--user {
+			//padding: 0 0.4rem;
+
+			.kt-header__topbar-welcome {
+				display: flex;
+				align-self: center;
+				padding: 0 0.55rem 0 0;
+				font-weight: 500;
+				font-size: 0.9rem;
+				color: #636177;
+			}
+
+			.kt-header__topbar-username {
+				display: flex;
+				align-self: center;
+				padding: 0 0.55rem 0 0;
+				font-weight: 500;
+				font-size: 1rem;
+				color: #fff;
+			}
+
+			.kt-header__topbar-wrapper {
+				img {
+					align-self: center;
+					max-height: $kt-topbar-icon-size;
+					max-width: $kt-topbar-icon-size;
+					border-radius: 50%;
+				}
+			}			
+		}	
+
+		// Languages
+		&.kt-header__topbar-item--langs {
+			.kt-header__topbar-icon {
+				img {
+					border-radius: 50%;
+					width: 22px;
+				}
+			}
+
+			.dropdown-menu {
+				.kt-nav__link-icon {
+					padding-right: 10px;
+
+					img {
+						border-radius: 50%;
+						width: 18px;
+					}
+				}
+			}
+		}
+
+		// Search
+		&.kt-header__topbar-item--search {
+			// Search
+			.kt-quick-search {
+				width: 200px;
+				padding: 0;
+				margin-right: 0.25rem;	
+				
+				// Form
+				.kt-quick-search__form {
+					border-radius: $kt-topbar-icon-size / 2;
+			
+					// Input group
+					.input-group {		
+						padding: 0rem 0.25rem;			
+						height: $kt-topbar-icon-size;
+						border-radius: $kt-topbar-icon-size / 2;
+						border: 1px solid $kt-topbar-icon-border-color;
+						align-items: center;		
+
+						@include kt-spinner-skin(#fff);
+					}
+				
+					// Form control
+					.form-control {		
+						background: transparent;	
+						color: $kt-topbar-icon-color;
+						@include kt-input-placeholder(#c0c2da);
+					}
+				
+					i {
+						font-size: 1.2rem;
+						color: #cfd0e4;
+					}
+				}			
+			}
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+
+// Desktop mode(1024px and above)
+@include kt-media-above(lg) {
+	// Header minimize mode
+	.kt-header--minimize {
+		// Topbar
+		.kt-header__topbar {
+			// Topbar item
+			.kt-header__topbar-item {
+				// Wrapper
+				.kt-header__topbar-wrapper {
+					.kt-header__topbar-icon {
+						border: 1px solid $kt-topbar-minimize-icon-border-color;
+
+						i {
+							color: kt-base-color(label, 2);
+						}	
+					}		
+				}		
+
+				// Hover state
+				&:hover,
+				&.show {
+					.kt-header__topbar-icon {
+						@include kt-transition();
+						background-color: kt-brand-color();
+						border: 1px solid kt-brand-color();
+					
+						i {
+							color: kt-brand-color(inverse);
+						}	
+					}
+				}		
+
+				// User
+				&.kt-header__topbar-item--user {
+					.kt-header__topbar-welcome {
+						color: kt-base-color(label, 2);
+					}
+
+					.kt-header__topbar-username {
+						color: kt-base-color(label, 3);
+					}			
+				}	
+
+				// Search
+				&.kt-header__topbar-item--search {
+					// Search
+					.kt-quick-search {
+						// Form
+						.kt-quick-search__form {
+							// Input group
+							.input-group {		
+								border: 1px solid $kt-topbar-minimize-icon-border-color;
+
+								@include kt-spinner-skin(kt-brand-color());
+							}
+						
+							// Form control
+							.form-control {		
+								color: kt-base-color(label, 3);
+								@include kt-input-placeholder(kt-base-color(label, 2));
+							}
+							
+							// Icon
+							i {
+								font-size: 1.2rem;
+								color: kt-base-color(label, 2);
+							}
+						}			
+					}
+				}
+			}
+		}
+	}
+}
+
+// Tablet and mobile mode(1024px and below)
+@include kt-media-below(lg) {
+	.kt-header__topbar {
+		padding: 0 kt-get($kt-page-padding, mobile);
+		background-color: #fff;
+		transition: all 0.3s ease;
+		margin-top: -(kt-get($kt-header-config, topbar, height, mobile));
+		height: kt-get($kt-header-config, topbar, height, mobile);
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		right: 0;
+		justify-content: flex-end;
+		width: 100%;
+		border-top: 1px solid transparent;
+
+		// Fixed mobile header
+		.kt-header-mobile--fixed & {
+			position: fixed;
+			z-index: kt-get($kt-header-config, base, mobile, self, fixed, zindex) - 1;
+		}
+
+		// Topbar shown
+		.kt-header__topbar--mobile-on & {
+			margin-top: 0;
+			transition: all 0.3s ease;
+			box-shadow: kt-get($kt-header-config, base, mobile, self, fixed, box-shadow);
+			border-top: 1px solid kt-base-color(grey, 2);
+		}
+
+		// Topbar item
+		.kt-header__topbar-item {
+			margin: 0 0.25rem;
+			align-items: center;
+			
+			// Wrapper
+			.kt-header__topbar-wrapper {
+				display: flex;
+				align-items: center;
+
+				.kt-badge {
+					top: 4px;		
+					width: 16px;
+					height: 16px;
+					margin-left: -8px;
+				}	
+
+				.kt-header__topbar-icon {
+					max-height: $kt-topbar-mobile-icon-size;
+					max-width: $kt-topbar-mobile-icon-size;
+					border: 1px solid $kt-topbar-minimize-icon-border-color;
+
+					i {
+						font-size: 1.2rem;		
+						color: kt-base-color(label, 2);
+					}		
+				}
+			}
+
+			// Hower state
+			&:hover,
+			&.show {
+				.kt-header__topbar-icon {
+					@include kt-transition();
+					background-color: kt-brand-color();
+					border: 1px solid kt-brand-color();
+					
+					i {
+						color: kt-brand-color(inverse);
+					}	
+				}				
+			}				
+
+			// User
+			&.kt-header__topbar-item--user {
+				padding: 0 0 0 0.25rem;
+				margin: 0;
+
+				.kt-header__topbar-welcome {
+					color: kt-base-color(label, 2);
+					padding: 0 0.35rem 0 0;
+					font-size: 0.9rem;
+				}
+
+				.kt-header__topbar-username {
+					color: kt-base-color(label, 3);
+					padding: 0 0.55rem 0 0;
+					font-size: 0.9rem;
+				}
+
+				.kt-header__topbar-wrapper {
+					img {
+						max-height: $kt-topbar-mobile-icon-size;
+						max-width: $kt-topbar-mobile-icon-size;
+						margin: 0 0.5rem 0 0.2rem;
+					}
+				}
+			}	
+
+			// Search
+			&.kt-header__topbar-item--search {
+				flex-grow: 1;
+				justify-content: flex-start;
+
+				// Search
+				.kt-quick-search {
+					max-width: 140px;
+					width: auto;
+					margin-right: 0.25rem;
+
+					.kt-quick-search__form {
+						.input-group {
+							padding: 0;
+							height: $kt-topbar-mobile-icon-size;
+							border: 1px solid $kt-topbar-minimize-icon-border-color;
+
+							@include kt-spinner-skin(kt-base-color(label, 2));
+
+							.form-control {
+								height: auto;
+							}
+						}
+		
+						.form-control {
+							color: kt-base-color(label, 3);
+							@include kt-input-placeholder(kt-base-color(label, 2));
+						}
+		
+						i {
+							color: kt-base-color(label, 2);
+						}
+					}
+				}
+			}
+
+			&:last-child {
+				padding-right: 0 !important;
+				margin-right: 0 !important;
+			}
+		}	
+	}
+}

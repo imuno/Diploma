@@ -1,0 +1,470 @@
+//
+// Aside Config
+//
+
+
+
+$kt-aside-config: (
+	// Aside
+	base: (
+		width: (
+			primary: (
+				desktop: 70px,
+				mobile: 60px
+			),
+			secondary: 250px
+		),
+		bg-color: #fff,
+		shadow: 0px 0px 28px 0px rgba(#445ea7, 0.13),
+		zindex: 98,
+		scroll: (
+			width: 4px,
+			color: #dbdbe3
+		),
+		
+		offcanvas-mobile: (
+			layout: (
+				self: (
+					zindex: 1001,
+					width: 275px
+				),
+				close: (
+					size: 25px,
+					font-size: 1.4rem
+				)
+			),
+			skin: (
+				self: (
+					bg-color: #ffffff,
+					shadow: 0px 1px 9px -3px rgba(0,0,0,0.75)
+				),
+				overlay: (
+					bg-color: rgba(#000000, 0.1),
+				),
+				close: (
+					icon-color: (
+						default: #968ad4,
+						hover: #ffffff
+					),
+					bg-color: (
+						default: darken(#f8f8fb, 5%),
+						hover: kt-brand-color()
+					)
+				)
+			)
+		)
+	),
+
+	// Menu
+	menu: (
+		// base parameters required to build the base menu
+		base: (
+			class: kt-aside-menu, // menu element class name
+			parent-class: kt-aside, // manu parent aside element class name
+			mode: general, // menu mode: general or tablet-and-mobile
+		),
+
+		// customize the menu
+		build: (
+			// layout
+			layout: (
+				// default mode
+				default: (
+					// menu panel itself
+					self: (
+						padding: 0
+					),
+
+					// root item
+					item: (
+						// item itself
+						self: (
+							margin:	0 19px  0  0
+						),
+
+						// item link
+						link: (
+							// link itself
+							self: (
+								height: 40px,				
+								padding: 5px 20px 5px 15px
+							),					
+
+							// link icon
+							icon:	(
+								width: 35px,
+								font-size: 1.3rem
+							),		
+
+							// link bullet
+							bullet:	(
+								self: (
+									width: 15px,
+								),
+
+								dot: (
+									size: 4px
+								),
+
+								line: (
+									width: 5px,
+									height: 1px
+								)							
+							),					
+
+							// link text
+							text:	(
+								font-size: 1rem,
+								font-weight: 500,
+								font-transform:	initial,
+								text-transform: uppercase
+							),
+
+							// link arrow
+							arrow:	(
+								width: 20px,
+								transition: all 0.3s ease,
+								font-size: 0.7rem
+							),
+
+							// link badge
+							badge:	(
+								padding: 0px 0px 0px 5px
+							)
+						),
+
+						// item submenu
+						submenu: (
+							// submenu self
+							self: (
+								indent: 15px,
+								margin:	0
+							),
+
+							// submenu item
+							item: (
+								// item itself
+								self: (
+									margin:	0 
+								),
+
+								// item link
+								link: (
+									// link itself
+									self: (
+										height: 34px,		
+										padding: 0 10px,
+										padding-x: 10px,
+										border-radius: 4px
+									),					
+
+									// link icon
+									icon:	(
+										width: 35px,
+										font-size: 1.3rem
+									),		
+
+									// link bullet
+									bullet:	(
+										self: (
+											width: 20px,
+										),
+										dot: (
+											size: 4px
+										),
+										line: (
+											width: 5px,
+											height: 1px
+										)							
+									),						
+
+									// link text
+									text:	(
+										font-size: 1rem,
+										font-weight: 400,
+										font-transform:	initial
+									),
+
+									// link arrow
+									arrow:	(
+										width: 20px,
+										transition: all 0.3s ease,
+										font-size: 0.7rem
+									),
+
+									// link badge
+									badge:	(
+										padding: 0px 0px 0px 5px
+									)
+								)
+							),
+
+							// submenu section
+							section: (
+								self: (
+									indent: 15px,
+									padding: 0 25px,
+									margin: 20px 0 0 0,
+									height: 40px
+								),
+
+								text: (
+									font-size: 0.8rem,
+									font-weight: 300,
+									font-transform: uppercase,
+									letter-spacing: 0.3px
+								),
+
+								icon: (
+									font-size: 1.1rem
+								)
+							),
+
+							// submenu separator
+							separator: (
+								margin: 15px 0
+							)
+						)
+					),
+
+					// root section
+					section: (
+						self: (
+							padding: 0,
+							margin: 20px 0 0 0,
+							height: 40px							
+						),
+
+						text: (
+							font-size: 0.83rem,
+							font-weight: 600,
+							font-transform: uppercase,
+							letter-spacing: 0.3px
+						),
+
+						icon: (					
+							font-size: 1.1rem
+						)
+					),
+
+					// root separator
+					separator: (
+						margin: 15px 0,
+					)
+				)
+			),
+
+			// skins
+			skin: (
+				// default mode
+				default: (
+					// menu panel itself
+					self: (
+						bg-color: #fff
+					),
+
+					// root item
+					item: (
+						// item itself
+						self: (
+							bg-color: (
+								default: null,
+								open: null,
+								here: null,
+								active: #e7f3ff,
+								hover: null									
+							)
+						),
+
+						// item link
+						link: (
+							// link itself
+							self: (
+								bg-color: (
+									default: null,
+									open: null,
+									here: null,
+									active: null,
+									hover: null
+								)
+							),			
+
+							// link icon
+							icon: (
+								font-color:	(
+									default: #cacad2,
+									open: kt-brand-color(),
+									here: kt-brand-color(),
+									active: kt-brand-color(),
+									hover: kt-brand-color()
+								),
+							),		
+
+							// link bullet
+							bullet:	(
+								dot: (
+									bg-color: (
+										default: #cacad2,
+										open: kt-brand-color(),
+										here: kt-brand-color(),
+										active: kt-brand-color(),
+										hover: kt-brand-color()
+									)
+								),
+								line: (
+									bg-color: (
+										default: #cacad2,
+										open: kt-brand-color(),
+										here: kt-brand-color(),
+										active: kt-brand-color(),
+										hover: kt-brand-color()
+									)
+								)							
+							),					
+
+							// link text
+							text:	(
+								font-color:	(
+									default: #90a6bb,
+									open: kt-brand-color(),
+									here: kt-brand-color(),
+									active: kt-brand-color(),
+									hover: kt-brand-color()
+								)	
+							),
+
+							// link arrow
+							arrow:	(
+								font-color:	(
+									default: #cacad2,
+									open: kt-brand-color(),
+									here: kt-brand-color(),
+									active: kt-brand-color(),
+									hover: kt-brand-color()
+								)
+							)
+						),
+
+						// item submenu
+						submenu: (
+							// submenu self
+							self: (
+								bg-color: (
+									default: null,
+									open: null,
+									active: null,
+									hover: null
+								)
+							),
+
+							// submenu item
+							item: (
+								// item itself
+								self: (
+									bg-color: (
+										default: null,
+										open: null,
+										here: null,
+										active: null,
+										hover: null
+									)
+								),
+								// item link
+								link: (
+									// link itself
+									self: (
+										bg-color: (
+											default: null,
+											open: null,
+											here: null,
+											active: #e7f3ff,
+											hover: null
+										)
+									),					
+									// link icon
+									icon:	(
+										font-color:	(
+											default: #cacad2,
+											open: kt-brand-color(),
+											active: kt-brand-color(),
+											hover: kt-brand-color()
+										)
+									),		
+									// link bullet
+									bullet:	(
+										dot: (
+											bg-color: (
+												default: #cacad2,
+												open: kt-brand-color(),
+												here: kt-brand-color(),
+												active: kt-brand-color(),
+												hover: kt-brand-color()
+											)
+										),
+										line: (
+											bg-color: (
+												default: #cacad2,
+												open: kt-brand-color(),
+												here: kt-brand-color(),
+												active: kt-brand-color(),
+												hover: kt-brand-color()
+											)
+										)							
+									),						
+									// link text
+									text: (
+										font-color:	(
+											default: #90a6bb,
+											open: kt-brand-color(),
+											active: kt-brand-color(),
+											hover: kt-brand-color()
+										)	
+									),
+									// link arrow
+									arrow:	(
+										font-color:	(
+											default: #cacad2,
+											open: kt-brand-color(),
+											active: kt-brand-color(),
+											hover: kt-brand-color()
+										)
+									)
+								)
+							),
+
+							// submenu section
+							section: (
+								text: (
+									font-color: #9e95c3
+								),
+								icon: (
+									font-color: #9e95c3
+								)
+							),
+
+							// submenu separator
+							separator: (
+								border: 1px solid #9e95c3
+							)
+						)
+					),
+
+					// root section
+					section: (
+						text: (
+							font-color: #676d8f
+						),
+						icon: (
+							font-color: #a4b9fc
+						)
+					),
+
+					// submenu separator
+					separator: (
+						border: 1px solid #9e95c3
+					)
+				)
+			)			
+		)
+	)
+);

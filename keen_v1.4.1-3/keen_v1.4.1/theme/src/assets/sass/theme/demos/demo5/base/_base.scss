@@ -1,0 +1,40 @@
+//
+// Page
+//
+
+
+
+
+body {
+	background: $kt-page-body-bg-color;
+}
+
+@include kt-desktop {
+	.kt-page {
+		transition: kt-get($kt-aside-config, base, minimize, transition);
+		
+		// Fixed Header
+		.kt-header--fixed & {
+			padding-top: kt-get($kt-header-config, base, desktop, default, height);
+		}
+		
+		// Container 
+		.kt-container {
+			padding: 0 kt-get($kt-page-padding, desktop);
+		}
+	}
+}
+
+@include kt-tablet-and-mobile {
+	.kt-page {
+		// Fixed Header
+		.kt-header-mobile--fixed & {
+			padding-top: kt-get($kt-header-config, base, mobile, self, default, height);
+		}
+	}
+
+	// Container 
+	.kt-container {
+		padding: 0 kt-get($kt-page-padding, mobile);
+	}
+}

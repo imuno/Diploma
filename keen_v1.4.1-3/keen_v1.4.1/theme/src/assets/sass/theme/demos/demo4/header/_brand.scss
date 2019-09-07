@@ -1,0 +1,48 @@
+//
+// Header Brand
+//
+
+
+
+.kt-header__brand {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-begin;
+	flex-direction: row;
+	padding: 0;
+	position: relative;
+
+	.kt-header__brand-logo {
+		display: flex;
+		justify-content: flex-begin;
+		align-items: flex-end;
+	}
+
+	.kt-header__brand-title {
+		display: flex;
+		border-left: 1px solid #2a2c3c;
+		color: #4d5061;
+		font-weight: 500;
+		font-size: 1.4rem;
+		margin: 0.25rem 0 0 2.25rem;
+		padding: 0.25rem 0 0.25rem 2rem;
+
+		.kt-header--minimize & {
+			font-size: 1.2rem;
+			border-left-color: kt-base-color(grey, 2);
+			color: kt-base-color(label, 3);
+			margin-left: 1.75rem;
+			padding-left: 1.5rem;			
+		}
+	}
+}
+
+// Mobile mode(1024px and below)
+@include kt-media-below(lg) {
+	.kt-header__brand {
+		.kt-header__brand-title {
+			display: none;
+		}
+	}
+}

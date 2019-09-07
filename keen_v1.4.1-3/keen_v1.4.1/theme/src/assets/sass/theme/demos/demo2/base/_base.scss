@@ -1,0 +1,85 @@
+//
+// Page
+//
+
+
+
+
+body {
+	background: $kt-page-body-bg-color;
+}
+
+@include kt-desktop {
+	// Wrapper	
+	.kt-wrapper {
+		transition: kt-get($kt-aside-config, base, minimize, transition);
+		
+		// Fixed Aside
+		.kt-aside--fixed & {
+			padding-left: kt-get($kt-aside-config, base, default, width);
+		}
+
+		// Minimize Aside
+		.kt-aside--fixed.kt-aside--minimize & {
+			padding-left: kt-get($kt-aside-config, base, minimize, width);
+			transition: kt-get($kt-aside-config, base, minimize, transition);
+		}
+	}
+
+	// Page
+	.kt-page {
+		padding: kt-get($kt-page-margin, desktop) !important;
+
+		// Fixed Header
+		.kt-header--fixed & {
+			padding-top: kt-get($kt-header-config, base, dekstop, default, height);
+		}
+	}
+
+	// Container 
+	.kt-container {
+		padding: 0 kt-get($kt-page-padding, desktop);
+		padding-right: 0 !important;
+	}
+
+	// Subheader enabled
+	.kt-subheader {
+		display: none;
+	}
+}
+
+//
+// Fixed container width handling 
+// Default Aside
+.kt-aside--enabled:not(.kt-aside--minimize) {
+	@include kt-media-range( lg, $kt-page-container-width + $kt-aside-default-width + (2 * kt-get($kt-page-padding, desktop)) ) {
+		.kt-container:not(.kt-container--fluid) {
+			width: 100%;
+		}
+	}
+}
+
+// Minimized Aside
+.kt-aside--enabled.kt-aside--minimize {
+	@include kt-media-range( lg, $kt-page-container-width + $kt-aside-minimize-width + (2 * kt-get($kt-page-padding, desktop)) ) {
+		.kt-container:not(.kt-container--fluid) {
+			width: 100%;
+		}
+	}
+}
+
+@include kt-tablet-and-mobile {
+	// Page
+	.kt-page {
+		// Fixed Header
+		.kt-header-mobile--fixed & {
+			padding-top: kt-get($kt-header-config, base, mobile, self, default, height);
+		}
+	}
+
+	// Container 
+	.kt-container {
+		padding: 0 kt-get($kt-page-padding, mobile) !important;
+	}
+}
+

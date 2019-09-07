@@ -1,0 +1,81 @@
+//
+// Aside
+//
+
+
+
+
+.kt-aside {
+	width: kt-get($kt-aside-config, base, default, width);
+	background-color: kt-get($kt-aside-config, base, default, bg-color);
+	box-shadow: kt-get($kt-aside-config, base, default, shadow);
+	transition: kt-get($kt-aside-config, base, minimize, transition);
+	padding: 2.5rem;
+
+	.kt-aside__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.kt-aside__title {
+			font-size:  1.4rem;
+			font-weight: 500;
+			color: #33323f;
+			margin: 0;
+			padding: 0;
+		}
+
+		.kt-aside__close {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 28px;
+			height: 28px;
+			background-color: #f4f4f8;
+			@include kt-transition();
+
+			i {
+				@include kt-transition();
+				font-size: 0.8rem;
+				color: #cacad7;
+			}
+
+			@include kt-rounded {
+				border-radius: 4px;
+			}
+
+			&:hover {
+				@include kt-transition();
+				background-color: kt-brand-color();
+
+				i {
+					@include kt-transition();
+					color: kt-brand-color(inverse);
+				}
+			}
+		}
+	}
+}
+
+@include kt-desktop {
+	.kt-aside {
+		// Scroll
+		@include kt-perfect-scrollbar-ver-size( kt-get($kt-aside-config, base, fixed, scroll, width) );
+		@include kt-perfect-scrollbar-skin( kt-get($kt-aside-config, base, fixed, scroll, color) );
+
+		.kt-aside__body {
+			.kt-aside-menu {
+				padding-right: 1rem;
+				margin-right: -1rem;
+			}
+		}
+	}
+}
+
+@include kt-tablet-and-mobile {
+	.kt-aside {
+		padding: 1rem;
+	}
+}
+
+@include kt-offcanvas-build(kt-aside, default, kt-get($kt-aside-config, base, offcanvas-mobile));

@@ -1,0 +1,23 @@
+//
+// Brand
+//
+
+
+
+
+@include kt-desktop {
+	.kt-header__brand {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 0;
+		background-color: kt-brand-color();
+		padding: 0 kt-get($kt-page-padding, desktop);
+	}
+}
+
+@include kt-tablet-and-mobile {
+	.kt-header__brand {
+		display: none;
+	}
+}

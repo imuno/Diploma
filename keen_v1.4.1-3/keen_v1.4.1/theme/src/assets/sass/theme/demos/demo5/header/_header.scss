@@ -1,0 +1,27 @@
+//
+// Header
+//
+
+
+
+// Desktop mode
+@include kt-desktop {
+	.kt-header {
+		display: flex;
+		justify-content: space-between;
+		height: kt-get($kt-header-config, base, desktop, default, height);
+		transition: kt-get($kt-header-config, base, desktop, fixed, transition);
+		position: relative;
+		z-index: 2;
+		
+		// Fixed
+		&.kt-header--fixed {
+			position: fixed;
+			transition: kt-get($kt-header-config, base, desktop, fixed, transition);
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: kt-get($kt-header-config, base, desktop, fixed, zindex);
+		}
+	}
+}

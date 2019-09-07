@@ -1,0 +1,80 @@
+//
+// Page
+//
+
+
+
+// Body 
+body {
+	background-color: $kt-page-body-bg-color;
+
+	// Container
+	.kt-container {
+		.kt-container {
+			width: 100%;
+		}
+	}
+}
+
+// Desktop(1024px and above)
+@include kt-desktop() {
+	// Container 
+	.kt-container {
+		padding: 0 kt-get($kt-page-padding, desktop);
+	}
+
+	// Body
+	.kt-body {
+		position: relative;
+		background: $kt-page-content-bg-color;
+		box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.02);
+
+		@include kt-rounded {
+			border-bottom-left-radius: $kt-border-radius;
+			border-bottom-right-radius: $kt-border-radius;
+		}
+	}
+
+	// Header Minimize mode
+	.kt-page {
+		.kt-header--fixed.kt-header--minimize & {
+			padding-top: kt-get($kt-header-config, base, desktop, default, height, top) + kt-get($kt-header-config, base, desktop, default, height, bottom);
+		}
+	}
+}
+
+// Page fluid mode(below $kt-page-container-width)
+@media (min-width: #{$kt-page-container-width + (2 * $kt-page-fluid-container-padding) - 1px}) {
+	// Container 
+	.kt-container {
+		padding: 0 kt-get($kt-page-padding, mobile);
+
+		&.kt-container--fluid {
+			padding: 0 $kt-page-fluid-container-padding;
+		}
+	}
+}
+
+// Tablet & mobile mode(1024px and below)
+@include kt-tablet-and-mobile {
+	// Container
+	.kt-container {
+		width: 100%;
+		padding: 0 kt-get($kt-page-padding, mobile);
+	}
+
+	// Wrapper
+	.kt-wrapper {
+		> .kt-container {
+			padding: 0;
+		}
+	}
+
+	// Page
+	.kt-page {
+		// Fixed Header
+		.kt-header-mobile--fixed & {
+			padding-top: kt-get($kt-header-config, base, mobile, self, default, height);
+		}
+	}
+}
