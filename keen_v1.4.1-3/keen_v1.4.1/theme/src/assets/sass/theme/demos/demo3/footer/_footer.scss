@@ -1,0 +1,274 @@
+//
+// Footer
+//
+
+
+
+
+.kt-footer {
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 0;
+	margin: 0;
+	
+    .kt-footer__top {
+		padding: 50px 0 40px 0;
+		border-bottom: 1px solid #191a43;
+
+		.kt-footer__section {
+			padding-right: 100px;
+
+			&.kt-footer__section--last {
+				padding-right: 0;
+			}
+		}
+
+		.kt-footer__title {
+			font-size: 1.2rem;
+			font-weight: 500;
+			margin-bottom: 1.75rem;
+			color: #ffffff;
+		}
+
+		.kt-footer__about {
+			color: #5d5e7d;
+			font-weight: 400;
+			font-size: 1.1rem;
+		}
+
+		.kt-footer__nav {
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+
+			li {
+				padding: 0.5rem 0;
+
+				&:first-child {
+					padding-top: 0;
+				}
+
+				a {
+					font-size: 1.1rem;
+					font-weight: 400;
+					@include kt-hover-transition();
+					@include kt-link-color( #535597, lighten(#535597, 10%) );
+				}
+			}
+		}
+
+		.kt-footer__social {
+			padding: 0;
+			margin: 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.kt-footer__social-label {
+				font-weight: 400;
+				font-size: 1.1rem;
+				color: #5d5e7d;
+				display: flex;
+				align-items: center;
+			}
+
+			.kt-footer__social-nav {
+				padding: 0;
+				margin: 0;
+				list-style-type: none;
+				display: flex;
+				align-items: center;
+
+				li {
+					display: inline-block;
+					padding: 0 0.5rem;
+
+					a {
+						i {
+							font-size:  1.7rem;
+							@include kt-transition();
+							color: #676885;
+						}
+
+						&:hover {
+							i {
+								@include kt-transition();
+								color: lighten(#676885, 8%);
+							}
+						}
+					}
+
+					&:last-child {
+						padding-right: 0;
+					}
+				}
+			}
+		}
+
+		.kt-footer__subscribe {
+			margin-bottom: 1rem;
+
+			.kt-input-icon {
+				.form-control {
+					border: 1px solid #42447f;
+					border-radius: 4rem;
+					background: transparent;
+					color:  lighten(#3e3f6b, 8%);
+					@include kt-input-placeholder(#3e3f6b);
+
+					&:focus {
+						border: 1px solid lighten(#42447f, 8%);
+					}
+				}				
+
+				.kt-input-icon__icon {
+					align-items: stretch;
+					padding: 6px;  
+					border-radius: 50%;
+
+					span {
+						display: flex;
+  						align-items: center;
+  						justify-content: center;
+  						width: 100%;
+  						background: #2f3168;
+  						border-radius: 50%;
+					}
+
+					&:hover {
+						span {
+							background: lighten(#2f3168, 8%);
+						}
+					}
+				}
+			}
+		}
+    }
+
+    .kt-footer__bottom {
+    	display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1.5rem 0;
+		width: 100%;
+		width: 100%;
+
+    	.kt-footer__copyright {
+			display: flex;
+			margin: 0;
+			padding: 0 1.25rem 0 0;
+			font-size: 1rem;
+			font-weight: 400;
+			color: #5d5e7d;
+			justify-content: flex-start;
+
+			a {
+				@include kt-link-color( #52536f, lighten(#52536f, 10%) );
+			}
+		}
+
+		.kt-footer__menu {
+			display: flex;
+			justify-content: flex-end;
+			padding: 0 0 0 0.75rem;
+			margin: 0;
+
+			a {
+				margin: 0 0 0 1.25rem;
+				padding: 0;
+				font-size: 1rem;
+				font-weight: 400;
+
+				@include kt-hover-transition();
+				@include kt-link-color( #535597, lighten(#535597, 10%) );
+			}
+		}
+    }	
+}
+
+// Desktop
+@include kt-desktop() {
+	.kt-footer {
+		margin-top: -70px;
+		padding-top: 70px;
+	}
+}
+
+// Tablet & mobile mode
+@include kt-tablet-and-mobile() {
+	.kt-footer {
+		background: #0a0b2c !important;
+		margin: 0;
+		padding: 0;
+
+		.kt-footer__top {
+			padding: 2rem 0;
+
+			.kt-footer__section {
+				padding: 2rem 0;
+			}
+
+			.kt-footer__title {
+				font-size: 1.1rem;
+				margin-bottom: 1rem;
+			}
+
+			.kt-footer__nav {
+				li {
+					padding: 0.25rem 0;
+
+					&:last-child {
+						padding-bottom: 0;
+					}
+				}
+			}
+		}
+
+		.kt-footer__bottom {
+			padding: 1rem 0;
+		}
+	}
+}
+
+// Small mobile mode
+@include kt-mobile() {
+	.kt-footer {
+		flex-direction: column;
+		justify-content: center;
+
+		.kt-footer__top {
+			padding: 1.5rem 0;
+
+			.kt-footer__section {
+				padding: 1.5rem 0;
+			}
+		}
+
+		.kt-footer__bottom {
+			display: flex;
+			flex-direction: column;
+			padding: 1.5rem 0;
+
+			.kt-footer__copyright {
+				justify-content: center;
+				padding: 0;
+				order: 2;
+			}
+
+			.kt-footer__menu {
+				justify-content: center;
+				order: 1;
+				padding: 0;
+				margin:  0 0 0.75rem 0;
+
+				a {
+					&:first-child {
+						padding-left: 0;
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+}

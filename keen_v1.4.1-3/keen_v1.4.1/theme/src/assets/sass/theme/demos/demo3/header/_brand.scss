@@ -1,0 +1,20 @@
+//
+// Header Brand
+//
+
+
+
+.kt-header__brand {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-begin;
+	flex-direction: row;
+	padding: 0;
+	position: relative;
+
+	.kt-header__brand-logo {
+		display: flex;
+		justify-content: flex-begin;
+	}
+}

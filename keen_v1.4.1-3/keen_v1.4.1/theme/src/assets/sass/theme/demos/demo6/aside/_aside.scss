@@ -1,0 +1,134 @@
+//
+// Aside
+//
+
+
+
+
+// Aside
+.kt-aside {
+	display: flex;
+	align-items: stretch;
+	background-color: kt-get($kt-aside-config, base, bg-color);
+	box-shadow: kt-get($kt-aside-config, base, shadow);
+
+	// Primary
+	.kt-aside__primary {
+		width: kt-get($kt-aside-config, base, width, primary, desktop);
+		background-color: #3699ff;		
+	}
+
+	// Secondary
+	.kt-aside__secondary {
+		flex-grow: 1;
+		
+		// Menu
+		.kt-aside-menu {
+			.ps__rail-y {
+				right: 2px;
+			}
+		}
+	}
+
+	// Primary aside only
+	width: kt-get($kt-aside-config, base, width, primary, desktop);
+
+	// Secondary aside enabled
+	.kt-aside--secondary-enabled & {
+		width: kt-get($kt-aside-config, base, width, primary, desktop) + kt-get($kt-aside-config, base, width, secondary);
+	}
+
+	.kt-menu__nav > .kt-menu__item.kt-menu__item--active {
+		border-radius: 4px;
+		height: 40px;
+	}
+}
+
+// Global dropdown menus
+.dropdown-menu {
+	z-index: kt-get($kt-aside-config, base, zindex) + 1;
+}
+
+// Desktop
+@include kt-desktop {
+	.kt-aside {
+		position: fixed;
+		overflow: visible; 
+		top: 0;
+		bottom: 0;
+		left: 0;
+		z-index: kt-get($kt-aside-config, base, zindex);
+	
+		// Scroll
+		@include kt-perfect-scrollbar-ver-size(kt-get($kt-aside-config, base, scroll, width));
+		@include kt-perfect-scrollbar-skin(kt-get($kt-aside-config, base, scroll, color));
+	}
+}
+
+// Aside offcanvas panel for mobile mode
+@include kt-offcanvas-build(kt-aside, tablet-and-mobile, kt-get($kt-aside-config, base, offcanvas-mobile));
+
+// Tablet & Mobile
+@include kt-tablet-and-mobile { 
+	// Aside
+	.kt-aside {
+		overflow: visible; 
+	}
+}
+
+// Mobile
+@include kt-mobile {
+	// Aside
+	.kt-aside {
+		// Primary
+		.kt-aside__primary {
+			width: kt-get($kt-aside-config, base, width, primary, mobile);
+
+			// Aside Top 
+			.kt-aside__top {
+				padding-bottom: 1.4rem;
+				
+				.kt-aside__nav {
+					.kt-aside__nav-item {
+						margin-top: 0.6rem;
+					}					
+				}
+			}
+
+			// Aside Middle
+			.kt-aside__middle {
+				.kt-aside__nav {
+					margin-top: 0;
+				}
+			}		
+			
+			// Aside Bottom 
+			.kt-aside__bottom {
+				.kt-aside__nav {
+					.kt-aside__nav-item {
+						margin-top: 0.8rem;
+
+						&:first-child {
+							margin-top: 2rem;
+						}
+					}					
+				}
+			}
+		}
+
+		// Secondary
+		.kt-aside__secondary {
+			padding: 9px 0 9px 18px;		
+
+			.kt-aside__secondary-top {
+				.kt-aside__secondary-title {
+					padding-top: 1rem;
+				}	
+			}
+		}
+
+		body:not(.kt-aside--secondary-enabled) & {
+			width: kt-get($kt-aside-config, base, width, primary, mobile) !important;
+		}
+	}	
+}

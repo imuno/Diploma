@@ -1,0 +1,34 @@
+//
+// Content
+//
+
+
+
+
+@include kt-desktop {
+	// Content
+	.kt-content {
+		padding: 0;
+
+		// Content fit
+		&.kt-content--fit-top {
+			padding-top: 0;
+		}
+
+		&.kt-content--fit-bottom {
+			padding-bottom: 0;
+		}
+	}
+}
+
+@include kt-tablet-and-mobile {
+	// Content
+	.kt-content {
+		padding: 0;
+
+		// Subheader enabled
+		.kt-subheader--enabled.kt-subheader--transparent & {
+			padding-top: 0;
+		}
+	}
+}

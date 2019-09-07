@@ -1,0 +1,59 @@
+//
+// Header
+//
+
+
+
+// Desktop mode
+@include kt-desktop {
+	.kt-header {
+		height: kt-get($kt-header-config, base, desktop, default, height);
+		background-color: #efeff5;
+		transition: kt-get($kt-aside-config, base, minimize, transition);
+
+		// Container
+		.kt-container {		
+			display: flex;
+			justify-content: space-between;
+		}
+
+		// Fixed
+		&.kt-header--fixed {
+			position: fixed;
+			top: 0;
+			right: kt-get($kt-page-margin, desktop);
+			left: kt-get($kt-aside-config, base, default, width) + kt-get($kt-page-margin, desktop);
+			z-index: kt-get($kt-header-config, base, desktop, fixed, zindex);
+			background-color: $kt-page-body-bg-color;
+			height: kt-get($kt-header-config, base, desktop, default, height) + kt-get($kt-page-margin, desktop);
+			padding-top: kt-get($kt-page-margin, desktop);
+		}
+
+		// Minimize Aside
+		.kt-header--fixed.kt-aside--minimize & {
+			left: kt-get($kt-aside-config, base, minimize, width);
+			transition: kt-get($kt-aside-config, base, minimize, transition);
+			box-shadow: kt-get($kt-header-config, base, desktop, default, shadow);
+		}
+
+		// Subheader enabled
+		.kt-subheader {
+			display: flex;
+			margin: 25px 0 10px 0;
+
+			.kt-subheader__title {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+// Desktop mode
+@include kt-tablet-and-mobile {
+	.kt-header {
+		// Subheader enabled
+		.kt-subheader {
+			display: none;
+		}
+	}
+}

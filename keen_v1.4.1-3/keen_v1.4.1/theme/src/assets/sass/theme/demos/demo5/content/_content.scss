@@ -1,0 +1,35 @@
+//
+// Content
+//
+
+
+
+
+
+// General mode
+.kt-content {
+	padding: kt-get($kt-page-padding, desktop) 0;
+}
+
+// Desktop 
+@include kt-desktop() {
+	// General mode
+	.kt-content {
+		// Container
+		.kt-container {
+			padding: 0 kt-get($kt-page-padding, desktop);
+		}
+	}
+}
+
+// Tablet & mobile mode
+@include kt-tablet-and-mobile() {
+	.kt-content {
+		padding: kt-get($kt-page-padding, mobile) 0;
+
+		// Subheader enabled
+		.kt-subheader--enabled.kt-subheader--transparent & {
+			padding-top: 0;
+		}
+	}
+}

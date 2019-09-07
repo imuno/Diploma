@@ -1,0 +1,42 @@
+//
+// Aside Secondary
+//
+
+
+// Secondary
+.kt-aside__secondary {
+    padding: 2rem 0.5rem 2rem 2rem;
+
+    .kt-aside__secondary-top {
+        padding: 0; 
+
+        .kt-aside__secondary-title {
+            color: #3f4567;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+    }   
+
+    .kt-aside__secondary-bottom {
+        padding: 1rem 0;   
+    }
+}
+
+
+// Mobile
+@include kt-mobile {
+
+    // Secondary
+    .kt-aside__secondary {
+        .kt-aside__secondary-top {
+            .kt-aside__secondary-title {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+
+// Build aside menu
+@include kt-menu-ver-build-layout(kt-get($kt-aside-config, menu));
+@include kt-menu-ver-build-skin(kt-get($kt-aside-config, menu), default);

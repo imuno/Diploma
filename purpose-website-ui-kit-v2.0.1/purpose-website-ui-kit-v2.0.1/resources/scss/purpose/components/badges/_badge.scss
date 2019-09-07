@@ -1,0 +1,64 @@
+//
+// Badge
+//
+
+
+// General styles
+
+.badge {
+    display: inline;
+    text-transform: $badge-text-transfom;
+
+    i {
+        margin-right: .5rem;
+    }
+}
+
+
+// Size variations
+
+.badge-md {
+    padding: .65em 1em;
+}
+
+.badge-lg {
+    padding: .85em 1.375em;
+}
+
+
+// Multiple inline badges
+
+.badge-inline {
+    margin-right: .625rem;
+
+    + span {
+        top: 2px;
+        position: relative;
+
+        > a {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+// Badge spacing inside a btn with some text
+
+.btn {
+    .badge {
+        &:not(:first-child) {
+            margin-left: .5rem;
+        }
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+    }
+}
+
+// Soft badge variations
+
+@each $color, $value in $theme-colors {
+    .badge-soft-#{$color} {
+        @include badge-soft-variant(theme-color-level($color, $badge-soft-bg-level), $value);
+    }
+}

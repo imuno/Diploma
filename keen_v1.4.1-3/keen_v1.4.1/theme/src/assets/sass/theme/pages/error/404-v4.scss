@@ -1,0 +1,71 @@
+//
+// Error 404 v4
+//
+
+
+
+
+// Custom pages SASS files are compiled per demo as 
+// each demo has own config settings that may override the global theme config
+// and pages may slighty different on demos
+
+
+// Global theme config(sass/theme/core/config.scss)
+@import "../../config";
+
+// Demo config(e.g: sass/theme/demos/demo1/config.scss) that overrides global theme config. 
+// Do not change this path, build tool automatically finds current demo's config file.    
+@import "config.scss";
+
+// Component config
+$kt-error404-v4-btn-color: #f7098f;
+
+.kt-error404-v4--enabled {
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.kt-error404-v4{
+	display:flex;
+	flex:1;
+	justify-content:center;
+	align-items:flex-end;
+
+	@include kt-mobile{
+		padding: 2rem;
+	}	
+
+	.kt-error404-v4__content{
+		margin-bottom: 7rem;
+		display: flex;
+		justify-content: center;
+		flex-direction:column;
+		align-items: center;
+		text-align:center;
+		
+		.kt-error404-v4__title{
+			font-size: 3rem;
+			color: kt-state-color(brand, inverse);
+			font-weight: 600;
+			margin-bottom:3rem;
+		}
+
+		.kt-error404-v4__button{
+			color: kt-state-color(brand, inverse);
+			background-color: $kt-error404-v4-btn-color;
+
+			&:hover{
+				color: kt-state-color(brand, inverse);
+			}
+		}
+	}
+}
+
+.kt-bg-error404-v4{
+	background-image:url('../../../../media/misc/404-bg4.jpg');
+
+	@include kt-mobile{
+		background-image:url('../../../../media/misc/bg-mobile-4.jpg') !important;
+	}
+}

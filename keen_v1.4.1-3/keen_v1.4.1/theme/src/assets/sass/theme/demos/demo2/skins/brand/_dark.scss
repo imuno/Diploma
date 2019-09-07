@@ -1,0 +1,46 @@
+//
+// Brand Dark Skin
+//
+
+
+
+// Desktop mode
+@include kt-desktop {
+	.kt-aside__brand.kt-aside__brand--skin-dark {
+	    background-color: #1b2736;
+    	box-shadow: none;
+    	border-bottom: 1px solid #253447;
+
+    	.kt-aside__brand-tools {
+			@include kt-burger-icon-skin(kt-aside__brand-aside-toggler, (default: #475363, hover: #6e8098, active: #6e8098) );
+		}
+	}
+}
+
+// Tablet and mobile mode
+@include kt-tablet-and-mobile {
+	.kt-aside__brand--skin-dark {
+		.kt-header-mobile {
+			background-color: #1b2736;
+			box-shadow: 0px 1px 9px -3px rgba(0,0,0,0.25);
+
+			// Toolbar
+			.kt-header-mobile__toolbar {
+				@include kt-burger-icon-skin(kt-header-mobile__toolbar-toggler, (default: #475363, hover: #6e8098, active: #6e8098) );
+
+				.kt-header-mobile__toolbar-topbar-toggler {
+					i {
+						color: #475363;
+					}
+
+					&.kt-header-mobile__toolbar-topbar-toggler--active,
+					&:hover {
+						i {
+							color: #6e8098;
+						}
+					}
+				}
+			}
+		}
+	}
+}

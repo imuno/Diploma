@@ -1,0 +1,258 @@
+//
+// Topbar
+//
+
+
+
+$kt-topbar-item-size: 46px;
+$kt-topbar-item-user-avatar-size: 34px;
+
+.kt-header__topbar {
+	display: flex;
+	align-items: stretch;
+	justify-content: flex-end;
+	padding: 0 kt-get($kt-page-padding, desktop) 0 0;
+
+	.kt-header__topbar-item {
+		display: flex;
+		align-items: stretch;
+		margin: 0 2px;
+		position: relative;
+
+		.kt-header__topbar-wrapper {
+			cursor: pointer;
+			display: flex;
+			align-items: stretch;
+
+			.kt-badge {
+				position: absolute;
+				left: 50%;
+				width: 4px;
+				height: 4px;
+				background-clip: padding-box; /* Firefox 4+, Opera, for IE9+, Chrome */
+				margin-left: -2px;
+				top: 15px;
+			}
+		}
+
+		.kt-header__topbar-icon {
+			display: flex;
+			align-items: center;
+			align-self: center;
+			justify-content: center;
+			height: $kt-topbar-item-size;
+			width: $kt-topbar-item-size;
+			border-radius: 50%;
+			cursor: pointer;
+			@include kt-transition();
+
+			i {
+				@include kt-transition();
+				font-size: 1.3rem;
+				color: #ffffff;
+			}	
+		}		
+
+		// User profile
+		&.kt-header__topbar-item--user {
+			padding: 0 0 0 15px;
+			margin: 0;
+
+			.kt-header__topbar-welcome {
+				display: flex;
+				align-self: center;
+				padding: 0 0.55rem 0 0;
+				font-weight: 500;
+				font-size: 0.9rem;
+				color: #636177;
+			}
+
+			.kt-header__topbar-username {
+				display: flex;
+				align-self: center;
+				padding: 0 0.55rem 0 0;
+				font-weight: 500;
+				font-size: 1rem;
+				color: #fff;
+			}
+
+			.kt-header__topbar-wrapper {
+				img {
+					align-self: center;
+					max-height: $kt-topbar-item-user-avatar-size;
+					max-width: $kt-topbar-item-user-avatar-size;
+					border-radius: 50%;
+				}
+			}			
+		}		
+
+		// Languages
+		&.kt-header__topbar-item--langs {
+			.kt-header__topbar-icon {
+				img {
+					border-radius: 50%;
+					width: 22px;
+				}
+			}
+
+			.dropdown-menu {
+				.kt-nav__link-icon {
+					padding-right: 10px;
+
+					img {
+						border-radius: 50%;
+						width: 18px;
+					}
+				}
+			}
+		}
+
+		// Search
+		&.kt-header__topbar-item--search {
+			.dropdown-menu {
+				padding: 1rem;
+			}
+
+			.kt-input-icon {
+				.kt-input-icon__icon {
+					font-size: 1.2rem;
+
+					i {
+						color: kt-base-color(label, 2);
+					}
+				}
+
+				.form-control {
+					border: 0;					
+					padding-left: 3.5rem;
+
+					&:focus {
+						border: 0;
+					}
+				}
+			}
+		}
+
+		&:hover,
+		&.show {
+			.kt-header__topbar-icon {
+				@include kt-transition();
+				background-color: #212029;
+
+				i {
+					@include kt-transition();
+					color: #fff;
+				}	
+			}
+
+			&.kt-header__topbar-item--user {
+				//background-color: #212029;		
+				
+				.kt-header__topbar-username {
+					color: #fff;
+				}
+			}
+		}	
+	}
+}
+
+@include kt-media-range(lg, 1400px) {
+	.kt-header__topbar {
+		.kt-header__topbar-item {
+			margin: 0 0.1rem;
+
+			.kt-header__topbar-icon {
+				height: 34px; 
+				width: 34px;
+
+				i {
+					font-size: 1.1rem;
+				}
+			}
+
+			&.kt-header__topbar-item--user {
+				padding-left: 5px;
+
+				.kt-header__topbar-wrapper {
+					img {
+						max-height: 34px;
+						max-width: 34px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include kt-tablet-and-mobile {
+	.kt-header__topbar {
+		padding: 0 kt-get($kt-page-padding, mobile);
+		background-color: #2b2a35;
+		box-shadow: 0px 1px 9px -3px rgba(0,0,0,0.75);
+		transition: all 0.3s ease;
+		margin-top: -(kt-get($kt-header-config, topbar, height, mobile));
+		height: kt-get($kt-header-config, topbar, height, mobile);
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		right: 0;
+		justify-content: flex-end;
+
+		// Fixed mobile header
+		.kt-header-mobile--fixed & {
+			position: fixed;
+			z-index: kt-get($kt-header-config, base, mobile, self, fixed, zindex) - 1;
+		}
+
+		// Topbar shown
+		.kt-header__topbar--mobile-on & {
+			margin-top: 0;
+			transition: all 0.3s ease;
+		}
+
+		// Topbar item
+		.kt-header__topbar-item {
+			margin: 0 0.25rem;
+
+			.kt-header__topbar-wrapper {
+				display: flex;
+				align-items: stretch;
+
+				.kt-badge {
+					top: 12px;
+				}
+			}
+
+			.kt-header__topbar-icon {
+				height: 38px;
+				width: 38px;
+
+				i {
+					font-size: 1.3rem;
+				}			
+			}		
+
+			&.kt-header__topbar-item--user {
+				padding: 0 0 0 0.35rem;
+				margin: 0 0 0 0.35rem;
+
+				.kt-header__topbar-welcome {
+					padding: 0 0.35rem 0 0;
+					font-size: 0.9rem;
+				}
+
+				.kt-header__topbar-username {
+					padding: 0 0.55rem 0 0;
+					font-size: 0.9rem;
+				}
+
+				.kt-header__topbar-wrapper {
+					img {
+						max-height: 30px;
+						max-width: 30px;
+					}
+				}
+			}		
+		}
+	}
+}

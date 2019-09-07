@@ -1,0 +1,169 @@
+//
+// Sub-header
+//
+
+
+
+
+// General mode
+.kt-subheader {
+	padding: 1rem 0;
+	box-shadow: kt-get($kt-subheader-config, default, shadow);
+	transition: kt-get($kt-header-config, base, desktop, fixed, transition);
+	background-color: #fff;
+	min-height: kt-get($kt-subheader-config, default, height, desktop);
+	margin: 0;
+	display: flex;
+	align-items: stretch;
+
+	.kt-container {		
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	// Title
+	.kt-subheader__title {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+
+		// Toggler
+		@include kt-burger-icon-build(kt-subheader__toggler, kt-get($kt-subheader-config, default, toggler));
+		@include kt-burger-icon-skin(kt-subheader__toggler, kt-get($kt-subheader-config, default, toggler, color));
+
+		.kt-subheader__toggler {
+			margin-right: 2.5rem;
+		}
+
+		// Breadcrumbs
+		.kt-subheader__breadcrumbs {
+			display: flex;
+			align-items: center;
+			list-style-type: none;
+			flex-wrap: wrap;
+			margin: 0;
+			padding: 0;
+			flex-wrap: wrap;
+
+			.kt-subheader__breadcrumbs-link {
+				padding: 0 0.75rem 0 0;
+				font-size: 1rem;
+				font-weight: 400;
+				color: #a8a5bb;
+
+				&:hover {
+					color: kt-brand-color();
+				}
+
+				&.kt-subheader__breadcrumbs-link--active {
+					color: kt-brand-color();
+				}
+
+				@include kt-hover-transition();
+
+				&.kt-subheader__breadcrumbs-link--home {
+					color: #33323f;
+					font-weight: 500;					
+				}  
+			}
+
+			.kt-subheader__breadcrumbs-separator {
+				display: flex;
+				justify-content: content;
+				align-items: center;
+				padding: 0 0.75rem 0 0;
+
+				&:after {
+					display: block;
+					width: 4px;
+					height: 4px;
+					border-radius: 50%;
+					content: " ";
+					background: #dedeea;
+				}
+			}
+		}
+	}
+
+	// Toolbar
+	.kt-subheader__toolbar {
+		display: flex;
+		justify-content: flex-end;	
+
+		.btn:not(.btn-icon) { 
+			margin-right: 0.1rem;
+			padding: 0.5rem 1.25rem;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}	
+	}
+}
+
+// Desktop mode
+@include kt-desktop {
+	.kt-subheader {
+		// Fixed
+		.kt-subheader--fixed.kt-header--fixed & {
+			height: kt-get($kt-subheader-config, default, height, desktop);
+			position: fixed;
+			transition: kt-get($kt-header-config, base, desktop, fixed, transition);
+			top: kt-get($kt-header-config, base, desktop, default, height);
+			right: 0;
+			left: 0;
+			z-index: kt-get($kt-subheader-config, fixed, zindex);
+		}
+	}
+}
+
+// Tablet and mobile mode
+@include kt-tablet-and-mobile {
+	.kt-subheader {
+		margin: 0;
+		padding: 0;
+		min-height: kt-get($kt-subheader-config, default, height, mobile);
+
+		// Title
+		.kt-subheader__title {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			margin: 0.25rem 0;
+
+			// Toggler		
+			.kt-subheader__toggler {
+				margin-top: 0.5rem;
+				margin-right: 1rem;
+			}
+
+			// Caption		
+			.kt-subheader__caption {
+				margin-left: 0.5rem;
+				margin-top: 0.5rem;
+			}
+
+			// Breadcrumbs
+			.kt-subheader__breadcrumbs {
+				margin-top: 0.5rem;
+			}
+		}
+
+		// Toolbar
+		.kt-subheader__toolbar {
+			display: flex;
+			justify-content: flex-end;	
+			margin: 0.25rem 0;
+
+			.btn { 
+				margin-right: 0.1rem;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}	
+		}
+	}
+}

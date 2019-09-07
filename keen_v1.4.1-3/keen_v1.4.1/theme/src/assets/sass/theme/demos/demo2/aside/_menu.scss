@@ -1,0 +1,51 @@
+//
+// Aside Menu
+//
+
+
+
+
+// Aside
+.kt-aside {
+	// Aside menu
+	.kt-aside-menu {
+		.kt-menu__nav {
+			.kt-menu__item {
+				&.kt-menu__item--active {
+					> .kt-menu__link {
+						border-radius: 2rem;		
+					}				
+				}
+			}
+		}
+	}
+}
+
+@include kt-desktop {
+	.kt-aside {
+		// Aside menu
+		.kt-aside-menu {
+			margin: 15px 0;
+
+			@include kt-rounded {
+				border-radius: $kt-border-radius;
+			}
+
+			.kt-aside--minimize & {
+				> .kt-menu__nav  {
+					> .kt-menu__item {
+						&.kt-menu__item--active,
+						&.kt-menu__item--here {
+							.kt-menu__link {
+								border-radius: $kt-border-radius;
+							}				
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Build aside menu
+@include kt-menu-ver-build-layout(kt-get($kt-aside-config, menu));

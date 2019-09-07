@@ -1,0 +1,24 @@
+//
+// images.scss
+// Extended from Bootstrap
+//
+
+// Image cover
+//
+// Spans the whole with of the viewport
+
+.img-cover {
+  width: 100vw; height: auto;
+  margin-left: calc(50% - 50vw);
+}
+
+
+// Figure
+
+.figure {
+  display: block;
+}
+
+.figure-img {
+  margin-bottom: $spacer;
+}

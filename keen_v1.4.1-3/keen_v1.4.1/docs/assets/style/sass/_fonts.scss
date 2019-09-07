@@ -1,0 +1,57 @@
+@import "_variables";
+
+@font-face {
+  font-family: 'poppinsmedium';
+  src: url('#{$fontPath}/poppins-medium-webfont.woff2') format('woff2'),
+  url('#{$fontPath}/poppins-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppinsregular';
+  src: url('#{$fontPath}/poppins-regular-webfont.woff2') format('woff2'),
+  url('#{$fontPath}/poppins-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hindmedium';
+  src: url('#{$fontPath}/hind-medium-webfont.woff2') format('woff2'),
+  url('#{$fontPath}/hind-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hindregular';
+  src: url('#{$fontPath}/hind-regular-webfont.woff2') format('woff2'),
+  url('#{$fontPath}/hind-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hindsemibold';
+  src: url('#{$fontPath}/hind-semibold-webfont.woff2') format('woff2'),
+  url('#{$fontPath}/hind-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hindbold';
+  src: url('#{$fontPath}/hind-bold-webfont.woff2') format('woff2'),
+  url('#{$fontPath}/hind-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hindlight';
+  src: url('#{$fontPath}/hind-light-webfont.woff2') format('woff2'),
+  url('#{$fontPath}/hind-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

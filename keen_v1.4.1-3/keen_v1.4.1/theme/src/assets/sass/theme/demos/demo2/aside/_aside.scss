@@ -1,0 +1,90 @@
+//
+// Aside
+//
+
+
+
+
+// Aside
+.kt-aside {
+	width: kt-get($kt-aside-config, base, default, width);
+	background-color: kt-get($kt-aside-config, base, default, bg-color);
+	box-shadow: kt-get($kt-aside-config, base, default, shadow);
+	transition: kt-get($kt-aside-config, base, minimize, transition);
+
+	// Menu
+	.kt-aside-menu {
+		.ps__rail-y {
+			right: 2px;
+		}
+	}
+}
+
+@include kt-desktop {
+	.kt-aside {
+		// Fixed
+		.kt-aside--fixed & {
+			position: fixed;
+			overflow: hidden;
+			top: kt-get($kt-page-margin, desktop);
+			bottom: kt-get($kt-page-margin, desktop);
+			left: kt-get($kt-page-margin, desktop);
+			z-index: kt-get($kt-aside-config, base, fixed, zindex);
+		}
+
+		@include kt-rounded {
+			border-radius: $kt-border-radius;
+		}
+
+		.kt-aside--static & {
+			position: relative;
+			z-index: 1;
+		}
+
+		.kt-header--fixed.kt-aside--static & {
+			padding-top: kt-get($kt-header-config, base, desktop, default, height);
+		}
+
+		// Minimize
+		.kt-aside--minimize & {
+			width: kt-get($kt-aside-config, base, minimize, width);
+			transition: kt-get($kt-aside-config, base, minimize, transition);
+		}
+
+		.kt-aside--minimizing & {
+			overflow: hidden;
+			
+			.kt-aside-menu {
+				.kt-menu__nav  {
+					width: kt-get($kt-aside-config, base, default, width);
+					overflow: hidden;
+				}
+			}
+		}
+
+		// Scroll
+		@include kt-perfect-scrollbar-ver-size(kt-get($kt-aside-config, base, fixed, scroll, width));
+		//@include kt-perfect-scrollbar-skin(kt-get($kt-aside-config, fixed, scroll, color));
+	}
+
+	// Fixed & Minimize Aside hover
+	.kt-aside--fixed.kt-aside--minimize-hover {
+		.kt-aside {
+			width: kt-get($kt-aside-config, base, default, width);
+			transition: kt-get($kt-aside-config, base, minimize, transition);
+		}
+
+		.kt-header {
+			transition: kt-get($kt-aside-config, base, minimize, transition);
+			left: kt-get($kt-aside-config, base, minimize, width);
+		}
+
+		.kt-wrapper {
+			transition: kt-get($kt-aside-config, base, minimize, transition);
+			padding-left: kt-get($kt-aside-config, base, minimize, width);
+		}
+	}
+}
+
+// Aside offcanvas panel for mobile mode
+@include kt-offcanvas-build(kt-aside, tablet-and-mobile, kt-get($kt-aside-config, base, offcanvas-mobile));

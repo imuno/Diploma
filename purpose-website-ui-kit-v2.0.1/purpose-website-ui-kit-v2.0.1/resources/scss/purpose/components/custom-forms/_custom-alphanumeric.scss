@@ -1,0 +1,79 @@
+//
+// Custom alphanumeric
+//
+
+
+.checkbox-alphanumeric {
+
+    & + .checkbox-alphanumeric {
+        margin-left: .25rem;
+    }
+
+    list-style: none;
+
+    &:after,
+    &:before {
+        content: '';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    > :not(:last-child) {
+        label {
+            margin-right: .375rem;
+        }
+    }
+
+    label {
+        width: 2.25rem;
+        height: 2.25rem;
+        float: left;
+        padding: .375rem 0;
+        margin-bottom: 0;
+        display: block;
+        color: $gray-600;
+        font-weight: 400;
+        font-size: $font-size-sm;
+        text-align: center;
+        background: transparent;
+        text-transform: uppercase;
+        transition: all .3s ease;
+        transform: scale(.95);
+        background: $custom-control-indicator-bg;
+        border: $custom-control-indicator-border-width solid $custom-control-indicator-border-color;
+        border-radius: $custom-checkbox-indicator-border-radius;
+
+        img {
+            max-width: 100%;
+        }
+
+        &:hover {
+            cursor: pointer;
+            border-color: $custom-control-indicator-hover-border-color;
+        }
+    }
+
+    input {
+        left: -9999px;
+        position: absolute;
+
+        &:checked ~ label {
+            color: $custom-control-indicator-checked-border-color;
+            border-color: $custom-control-indicator-checked-border-color;
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+// Sizes
+
+.checkbox-alphanumeric-sm {
+    label {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}

@@ -1,0 +1,114 @@
+//
+// Demo Config
+//
+
+
+
+
+// State colors
+$kt-state-colors: (
+    // Keen states
+    brand: (
+        base: #1cac81,
+        inverse: #ffffff
+    ),
+    metal: (
+        base: #d3dae6, 
+        inverse: #586272
+    ),  
+    light: (
+        base: #ffffff,
+        inverse: #282a3c 
+    ),
+    dark: (
+        base: lighten(#4c467a, 12%),
+        inverse: #ffffff 
+    ),
+    accent: (
+        base: #00c5dc,
+        inverse: #ffffff 
+    ),
+    focus: (
+        base: #9816f4,
+        inverse: #ffffff 
+    ),
+
+    // Bootstrap states
+    primary: (
+        base: #5867dd,
+        inverse: #ffffff
+    ),
+    success: (
+        base: #1dc9b7,
+        inverse: #ffffff
+    ),
+    info: (
+        base: #5578eb,
+        inverse: #ffffff
+    ),
+    warning: (
+        base: #ffb822,
+        inverse: #111111
+    ),
+    danger: (
+        base: #fd397a,
+        inverse: #ffffff
+    )    
+);
+
+// Base colors
+$kt-base-colors: (
+    label: (
+        1: #b9bdc1,
+        2: #aeb2b7,
+        3: #414b4c,
+        4: #343d3e
+    ),
+    shape: (
+        1: #eef4f3,
+        2: #e0e9e6, 
+        3: #80c3af,
+        4: #41675c
+    ),    
+    grey: (
+        1: #f7f8fa,
+        2: #ebedf2,
+        3: darken(#ebedf2, 3%),
+        4: darken(#ebedf2, 6%)
+    )    
+);
+
+// Layout Colors
+$kt-page-body-bg-color: #f0f0f4;  // page body bg color
+$kt-page-content-width: 1380px; //  fixed page width
+
+// Layout Skins
+$kt-layout-skins: (
+	navy: #2f2e38,
+	light: #ffffff
+);
+
+// Root Font Settings
+$kt-font-families: (
+    regular: 'Poppins',  
+    heading: 'Raleway'
+); 
+
+// Layout
+$kt-aside-default-width: 325px;
+$kt-aside-minimize-width: 78px;
+$kt-aside-offcanvas-width: 255px;
+
+// Page padding
+$kt-page-padding: (
+	desktop: 30px,
+	mobile: 15px
+);
+
+// Page container
+$kt-page-container-width: 1380px; //  fixed page width
+$kt-page-fluid-container-padding: 60px; // fluid page padding
+
+// Body
+$kt-page-content-bg-color: #f9f9fc; // page content bg color
+$kt-page-body-bg-color: #efeff5;  // page body bg color

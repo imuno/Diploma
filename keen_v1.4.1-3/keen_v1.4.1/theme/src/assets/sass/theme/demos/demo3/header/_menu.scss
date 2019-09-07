@@ -1,0 +1,89 @@
+//
+// Header Menu
+//
+
+
+
+
+// Build desktop menu
+@include kt-menu-hor-build-layout(kt-get($kt-header-config, menu, desktop));
+@include kt-menu-hor-build-skin(kt-get($kt-header-config, menu, desktop), default);
+
+// Build mobile menu
+@include kt-menu-ver-build-layout(kt-get($kt-header-config, menu, tablet-and-mobile));
+@include kt-menu-ver-build-skin(kt-get($kt-header-config, menu, tablet-and-mobile), default);
+
+// Header menu mobile offcanvas
+@include kt-offcanvas-build(kt-header-menu-wrapper, tablet-and-mobile, kt-get($kt-header-config, menu, offcanvas-mobile));
+
+// Desktop((1024px and above))
+@include kt-desktop {
+	// Header default mode
+	.kt-header-menu-wrapper {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+		background-color: #fff;
+		box-shadow: 0px 0px 20px 0px rgba(103,92,139,0.05);
+		padding: 0 kt-get($kt-page-padding, desktop);
+
+		@include kt-rounded {
+			border-top-left-radius: $kt-border-radius;
+			border-top-right-radius: $kt-border-radius;
+		}
+
+		.kt-header-menu {
+			.kt-menu__nav {
+				> .kt-menu__item {
+					> .kt-menu__link {
+						border-radius: $kt-border-radius;
+						padding: 0.65rem 1.25rem;
+					}
+
+					> .kt-menu__submenu {
+						border-top-left-radius: 0;
+						border-top-right-radius: 0;
+					}
+				}
+			}
+		}
+
+		.kt-header-toolbar {
+			padding-left: 1rem;
+			display: flex;
+			align-items: center;
+		}
+	}	
+}
+
+// Media range(above 1024px and below 1200px)
+@include kt-media-range(lg, xl) {
+	.kt-header-menu-wrapper {
+		.kt-header-menu {
+			.kt-menu__nav {
+				> .kt-menu__item {
+					> .kt-menu__link {
+						padding: 0.75rem 0.75rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Tablet and mobile mode(1024px and below)
+@include kt-tablet-and-mobile {
+	.kt-header-menu-wrapper {
+		.kt-header-menu {
+			.kt-menu__nav {
+				margin-bottom: 0;
+				padding-bottom: 10px;
+			}
+		}
+
+		.kt-header-toolbar {
+			padding-left: 30px;
+		}
+	}
+}
