@@ -45,3 +45,6 @@ def getstarted(request):
             return render(request, 'diploma/getstarted.html', {'error': 'Passwords must match.'})
     else:
         return render(request, 'diploma/getstarted.html')
+
+def comingsoon(request):
+    return render(request, 'diploma/comingsoon.html')

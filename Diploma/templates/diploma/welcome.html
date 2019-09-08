@@ -8,7 +8,7 @@
   <meta name="description" content="Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.">
   <meta name="author" content="Webpixels">
   <!-- Favicon -->
-  <link rel="icon" href="{% static 'purpose/purpose/assets/img/brand/favicon.png' %}" type="image/png">
+  <link rel="icon" href="{% static 'purpose/purpose/assets/img/brand/favicon.ico' %}" type="image/png">
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="{% static 'purpose/purpose/assets/libs/@fortawesome/fontawesome-free/css/all.min.css' %}"><!-- Purpose CSS -->
@@ -51,19 +51,19 @@
                 <div class="dropdown-menu-links rounded-bottom delimiter-top p-4">
                   <div class="row">
                     <div class="col-sm-4">
-                      <a href="../../sections.html#headers" class="dropdown-item">Mathematics</a>
-                      <a href="../../sections.html#footers" class="dropdown-item">Science</a>
-                      <a href="../../sections.html#blog" class="dropdown-item">Computing</a>
+                      <a href="{% url 'math' %}" class="dropdown-item">Mathematics</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Science</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Computing</a>
                     </div>
                     <div class="col-sm-4">
-                      <a href="../../sections.html#swiper" class="dropdown-item">Communication</a>
-                      <a href="../../sections.html#tables" class="dropdown-item">Finance</a>
-                      <a href="../../sections.html#team" class="dropdown-item">Critical Thinking</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Communication</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Finance</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Critical Thinking</a>
                     </div>
                     <div class="col-sm-4">
-                      <a href="../../sections.html#covers" class="dropdown-item">Humanities</a>
-                      <a href="../../sections.html#features" class="dropdown-item">Art</a>
-                      <a href="../../sections.html#milestone" class="dropdown-item">Visual Studies</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Humanities</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Art</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Visual Studies</a>
                     </div>
 
                   </div>
@@ -88,27 +88,27 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item" href="../../pages/landing/agency.html">
+                        <a class="dropdown-item" href="{% url 'math' %}">
                           Mathematics
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="../../pages/landing/app.html">
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
                           Social Studies
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="../../pages/landing/blog.html">
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
                           Reading
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="../../pages/landing/classic.html">
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
                           Writing
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="../../pages/landing/cloud-hosting.html">
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
                           Science
                         </a>
                       </li>
@@ -127,17 +127,17 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item" href="../../pages/secondary/about-classic.html">
+                        <a class="dropdown-item" href="{% url 'math' %}">
                           Math
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="../../pages/secondary/about.html">
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
                           Evidence-Based Reading
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="../../pages/secondary/blog.html">
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
                           Writing
                         </a>
                       </li>
@@ -157,22 +157,22 @@
                     <ul class="dropdown-menu">
 
                       <li>
-                        <a class="dropdown-item" href="../../pages/authentication/basic-login.html">
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
                           English
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="../../pages/authentication/basic-register.html">
+                        <a class="dropdown-item" href="{% url 'math' %}">
                           Mathematics
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="../../pages/authentication/basic-recover.html">
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
                           Scientific Reasoning
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="../../pages/authentication/cover-login.html">
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
                           Reading
                         </a>
                       </li>
@@ -276,7 +276,7 @@
           <div class="col-sm-6">
             <ul class="list-unstyled mb-0">
               <li>
-                <a class="list-link" href="#">
+                <a class="list-link" href="{% url 'math' %}">
                   <i class="fas fa-search"></i>
                   <span>Mathematics</span> in GED
                 </a>
