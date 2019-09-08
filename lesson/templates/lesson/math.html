@@ -259,7 +259,7 @@
 
   </header>
 
-  <div class="main-content">
+  <div class="main-content" id="#top">
     <!-- Spotlight -->
     <section class="slice slice-xl" data-offset-top="#header-main">
       <div class="container pt-6">
@@ -315,16 +315,16 @@
             <div class="card shadow mt-5">
               <div class="card-body px-lg-5 py-lg-5">
                 <h4 class="mb-4">Sample Lesson on Topics</h4>
-                <h6>Basic Math</h6>
+                <a href="{% url 'comingsoon' %}"> <h6  class="text-primary">Basic Math</h6> </a>
                 <p>Numbers and the four operations--addition, subtraction, multiplication, and division--is the foundation of math. This is called “basic math.” There are many different kinds of numbers such as whole numbers, decimals, percents, and fractions. Basic math also includes exponents and finding square roots of numbers.</p>
 
-                <h6>Geometry</h6>
+                <a href="{% url 'comingsoon' %}"> <h6  class="text-primary">Geometry</h6></a>
                 <p>Shapes are an integral part of math. The GED exam will ask questions about different types of shapes and how numbers relate to those shapes. Learn about circles, triangles, quadrilaterals, cubes, prisms, pyramids, cylinders, and cones. Questions will ask you about the area and perimeter of two-dimensional shapes, and the volume and surface of three-dimensional shapes. </p>
 
-                <h6>Basic Algebra</h6>
+                <a href="{% url 'comingsoon' %}"> <h6  class="text-primary">Basic Algebra</h6></a>
                 <p>Algebra is an extension of basic mathematical concepts, such as addition, subtraction, multiplication, division, and exponents. The only difference is that algebra uses letters, called variables, in place of certain numbers. When this happens, you have algebraic expressions and equations. The GED exam will ask questions about simplifying algebraic expressions and solving equations. Simplifying algebraic expressions, solving equations and inequalities, using the Quadratic Formula</p>
 
-                <h6>Graphs & Functions</h6>
+                <a href="{% url 'comingsoon' %}"> <h6  class="text-primary">Graphs & Functions</h6></a>
                 <p>Functions have to do with inputs and outputs of numbers. To be able to demonstrate your understanding of functions, you need to know about the coordinate plane, basic graphs, function notation, and identifying functions. The GED exam will ask questions about all these aspects of functions. Identifying points in the coordinate plane, graphing lines and inequalities in the coordinate plane, identifying functions, interpreting graphs, evaluating functions.</p>
 
                 <p><font size="2"> All are quotes from https://www.passged.com/ged-study-guide-math.</p>
@@ -485,6 +485,13 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="text-center mt-5">
+  <a href="#top" class="btn btn-dark rounded-pill btn-icon shadow">
+    <span class="btn-inner--icon"><i class="fas fa-angle-up"></i></span>
+    <span class="btn-inner--text">Go To Top</span>
+  </a>
 </div>
 
           </div>

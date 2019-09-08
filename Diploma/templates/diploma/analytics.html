@@ -1,1 +1,758 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load staticfiles %}
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.">
+  <meta name="author" content="Webpixels">
+  <title>Purpose Website UI Kit - Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</title>
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'purpose/purpose/assets/img/brand/favicon.ico' %}" type="image/png">
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="{% static 'purpose/purpose/assets/libs/@fortawesome/fontawesome-free/css/all.min.css' %}"><!-- Purpose CSS -->
+  <link rel="stylesheet" href="{% static 'purpose/purpose/assets/css/purpose.css' %}" id="stylesheet' %}">
+</head>
+
+<body>
+  <header class="header header-transparent" id="header-main">
+    <!-- Topbar -->
+
+    <nav class="navbar navbar-main navbar-expand-lg navbar-dark border-bottom py-2" id="navbar-main">
+      <div class="container px-lg-0">
+        <!-- Logo -->
+          <h3 class="pr-3 pt-2 text-white"> <span class="fas fa-graduation-cap" style="color:white;"></span> diploma</h3>
+        <!-- Navbar collapse trigger -->
+        <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar nav -->
+        <div class="collapse navbar-collapse" id="navbar-main-collapse">
+          <ul class="navbar-nav align-items-lg-center">
+            <!-- Home - Overview  -->
+
+            <!-- Sections menu -->
+            <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subjects</a>
+              <div class="dropdown-menu dropdown-menu-xl dropdown-menu-arrow p-0">
+                <ul class="list-group list-group-flush">
+                  <li>
+                    <a href="{% url 'welcome' %}" class="list-group-item list-group-item-action" role="button">
+                      <div class="media d-flex align-items-center">
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">Explore all subjects</h6>
+                          <p class="mb-0">And choose a learning style that works best for you.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="dropdown-menu-links rounded-bottom delimiter-top p-4">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <a href="{% url 'math' %}" class="dropdown-item">Mathematics</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Science</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Computing</a>
+                    </div>
+                    <div class="col-sm-4">
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Communication</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Finance</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Critical Thinking</a>
+                    </div>
+                    <div class="col-sm-4">
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Humanities</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Art</a>
+                      <a href="{% url 'comingsoon' %}" class="dropdown-item">Visual Studies</a>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Test Prep</a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow p-0">
+                <ul class="list-group list-group-flush">
+                  <li class="dropdown dropdown-animate dropdown-submenu" data-toggle="hover">
+                    <a href="#" class="list-group-item list-group-item-action dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="media d-flex align-items-center">
+
+                        <!-- Media body -->
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">GED</h6>
+                          <p class="mb-0">Get your GED and become a high school graduate.</p>
+                        </div>
+                      </div>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="{% url 'math' %}">
+                          Mathematics
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
+                          Social Studies
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
+                          Reading
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
+                          Writing
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
+                          Science
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown dropdown-animate dropdown-submenu" data-toggle="hover">
+                    <a href="#" class="list-group-item list-group-item-action dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="media d-flex align-items-center">
+
+                        <!-- Media body -->
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">SAT</h6>
+                          <p class="mb-0">Study for the SAT.</p>
+                        </div>
+                      </div>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="{% url 'math' %}">
+                          Math
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
+                          Evidence-Based Reading
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
+                          Writing
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown dropdown-animate dropdown-submenu" data-toggle="hover">
+                    <a href="#" class="list-group-item list-group-item-action dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="media d-flex align-items-center">
+
+                        <!-- Media body -->
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">ACT</h6>
+                          <p class="mb-0">College prep.</p>
+                        </div>
+                      </div>
+                    </a>
+                    <ul class="dropdown-menu">
+
+                      <li>
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
+                          English
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="{% url 'math' %}">
+                          Mathematics
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
+                          Scientific Reasoning
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="{% url 'comingsoon' %}">
+                          Reading
+                        </a>
+                      </li>
+
+
+
+                    </ul>
+                  </li>
+
+
+
+                </ul>
+
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+              <a class="nav-link dropdown-toggle" href="{% url 'comingsoon' %}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Progress</a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow p-0">
+                <ul class="list-group list-group-flush">
+
+
+                  <li class="dropdown" data-toggle="hover">
+                    <a href="{% url 'comingsoon' %}" class="list-group-item list-group-item-action" role="button" >
+                      <div class="media d-flex align-items-center">
+
+                        <!-- Media body -->
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">Courses Taken</h6>
+                          <p class="mb-0">A transcript of your courses.</p>
+                        </div>
+                      </div>
+                    </a>
+
+                  </li>
+                  <li class="dropdown" data-toggle="hover">
+                    <a href="{% url 'analytics' %}" class="list-group-item list-group-item-action" role="button">
+                      <div class="media d-flex align-items-center">
+
+                        <!-- Media body -->
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">Analytics</h6>
+                          <p class="mb-0">Learn about trends across your courses.</p>
+                        </div>
+                      </div>
+                    </a>
+
+                  </li>
+                  <li class="dropdown" data-toggle="hover">
+                    <a href="{% url 'comingsoon' %}" class="list-group-item list-group-item-action" role="button" >
+                      <div class="media d-flex align-items-center">
+
+                        <!-- Media body -->
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">Goals</h6>
+                          <p class="mb-0">Motivate yourself to go further and do more.</p>
+                        </div>
+                      </div>
+                    </a>
+
+                  </li>
+
+
+
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link pr-0 pt-4" href="{% url 'welcome' %}">
+                <h5><i class="fas fa-home" style="color:white;"></i></h5>
+              </a>
+
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Main navbar -->
+
+  </header>
+
+  <div class="main-content">
+    <!-- Header (account) -->
+    <section class="header-account-page bg-primary d-flex align-items-end" data-offset-top="#header-main">
+      <!-- Header container -->
+      <div class="container pt-4 pt-lg-0">
+        <div class="row">
+          <div class=" col-lg-12">
+            <!-- Salute + Small stats -->
+            <div class="row align-items-center mb-4">
+              <div class="col-md-5 mb-4 mb-md-0">
+                <span class="h2 mb-0 text-white d-block">Morning, {{ user.first_name }}</span>
+                <span class="text-white">Have a nice day!</span>
+              </div>
+              <div class="col-auto flex-fill d-none d-xl-block">
+                <ul class="list-inline row justify-content-lg-end mb-0">
+                  <li class="list-inline-item col-sm-4 col-md-auto px-3 my-2 mx-0">
+                    <span class="badge badge-dot text-white">
+                      <i class="bg-success"></i>Percent Correct
+                    </span>
+                    <a class="d-sm-block h5 text-white font-weight-bold pl-2" href="#">
+                      24.5%
+                      <small class="fas fa-check text-success"></small>
+                    </a>
+                  </li>
+                  <li class="list-inline-item col-sm-4 col-md-auto px-3 my-2 mx-0">
+                    <span class="badge badge-dot text-white">
+                      <i class="bg-warning"></i>Percent Started
+                    </span>
+                    <a class="d-sm-block h5 text-white font-weight-bold pl-2" href="#">
+                      13.7%
+                      <small class="fas fa-question text-warning"></small>
+                    </a>
+                  </li>
+                  <li class="list-inline-item col-sm-4 col-md-auto px-3 my-2 mx-0">
+                    <span class="badge badge-dot text-white">
+                      <i class="bg-danger"></i>Percent Incorrect
+                    </span>
+                    <a class="d-sm-block h5 text-white font-weight-bold pl-2" href="#">
+                      9.24%
+                      <small class="fas fa-times text-danger"></small>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Account navigation -->
+            <div class="d-flex">
+              <a href="{% url 'comingsoon' %}" class="btn btn-icon btn-group-nav shadow btn-neutral">
+                <span class="btn-inner--icon"><i class="fas fa-user"></i></span>
+                <span class="btn-inner--text d-none d-md-inline-block">My Profile</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slice bg-section-secondary">
+      <div class="container">
+        <!-- Stats -->
+        <div class="row">
+          <div class="col-lg">
+            <div class="card card-stats">
+              <div class="card-body">
+                <h6 class="card-title text-muted mb-2">Mathematical Reasoning</h6>
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <span class="h5  mr-2">58%</span>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-xs">
+                          <div class="progress-bar bg-info" role="progressbar" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="icon text-dark icon-sm">
+                      <i class="fas fa-calculator"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card card-stats">
+              <div class="card-body">
+                <h6 class="card-title text-muted mb-2">Reasoning / Language Arts</h6>
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <span class="h5  mr-2">26%</span>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-xs">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 26%" aria-valuenow="26" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="icon text-dark icon-sm">
+                      <i class="fas fa-book-reader"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card card-stats">
+              <div class="card-body">
+                <h6 class="card-title text-muted mb-2">Social Studies</h6>
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <span class="h5  mr-2">27%</span>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-xs">
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="icon text-dark icon-sm">
+                      <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card card-stats">
+              <div class="card-body">
+                <h6 class="card-title text-muted mb-2">Science</h6>
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <span class="h5  mr-2">14%</span>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-xs">
+                          <div class="progress-bar bg-primary" role="progressbar" style="width: 14%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="icon text-dark icon-sm">
+                      <i class="fas fa-atom"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tasks -->
+        <div class="row row-grid">
+          <div class="col-lg-4">
+            <div data-toggle="sticky" data-sticky-offset="30">
+              <div class="card">
+                <div class="card-header">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h6 class="mb-0">Recent Lessons</h6>
+                    </div>
+                    <div class="text-right">
+                      <div class="actions">
+                        <a href="#" class="action-item"><i class="fas fa-sync"></i></a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center justify-content-between">
+
+                      <div class="flex-fill pl-3 text-limit">
+                        <h6 class="progress-text mb-1 text-sm d-block text-limit">Algebra 1</h6>
+                        <div class="progress progress-xs mb-0">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between text-xs text-muted text-right mt-1">
+                          <div>
+                            <span class="font-weight-bold text-warning">Reading</span>
+                          </div>
+                          <div>
+                            7 Sept 2019
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center justify-content-between">
+
+                      <div class="flex-fill pl-3 text-limit">
+                        <h6 class="progress-text mb-1 text-sm d-block text-limit">Geometry</h6>
+                        <div class="progress progress-xs mb-0">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between text-xs text-muted text-right mt-1">
+                          <div>
+                            <span class="font-weight-bold text-success">Completed</span>
+                          </div>
+                          <div>
+                            2 Sept 2019
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center justify-content-between">
+
+                      <div class="flex-fill pl-3 text-limit">
+                        <h6 class="progress-text mb-1 text-sm d-block text-limit">Algebra 1</h6>
+                        <div class="progress progress-xs mb-0">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 72%;" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between text-xs text-muted text-right mt-1">
+                          <div>
+                            <span class="font-weight-bold text-danger">Began Testing</span>
+                          </div>
+                          <div>
+                            31 Aug 2019
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center justify-content-between">
+
+                      <div class="flex-fill pl-3 text-limit">
+                        <h6 class="progress-text mb-1 text-sm d-block text-limit">Trigonometry</h6>
+                        <div class="progress progress-xs mb-0">
+                          <div class="progress-bar bg-info" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between text-xs text-muted text-right mt-1">
+                          <div>
+                            <span class="font-weight-bold text-info">Viewed</span>
+                          </div>
+                          <div>
+                            20 Aug 2019
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+
+            <!-- Section title -->
+            <div class="actions-toolbar py-2 mb-4">
+              <div class="actions-search" id="actions-search">
+                <div class="input-group input-group-merge input-group-flush">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-transparent"><i class="fas fa-search"></i></span>
+                  </div>
+                  <input type="text" class="form-control form-control-flush" placeholder="Type and hit enter ...">
+                  <div class="input-group-append">
+                    <a href="#" class="input-group-text bg-transparent" data-action="search-close" data-target="#actions-search"><i class="fas fa-times"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between align-items-center">
+                <div class="col">
+                  <h5 class="mb-1">Projects</h5>
+                  <p class="text-sm text-muted mb-0 d-none d-md-block">Manage pending orders and track invoices.</p>
+                </div>
+                <div class="col text-right">
+                  <div class="actions"><a href="#" class="action-item mr-2" data-action="search-open" data-target="#actions-search"><i class="fas fa-search"></i></a>
+                    <div class="dropdown mr-2">
+                      <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-filter"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">
+                          <i class="fas fa-sort-amount-down"></i>Newest
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <i class="fas fa-sort-alpha-down"></i>From A-Z
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <i class="fas fa-sort-alpha-up"></i>From Z-A
+                        </a>
+                      </div>
+                    </div><a href="#" class="action-item mr-2"><i class="fas fa-sync"></i></a>
+                    <div class="dropdown" data-toggle="dropdown">
+                      <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-h"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Refresh</a>
+                        <a href="#" class="dropdown-item">Manage Widgets</a>
+                        <a href="#" class="dropdown-item">Settings</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tasks table -->
+            <div class="table-responsive">
+              <table class="table table-cards align-items-center">
+                <thead>
+                  <tr>
+                    <th scope="col" class="sort" data-sort="name">Lesson</th>
+                    <th scope="col" class="sort" data-sort="budget">Subject</th>
+                    <th scope="col" class="sort" data-sort="status">Status</th>
+                    <th scope="col" class="sort" data-sort="completion">Completion</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody class="list">
+                  <tr>
+                    <th scope="row">
+                      <div class="media align-items-center">
+                        <div>
+                          <a href="{% url 'comingsoon' %}" class="action-item mr-2" data-toggle="tooltip" title="Quick view">
+                            <i class="fas fa-external-link-alt"></i>
+                          </a>                        </div>
+                        <div class="media-body ml-4">
+                          <span class="name mb-0 text-sm">Properties of carbon</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="budget">
+                      Biology
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-warning"></i>
+                        <span class="status">reading</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="completion mr-2">60%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+
+                  </tr>
+                  <tr class="table-divider"></tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="media align-items-center">
+                        <div>
+                          <a href="{% url 'comingsoon' %}" class="action-item mr-2" data-toggle="tooltip" title="Quick view">
+                            <i class="fas fa-external-link-alt"></i>
+                          </a>                        </div>
+                        <div class="media-body ml-4">
+                          <span class="name mb-0 text-sm">Data Structures</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="budget">
+                      Computer Science
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">completed</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="completion mr-2">100%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+
+                  </tr>
+                  <tr class="table-divider"></tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="media align-items-center">
+                        <div>
+                          <a href="{% url 'comingsoon' %}" class="action-item mr-2" data-toggle="tooltip" title="Quick view">
+                            <i class="fas fa-external-link-alt"></i>
+                          </a>                        </div>
+                        <div class="media-body ml-4">
+                          <span class="name mb-0 text-sm">Ancient Persia</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="budget">
+                      World History
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-danger"></i>
+                        <span class="status">testing</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="completion mr-2">72%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+
+                  </tr>
+                  <tr class="table-divider"></tr>
+                  <tr>
+                    <th scope="row">
+                      <div class="media align-items-center">
+                        <div>
+                          <a href="{% url 'comingsoon' %}" class="action-item mr-2" data-toggle="tooltip" title="Quick view">
+                            <i class="fas fa-external-link-alt"></i>
+                          </a>                        </div>
+                        <div class="media-body ml-4">
+                          <span class="name mb-0 text-sm">Linear Algebra</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="budget">
+                      Mathematics
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-info"></i>
+                        <span class="status">viewed</span>
+                      </span>
+                    </td>
+
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="completion mr-2">10%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+
+                  </tr>
+                  <tr class="table-divider"></tr>
+
+                </tbody>
+              </table>
+              <div class="mt-4 text-center">
+                <a href="#" class="btn btn-sm btn-neutral rounded-pill shadow hover-translate-y-n3">Load more ...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="{% static 'purpose/purpose/assets/js/purpose.core.js' %}"></script>
+  <!-- Purpose JS -->
+  <script src="{% static 'purpose/purpose/assets/js/purpose.js' %}"></script>
+  <!-- Demo JS - remove it when starting your project -->
+  <script src="{% static 'purpose/purpose/assets/js/demo.js' %}"></script>
+</body>
+
+</html>
