@@ -6,9 +6,9 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.">
+  <meta name="description" content="Diploma - Sign Up">
   <meta name="author" content="Webpixels">
-  <title>Purpose Website UI Kit - Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</title>
+  <title>Diploma - Sign Up</title>
   <!-- Favicon -->
   <link rel="icon" href="{% static 'purpose/purpose/assets/img/brand/favicon.png' %}" type="image/png">
   <!-- Font Awesome 5 -->
@@ -100,6 +100,11 @@
                   <div class="mb-5">
                     <h6 class="h3">Sign Up</h6>
                     <p class="text-muted mb-0">Create an account to continue.</p>
+                    <h6 class="mt-3 fs--1 text-danger" style="text-align:left">
+                        {% if error %}
+                        {{ error }}
+                        {% endif %}
+                          </h6>
                   </div>
                   <span class="clearfix"></span>
                   <form role="form" method="POST" action="{% url 'getstarted' %}">
