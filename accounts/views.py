@@ -35,7 +35,7 @@ def getstarted(request):
         if request.POST['password1'] == request.POST['password2']:
             try:
                 user = User.objects.get(username=request.POST['username'])
-                return render(request, 'major/login.html', {'error': 'This username already exists.'})
+                return render(request, 'diploma/login.html', {'error': 'This username already exists.'})
             except:
                 user = User.objects.create_user(username=request.POST['username'], password=request.POST['password1'], first_name=request.POST['first_name'], last_name=request.POST['last_name'])
                 user.save()
