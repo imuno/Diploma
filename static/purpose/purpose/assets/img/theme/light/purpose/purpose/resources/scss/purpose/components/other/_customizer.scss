@@ -1,0 +1,19 @@
+//
+// Customizer
+//
+
+.customizer {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    width: 300px;
+    height: 60px;
+    z-index: 100;
+
+    .btn-skins {
+        background: #6e00ff;
+        background: linear-gradient(135deg, #6e00ff 0%,#00b8d9 18%,#00b8d9 18%,#36b37e 37%,#ff5630 50%,#ff5630 65%,#ffab00 83%,#ffab00 100%);
+    }
+
+
+}

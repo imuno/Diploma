@@ -1,0 +1,12 @@
+.dropdown-extend {
+    position: static;
+
+    @if $enable-grid-classes {
+        .dropdown-menu {
+            // left: 50%;
+            // transform: translateX(-50%);
+            @include make-container();
+            @include make-container-max-widths();
+        }
+    }
+}

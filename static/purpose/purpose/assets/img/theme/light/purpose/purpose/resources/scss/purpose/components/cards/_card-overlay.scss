@@ -1,0 +1,61 @@
+//
+// Overlay cards
+//
+
+.card-overlay {
+    .card-img-overlay {
+    	color: $white;
+    }
+
+    .card-footer {
+        background-color: $card-bg;
+        border: 0;
+    }
+}
+
+.card-hover-overlay {
+    overflow: hidden;
+
+    .card-img-overlay {
+        opacity: 0;
+        background-color: rgba($dark, .4);
+    	backface-visibility: hidden;
+        @include transition(opacity .35s);
+
+        &:before,
+        &:after {
+            pointer-events: none;
+        }
+
+        .overlay-text,
+        .overlay-actions,
+        .actions .action-item {
+            transform: translate3d(0, 200%, 0);
+            @include transition(transform .35s);
+        }
+    }
+
+    &:hover {
+        .card-img-overlay {
+            opacity: 1;
+
+            .overlay-text,
+            .overlay-actions,
+            .actions .action-item {
+                transform: translate3d(0, 0, 0);
+            }
+
+            .actions .action-item:first-child {
+            	transition-delay: .1s;
+            }
+
+            .actions .action-item:nth-child(2) {
+            	transition-delay: .15s;
+            }
+
+            .actions .action-item:nth-child(3) {
+            	transition-delay: .2s;
+            }
+        }
+    }
+}

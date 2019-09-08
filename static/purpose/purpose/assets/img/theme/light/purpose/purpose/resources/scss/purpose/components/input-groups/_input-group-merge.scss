@@ -1,0 +1,52 @@
+//
+// Input group merge
+// merge icon and form-control
+//
+
+
+.input-group-merge {
+    .input-group-text {
+        color: $input-group-addon-color;
+        background-color: $input-bg;
+        border: $input-border-width solid $input-group-addon-border-color;
+    }
+
+    .form-control {
+        box-shadow: none;
+
+        &:not(:first-child):not(.is-valid):not(.is-invalid) {
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        &:not(:last-child):not(.is-valid):not(.is-invalid) {
+            border-right: 0;
+            padding-right: 0;
+        }
+    }
+
+    // Rounded pill input groups
+
+    &.rounded-pill {
+        .form-control:first-child {
+            padding-left: 1.5rem;
+            @include border-left-radius($rounded-pill);
+        }
+
+        .input-group-append {
+            > .btn {
+                padding-right: 1.5rem;
+                @include border-right-radius($rounded-pill);
+            }
+        }
+    }
+}
+
+.focused {
+    .input-group-merge {
+        .input-group-text {
+            background-color: $input-focus-bg;
+            border-color: $input-group-addon-focus-border-color;
+        }
+    }
+}

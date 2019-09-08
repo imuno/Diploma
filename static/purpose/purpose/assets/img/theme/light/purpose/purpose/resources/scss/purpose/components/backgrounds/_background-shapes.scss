@@ -1,0 +1,21 @@
+//
+// Background shapes
+//
+
+
+// Circles
+
+.bg-shape-circle {
+    display: block;
+    border-radius: 50%;
+    background-color: rgba($black, .05);
+    position: absolute;
+    margin: auto;
+}
+
+.bg-shape-circle-lg {
+    width: 800px;
+    height: 800px;
+}
+
+// html ex :<span class="bg-shape-circle bg-shape-circle-lg right-0 top-n9 translate-x-50"></span>
