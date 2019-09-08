@@ -1,0 +1,91 @@
+//
+// Card table
+// table with spaced rows and syles with the card's properties
+//
+
+
+.table-cards {
+
+    thead,
+    tbody {
+        th,
+        td {
+            border: 0 !important;
+            padding: 1rem;
+            position: relative;
+            background-color: transparent;
+        }
+    }
+
+    tbody tr {
+
+        &:not(.table-divider) {
+            border-radius: $card-border-radius;
+
+            @if $enable-shadows {
+                @include box-shadow($card-shadow);
+            }
+        }
+
+        th {
+            border-radius: $card-border-radius 0 0 $card-border-radius;
+
+            &:after {
+                border-radius: $card-border-radius 0 0 $card-border-radius;
+                border-left: 1px solid $card-border-color;
+            }
+        }
+
+        td {
+            &:last-child {
+                border-radius: 0 $card-border-radius $card-border-radius 0;
+
+                &:after {
+                    border-radius: 0 $card-border-radius $card-border-radius 0;
+                    border-right: 1px solid $card-border-color;
+                }
+            }
+        }
+
+        th, td {
+            background-color: $card-bg;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-top: 1px solid $card-border-color;
+                border-bottom: 1px solid $card-border-color;
+                left: 0;
+                top: 0;
+                pointer-events: none;
+            }
+        }
+    }
+
+    tr.table-divider {
+        height: 1rem;
+    }
+
+    &.table-hover {
+        tbody > tr {
+            &:hover {
+                th,
+                td {
+                    background-color: $table-hover-bg;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .table-cards.table-scale--hover {
+        tr {
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+//
+// Section rotate
+//
+
+
+.section-half-rounded {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    overflow: hidden;
+    background: transparent;
+    position: relative;
+    z-index: 0;
+
+    // half bg
+    .section-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        z-index: -2;
+        @include border-right-radius(40px);
+    }
+
+    @include media-breakpoint-down(md) {
+        .section-inner {
+            width: 100%;
+        }
+    }
+}

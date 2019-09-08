@@ -1,0 +1,23 @@
+//
+// Divider fade
+//
+
+.divider-fade {
+    &:before {
+		content: '';
+		display: block;
+		width: 80%;
+		position: relative;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 1px;
+		background: radial-gradient(ellipse at center, $divider-border-color 0, rgba($white, 0) 75%);
+	}
+
+    &.divider-dark {
+        &:before {
+            background: radial-gradient(ellipse at center, rgba($white, .2) 0, rgba($black, 0) 75%);
+        }
+    }
+}

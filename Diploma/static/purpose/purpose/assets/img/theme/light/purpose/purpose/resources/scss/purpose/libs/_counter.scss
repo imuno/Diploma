@@ -1,0 +1,12 @@
+//
+// Milestone counter
+//
+
+
+.milestone-count-extra {
+	display: none;
+}
+
+.counting-finished + .counter-extra {
+	display: inline-block;
+}
