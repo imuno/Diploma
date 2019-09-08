@@ -48,3 +48,6 @@ def getstarted(request):
 
 def comingsoon(request):
     return render(request, 'diploma/comingsoon.html')
+
+def analytics(request):
+    return render(request, 'diploma/analytics.html')

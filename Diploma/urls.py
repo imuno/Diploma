@@ -25,6 +25,7 @@ urlpatterns = [
     path('login/', views.login, name='login'),
     path('sign-up/', views.getstarted, name='getstarted'),
     path('coming-soon/', views.comingsoon, name='comingsoon'),
+    path('analytics/', views.analytics, name='analytics'),
     path('admin/', admin.site.urls),
     path('lessons/', include('lesson.urls')),
     path('quiz/', include('quiz.urls')),
