@@ -40,11 +40,11 @@ Finally, install all dependencies via the command
 $ pip install -r requirements.txt
 ```
 
-## Building and Running the Site
-After some code changes, you can start the server with `$ python manage.py runserver`. To get the list of available Django subcommands, you can type `$ django-admin help
+## Running the Site
+You can start the server with `$ python manage.py runserver`. To get the list of available Django subcommands, you can type `$ django-admin help
 `. If not viewing the live site, visit `http://127.0.0.1:8000/` to see your changes.
 
-Once the site is loaded, you will see the welcome page that branches to a login or sign up page. During this process, the site prompts the student to input a major. In a *Current Year* page, it provides a space for the student to map out their courses for two semestes, while storing the information in their course history. Another view is the *Four Year* page that shows all of their courses. On both pages, a checklist is keeping track of all of the requirements for the major. Once the student selects their first course, the checklist will also update and mark the course as completed. The third view, *Co-Curricular* contains more checklists, pulled from other resources on campus, that aren't necessarily academic but can help the student set their self up for life post college.
+
 
 
 ## Deployment
@@ -69,5 +69,5 @@ If you have made any changes and would like to push to our repo, here are some h
 
 ## License
 
-This project is licensed under the MIT License - [see more](license.md).
+This project is licensed under the MIT License.
 
