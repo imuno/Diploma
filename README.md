@@ -2,6 +2,11 @@
 
 Diploma is an offline educational platform for incarcerated people that streamlines prison education into one consistent curriculum to further their education. 
 
+Diploma is an offline educational platform for incarcerated people that streamlines prison education from a number of systems, books, and teaching methods into one consistent way for them to further their education. Notably, Diploma’s offline capability accounts for how many incarcerated do not have internet access. Additionally, existing Diploma users can continue to learn about Diploma after their release from prison. 
+
+Why does education matter for people incarcerated? There are currently 2.3 million people incarcerated in the United States. Of these people, 37% do not have a GED or high school diploma, and prison education programs are routinely underfunded and understaffed. This makes it difficult for people to access opportunity upon release from prison, contributing to a cycle of recidivism where around 40% of people will become incarcerated again within three years of being released (The Petey Greene Program). Yet, education significantly reduces recidivism. Studies have proven this and continue to highlight the importance of education in changing the narrative of incarceration. But next steps vary from state to state, prison to prison, and non-profit to non-profit. With Diploma, we hope to bring consistency to the process of prison education to allow for a better experience for people incarcerated.
+
+
 ## Authors
 * **Bella Muno**
 * **Blien Habtu**
