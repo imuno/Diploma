@@ -1,0 +1,24 @@
+//
+// Border
+//
+
+
+.border-sm { border-width: $border-width-sm !important;}
+.border-md { border-width: $border-width-md !important;}
+
+
+// Border style
+
+.border-dashed { border-style: dashed !important; }
+.border-dotted { border-style: dotted !important; }
+.border-groove { border-style: groove !important; }
+
+// Border radius
+
+.rounded-left-pill {
+    @include border-left-radius($rounded-pill !important);
+}
+
+.rounded-right-pill {
+    @include border-right-radius($rounded-pill !important);
+}

@@ -1,0 +1,88 @@
+//
+// Custom file
+//
+
+
+.custom-input-file {
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+    &+label {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        display: block;
+        overflow: hidden;
+        padding: .625rem 1.25rem;
+        border: 1px solid $input-border-color;
+        border-radius: $input-border-radius;
+        color: $input-color;
+        background-color: $input-bg;
+        outline: none;
+        margin: 0;
+
+        i {
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+            fill: currentColor;
+            margin-top: -0.25em;
+            margin-right: .5em;
+        }
+    }
+
+    &+label:hover,
+    &.has-focus+label,
+    &:focus+label {
+        background-color: $input-focus-bg;
+    }
+
+    & .has-focus,
+    &:focus {
+        &+label {
+
+        }
+    }
+}
+
+.no-js .custom-input-file + label {
+    display: none;
+}
+
+/* Custom file input -- Style 2 */
+
+.custom-input-file--2+label {
+    color: color-yiq(theme-color("primary"));
+    border-color: theme-color("primary");
+    background: theme-color("primary");
+}
+
+.custom-input-file--2+label:hover,
+.custom-input-file--2.has-focus+label,
+.custom-input-file--2:focus+label {
+    color: color-yiq(theme-color("primary"));
+    border-color: darken(theme-color("primary"), 10%);
+    background: darken(theme-color("primary"), 10%);
+}
+
+.custom-input-file-link {
+    & + label {
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: theme-color("primary");
+        font-size: $font-size-sm;
+        font-weight: $font-weight-bold;
+    }
+
+    &+label:hover,
+    &.has-focus+label,
+    &:focus+label {
+        background-color: transparent;
+    }
+}

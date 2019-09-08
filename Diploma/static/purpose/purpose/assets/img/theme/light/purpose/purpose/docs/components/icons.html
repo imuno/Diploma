@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.">
+  <meta name="author" content="Webpixels">
+  <title>Purpose Website UI Kit - Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png">
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="../../assets/libs/@fortawesome/fontawesome-free/css/all.min.css"><!-- Purpose CSS -->
+  <link rel="stylesheet" href="../../assets/css/purpose.css" id="stylesheet">
+  <!-- Docs CSS - used only for demo -->
+  <link rel="stylesheet" href="../../assets/css/docs.css">
+</head>
+
+<body class="docs">
+  <!-- Nav -->
+  <header class="header fixed-top border-bottom">
+    <!-- Nav -->
+    <nav id="navbar-main" class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <!-- Brand logo -->
+        <a class="navbar-brand" href="../../docs/index.html">
+          <img alt="Image placeholder" src="../../assets/img/brand/dark.png" id="navbar-logo" style="width: 120px;">
+        </a>
+        <!-- Sidenav toggler -->
+        <button class="sidenav-toggler ml-auto mr-3" type="button" data-action="sidenav-pin" data-target="#sidenav-main">
+          <div class="sidenav-toggler-inner">
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+          </div>
+        </button>
+        <!-- Search form -->
+        <form class="navbar-search navbar-search-dark form-inline mr-sm-3 d-none" id="navbar-search-main">
+          <div class="form-group mb-0">
+            <div class="input-group input-group-merge">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control" placeholder="Search" type="text">
+            </div>
+          </div>
+          <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </form>
+        <!-- Navbar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/getting-started/installation.html">Getting started</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/components/index.html">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/changelog.html">What's new</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/support.html">Support</a>
+            </li>
+          </ul>
+          <a href="../../index.html" class="btn btn-sm btn-primary btn-icon d-none d-lg-inline-flex">
+            <span class="btn-inner--icon"><i class="fas fa-eye"></i></span>
+            <span class="btn-inner--text">Live preview</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="px-3 scrollbar-inner">
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+        <!-- Navigation -->
+        <ul class="navbar-nav navbar-nav-docs">
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-getting-started" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-getting-started">
+              Getting started
+            </a>
+            <div class="collapse" id="navbar-getting-started">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/installation.html" class="nav-link">Installation</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/file-structure.html" class="nav-link">File structure</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/quick-start.html" class="nav-link">Quick start</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/build-tools.html" class="nav-link">Build tools</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/customization.html" class="nav-link">Customization</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/skins.html" class="nav-link">Skins</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/plugins.html" class="nav-link">Plugins</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-styleguide" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-styleguide">
+              Styleguide
+            </a>
+            <div class="collapse" id="navbar-styleguide">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/breakpoints.html" class="nav-link">Breakpoints</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/colors.html" class="nav-link">Colors</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/grid.html" class="nav-link">Grid</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/icons.html" class="nav-link active">Icons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/spacing.html" class="nav-link">Spacing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/typography.html" class="nav-link">Typography</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-components" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-components">
+              Components
+            </a>
+            <div class="collapse show" id="navbar-components">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/components/alerts.html" class="nav-link">Alerts</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/avatar.html" class="nav-link">Avatar</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/badge.html" class="nav-link">Badge</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/breadcrumb.html" class="nav-link">Breadcrumb</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/buttons.html" class="nav-link">Buttons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/card.html" class="nav-link">Card</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/carousel.html" class="nav-link">Carousel</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/collapse.html" class="nav-link">Collapse</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/countdown.html" class="nav-link">Countdown</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/counter.html" class="nav-link">Counter</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/divider.html" class="nav-link">Divider</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/dropdowns.html" class="nav-link">Dropdowns</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/forms.html" class="nav-link">Forms</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/icons.html" class="nav-link active">Icons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/input-group.html" class="nav-link">Input group</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/list-group.html" class="nav-link">List group</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/jumbotron.html" class="nav-link">Jumbotron</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/media-object.html" class="nav-link">Media object</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/modal.html" class="nav-link">Modal</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/navs.html" class="nav-link">Navs</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/navbar.html" class="nav-link">Navbar</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/omnisearch.html" class="nav-link">Omnisearch</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/pagination.html" class="nav-link">Pagination</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/popovers.html" class="nav-link">Popovers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/progress.html" class="nav-link">Progress</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/spinners.html" class="nav-link">Spinners</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/tables.html" class="nav-link">Tables</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/toasts.html" class="nav-link">Toasts</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/tooltips.html" class="nav-link">Tooltips</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/tongues.html" class="nav-link">Tongues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-plugins" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-plugins">
+              Plugins
+            </a>
+            <div class="collapse" id="navbar-plugins">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/plugins/animate.html" class="nav-link">Animate</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/autosize.html" class="nav-link">Autosize</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/datepicker.html" class="nav-link">Datepicker</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/fancybox.html" class="nav-link">Fancybox</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/google-maps.html" class="nav-link">Google maps</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/input-mask.html" class="nav-link">Input mask</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/list.html" class="nav-link">List</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/masonry.html" class="nav-link">Masonry</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/notify.html" class="nav-link">Notify</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/quill.html" class="nav-link">Quill</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/select.html" class="nav-link">Select</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/sweet-alert.html" class="nav-link">Sweet alert</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/swiper.html" class="nav-link">Swiper</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/tags.html" class="nav-link">Tags</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/typed.html" class="nav-link">Typed</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <!-- Heading -->
+        <h6 class="navbar-heading text-muted mt-4">Resources</h6>
+        <!-- Navigation -->
+        <ul class="navbar-nav mb-md-3">
+          <li class="nav-item">
+            <a class="nav-link" href="../../docs/support.html">
+              <i class="fas fa-question-circle"></i>Support
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com" target="_blank">
+              <i class="fab fa-twitter"></i>Bootstrap
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Page content -->
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <div class="col-lg-9 col-xl-8 offset-xl-1">
+          <div class="docs-content">
+            <div class="docs-page-title">
+              <h2>Icons</h2>
+            </div>
+            <p class="text-muted docs-lead">Documentation and examples for using the icon components and their multiple options, like shape, colors, svgs and much more.</p>
+            <hr class="divider divider-fade" />
+            <h2 id="examples">Examples</h2>
+            <p>You will find below that the <code class="highlighter-rouge">.icon</code> component has lots of options and it is extremely customizable. Play with the modifier classes to obtain multiple shapes, colors, sizes ans so on.</p>
+            <p>The <code class="highlighter-rouge">.icon</code> components works very well with the already included Font Awesome 5 library and also with SVGs. Check out the Styleguide section from the menu and see all the icon and SVG options you have.</p>
+            <h3 id="simple">Simple</h3>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="icon-simple-result-tab" data-toggle="tab" href="#icon-simple-result" role="tab" aria-controls="icon-simple-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="icon-simple-html-tab" data-toggle="tab" href="#icon-simple-html" role="tab" aria-controls="icon-simple-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="icon-simple-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="icon-simple-result-tab">
+                  <div class="icon text-primary">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                  <div class="icon text-secondary">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                  <div class="icon text-success">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                  <div class="icon text-danger">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                  <div class="icon text-warning">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                  <div class="icon text-info">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                  <div class="icon text-dark">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                </div><!-- Code -->
+                <div id="icon-simple-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="icon-simple-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon text-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon text-secondary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon text-success"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon text-danger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon text-warning"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon text-info"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon text-dark"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <h3 id="rounded">Rounded</h3>
+            <p>Shaped icons come with their own set of colors prefixed by the <code class="highlighter-rouge">.icon-</code> class followed by the color name set in your <code class="highlighter-rouge">$theme-colors</code> variables (e.g: <code class="highlighter-rouge">.icon-success</code>, <code class="highlighter-rouge">.icon-danger</code>).</p>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="icon-rounded-result-tab" data-toggle="tab" href="#icon-rounded-result" role="tab" aria-controls="icon-rounded-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="icon-rounded-html-tab" data-toggle="tab" href="#icon-rounded-html" role="tab" aria-controls="icon-rounded-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="icon-rounded-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="icon-rounded-result-tab">
+                  <div class="icon icon-primary icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon icon-secondary icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon icon-success icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon icon-danger icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon icon-warning icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon icon-info icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon icon-dark icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                </div><!-- Code -->
+                <div id="icon-rounded-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="icon-rounded-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-primary icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-secondary icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-success icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-danger icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-warning icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-info icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-dark icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <h3 id="circle">Circle</h3>
+            <p>Simply add the ‘.rounded-circle’ modifier class in order to get the fully rounded shape.</p>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="icon-circle-result-tab" data-toggle="tab" href="#icon-circle-result" role="tab" aria-controls="icon-circle-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="icon-circle-html-tab" data-toggle="tab" href="#icon-circle-html" role="tab" aria-controls="icon-circle-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="icon-circle-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="icon-circle-result-tab">
+                  <div class="icon icon-primary rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon icon-secondary rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon icon-success rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon icon-danger rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon icon-warning rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon icon-info rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon icon-dark rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                </div><!-- Code -->
+                <div id="icon-circle-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="icon-circle-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-primary rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-secondary rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-success rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-danger rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-warning rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-info rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon icon-dark rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <h2 id="options">Options</h2>
+            <h3 id="colors">Colors</h3>
+            <p>If you want to use the default background colors you can directly use the <code class="highlighter-rouge">.bg-*</code> utilities in combination with the <code class="highlighter-rouge">.text-*</code> utilities.</p>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="icon-colors-result-tab" data-toggle="tab" href="#icon-colors-result" role="tab" aria-controls="icon-colors-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="icon-colors-html-tab" data-toggle="tab" href="#icon-colors-html" role="tab" aria-controls="icon-colors-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="icon-colors-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="icon-colors-result-tab">
+                  <div class="icon bg-primary text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-secondary text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-success text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-danger text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-warning text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-info text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-dark text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                </div><!-- Code -->
+                <div id="icon-colors-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="icon-colors-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-primary text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-secondary text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-success text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-danger text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-warning text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-info text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-dark text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <p>Or maybe you like gradients more? Apply the gradient background colors using the <code class="highlighter-rouge">.bg-gradient-*</code> utilities in combination with the <code class="highlighter-rouge">.text-*</code> utilities.</p>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="icon-colors-gradient-result-tab" data-toggle="tab" href="#icon-colors-gradient-result" role="tab" aria-controls="icon-colors-gradient-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="icon-colors-gradient-html-tab" data-toggle="tab" href="#icon-colors-gradient-html" role="tab" aria-controls="icon-colors-gradient-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="icon-colors-gradient-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="icon-colors-gradient-result-tab">
+                  <div class="icon bg-gradient-primary text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-gradient-secondary text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-gradient-success text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-gradient-danger text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-gradient-warning text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-gradient-info text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-gradient-dark text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                </div><!-- Code -->
+                <div id="icon-colors-gradient-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="icon-colors-gradient-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-gradient-primary text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-gradient-secondary text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-gradient-success text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-gradient-danger text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-gradient-warning text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-gradient-info text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-gradient-dark text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <h3 id="sizing">Sizing</h3>
+            <p>Use <code class="highlighter-rouge">.icon-sm</code>, <code class="highlighter-rouge">.icon-lg</code> and <code class="highlighter-rouge">.icon-xl</code> for changing the icon’s size to small, large or extra large.</p>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="icon-simple-sizing-result-tab" data-toggle="tab" href="#icon-simple-sizing-result" role="tab" aria-controls="icon-simple-sizing-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="icon-simple-sizing-html-tab" data-toggle="tab" href="#icon-simple-sizing-html" role="tab" aria-controls="icon-simple-sizing-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="icon-simple-sizing-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="icon-simple-sizing-result-tab">
+                  <div class="icon text-primary icon-sm">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                  <div class="icon text-primary">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                  <div class="icon text-primary icon-lg">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                  <div class="icon text-primary icon-xl">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                </div><!-- Code -->
+                <div id="icon-simple-sizing-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="icon-simple-sizing-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon text-primary icon-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon text-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon text-primary icon-lg"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon text-primary icon-xl"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <p>Same rules apply for the shaped version also.</p>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="icon-shape-sizing-result-tab" data-toggle="tab" href="#icon-shape-sizing-result" role="tab" aria-controls="icon-shape-sizing-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="icon-shape-sizing-html-tab" data-toggle="tab" href="#icon-shape-sizing-html" role="tab" aria-controls="icon-shape-sizing-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="icon-shape-sizing-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="icon-shape-sizing-result-tab">
+                  <div class="icon bg-gradient-primary text-white rounded-circle icon-sm icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-gradient-info text-white rounded-circle icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-gradient-warning text-white rounded-circle icon-lg icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-gradient-danger text-white rounded-circle icon-xl icon-shape">
+                    <i class="fas fa-award"></i>
+                  </div>
+                </div><!-- Code -->
+                <div id="icon-shape-sizing-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="icon-shape-sizing-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-gradient-primary text-white rounded-circle icon-sm icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-gradient-info text-white rounded-circle icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-gradient-warning text-white rounded-circle icon-lg icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-gradient-danger text-white rounded-circle icon-xl icon-shape"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <h3 id="animations">Animations</h3>
+            <div class="docs-example">
+              <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="icon-animations-result-tab" data-toggle="tab" href="#icon-animations-result" role="tab" aria-controls="icon-animations-result" aria-selected="true">
+                    <i class="fas fa-eye mr-2"></i>Result
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="icon-animations-html-tab" data-toggle="tab" href="#icon-animations-html" role="tab" aria-controls="icon-animations-html" aria-selected="false">
+                    <i class="fas fa-code mr-2"></i>HTML
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <!-- Result -->
+                <div id="icon-animations-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="icon-animations-result-tab">
+                  <div class="icon bg-gradient-primary text-white rounded-circle icon-shape hover-scale-110">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="icon bg-gradient-primary text-white rounded-circle icon-shape hover-rotate-360">
+                    <i class="fas fa-award"></i>
+                  </div>
+                </div><!-- Code -->
+                <div id="icon-animations-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="icon-animations-html-tab">
+                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-gradient-primary text-white rounded-circle icon-shape hover-scale-110"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon bg-gradient-primary text-white rounded-circle icon-shape hover-rotate-360"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-award"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xl-3 border-left">
+          <div class="h-100 p-4">
+            <div data-toggle="sticky" data-sticky-offset="120">
+              <h6 class="mb-3">Summary</h6>
+              <ul class="section-nav">
+                <li class="toc-entry toc-h2"><a href="#examples">Examples</a>
+                  <ul>
+                    <li class="toc-entry toc-h3"><a href="#simple">Simple</a></li>
+                    <li class="toc-entry toc-h3"><a href="#rounded">Rounded</a></li>
+                    <li class="toc-entry toc-h3"><a href="#circle">Circle</a></li>
+                  </ul>
+                </li>
+                <li class="toc-entry toc-h2"><a href="#options">Options</a>
+                  <ul>
+                    <li class="toc-entry toc-h3"><a href="#colors">Colors</a></li>
+                    <li class="toc-entry toc-h3"><a href="#sizing">Sizing</a></li>
+                    <li class="toc-entry toc-h3"><a href="#animations">Animations</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Purpose Scripts -->
+  <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+  <script src="../../assets/js/purpose.core.js"></script>
+  <!-- Docs JS -->
+  <script src="../../assets/libs/highlightjs/highlight.pack.min.js"></script>
+  <script src="../../assets/libs/clipboard/dist/clipboard.min.js"></script>
+  <!-- Purpose JS -->
+  <script src="../../assets/js/purpose.js"></script>
+  <!-- Demo JS - remove it when starting your project -->
+  <script src="../../assets/js/demo.js"></script>
+</body>
+
+</html>

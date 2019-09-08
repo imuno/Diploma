@@ -1,0 +1,17 @@
+//
+// Alert notify
+// work together with Bootstrap alerts and bootstrap-notify plugin
+//
+
+
+.alert-notify {
+    display: flex !important;
+    max-width: 600px;
+    width: calc(100% - 30px);
+    padding-right: 80px;
+    @include box-shadow($box-shadow-lg);
+
+    &:hover {
+        z-index: 1081 !important;
+    }
+}

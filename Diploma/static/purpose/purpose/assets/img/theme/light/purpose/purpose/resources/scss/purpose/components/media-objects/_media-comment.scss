@@ -1,0 +1,30 @@
+// Media comment
+
+.media-comment {
+	& + .media-comment {
+		margin-top: 1.25rem;
+	}
+}
+
+.media-comment-bubble {
+	border-radius: 20px;
+	border-top-left-radius: 0;
+	position: relative;
+	background-color: darken($card-bg, 3%);
+	padding: 1rem 1.25rem;
+
+	&.left-top {
+		&:after {
+			content: ' ';
+			position: absolute;
+			width: 0;
+			height: 0;
+			left: -16px;
+			right: auto;
+			top: 0px;
+			bottom: auto;
+			border: 18px solid transparent;
+			border-top-color: darken($card-bg, 3%);
+		}
+	}
+}

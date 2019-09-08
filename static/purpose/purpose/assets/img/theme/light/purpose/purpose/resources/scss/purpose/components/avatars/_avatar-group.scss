@@ -1,0 +1,46 @@
+//
+// Avatar group
+// 
+
+.avatar-group {
+	display: inline-block;
+	line-height: 1;
+
+	.avatar {
+		transition: margin .15s ease-in-out;
+		z-index: 1;
+
+		&:hover {
+			z-index: 2;
+		}
+
+		img {
+			border: $avatar-stack-gutter solid $avatar-stack-border-color;
+		}
+	}
+
+	.avatar + .avatar {
+		margin-left: -1.5rem;
+		@include border-left-radius(0);
+	}
+
+	.avatar-sm + .avatar-sm {
+		margin-left: -1rem;
+	}
+
+	&:hover {
+		.avatar {
+			@include border-left-radius($avatar-border-radius);
+		}
+
+		.avatar-sm {
+			@include border-left-radius($avatar-border-radius-sm);
+		}
+	}
+}
+
+.hover-avatar-ungroup:hover {
+	.avatar:not(:first-child) {
+		margin-left: 0;
+	}
+}

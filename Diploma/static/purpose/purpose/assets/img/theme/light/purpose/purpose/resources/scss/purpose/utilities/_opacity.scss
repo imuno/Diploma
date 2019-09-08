@@ -1,0 +1,12 @@
+//
+// Opacity
+//
+
+
+@each $opacity, $value in $opacities {
+    .opacity-#{$opacity},
+    .hover-opacity-#{$opacity}:hover,
+    .opacity-container:hover .hover-opacity-#{$opacity} {
+        opacity: $value;
+    }
+}

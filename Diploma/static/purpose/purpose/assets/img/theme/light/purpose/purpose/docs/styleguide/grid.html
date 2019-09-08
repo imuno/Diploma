@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.">
+  <meta name="author" content="Webpixels">
+  <title>Purpose Website UI Kit - Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png">
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="../../assets/libs/@fortawesome/fontawesome-free/css/all.min.css"><!-- Purpose CSS -->
+  <link rel="stylesheet" href="../../assets/css/purpose.css" id="stylesheet">
+  <!-- Docs CSS - used only for demo -->
+  <link rel="stylesheet" href="../../assets/css/docs.css">
+</head>
+
+<body class="docs">
+  <!-- Nav -->
+  <header class="header fixed-top border-bottom">
+    <!-- Nav -->
+    <nav id="navbar-main" class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <!-- Brand logo -->
+        <a class="navbar-brand" href="../../docs/index.html">
+          <img alt="Image placeholder" src="../../assets/img/brand/dark.png" id="navbar-logo" style="width: 120px;">
+        </a>
+        <!-- Sidenav toggler -->
+        <button class="sidenav-toggler ml-auto mr-3" type="button" data-action="sidenav-pin" data-target="#sidenav-main">
+          <div class="sidenav-toggler-inner">
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+          </div>
+        </button>
+        <!-- Search form -->
+        <form class="navbar-search navbar-search-dark form-inline mr-sm-3 d-none" id="navbar-search-main">
+          <div class="form-group mb-0">
+            <div class="input-group input-group-merge">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control" placeholder="Search" type="text">
+            </div>
+          </div>
+          <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </form>
+        <!-- Navbar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/getting-started/installation.html">Getting started</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/components/index.html">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/changelog.html">What's new</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../docs/support.html">Support</a>
+            </li>
+          </ul>
+          <a href="../../index.html" class="btn btn-sm btn-primary btn-icon d-none d-lg-inline-flex">
+            <span class="btn-inner--icon"><i class="fas fa-eye"></i></span>
+            <span class="btn-inner--text">Live preview</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="px-3 scrollbar-inner">
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+        <!-- Navigation -->
+        <ul class="navbar-nav navbar-nav-docs">
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-getting-started" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-getting-started">
+              Getting started
+            </a>
+            <div class="collapse" id="navbar-getting-started">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/installation.html" class="nav-link">Installation</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/file-structure.html" class="nav-link">File structure</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/quick-start.html" class="nav-link">Quick start</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/build-tools.html" class="nav-link">Build tools</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/customization.html" class="nav-link">Customization</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/skins.html" class="nav-link">Skins</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/getting-started/plugins.html" class="nav-link">Plugins</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-styleguide" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-styleguide">
+              Styleguide
+            </a>
+            <div class="collapse show" id="navbar-styleguide">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/breakpoints.html" class="nav-link">Breakpoints</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/colors.html" class="nav-link">Colors</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/grid.html" class="nav-link active">Grid</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/icons.html" class="nav-link">Icons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/spacing.html" class="nav-link">Spacing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/styleguide/typography.html" class="nav-link">Typography</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-components" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-components">
+              Components
+            </a>
+            <div class="collapse" id="navbar-components">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/components/alerts.html" class="nav-link">Alerts</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/avatar.html" class="nav-link">Avatar</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/badge.html" class="nav-link">Badge</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/breadcrumb.html" class="nav-link">Breadcrumb</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/buttons.html" class="nav-link">Buttons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/card.html" class="nav-link">Card</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/carousel.html" class="nav-link">Carousel</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/collapse.html" class="nav-link">Collapse</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/countdown.html" class="nav-link">Countdown</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/counter.html" class="nav-link">Counter</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/divider.html" class="nav-link">Divider</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/dropdowns.html" class="nav-link">Dropdowns</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/forms.html" class="nav-link">Forms</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/icons.html" class="nav-link">Icons</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/input-group.html" class="nav-link">Input group</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/list-group.html" class="nav-link">List group</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/jumbotron.html" class="nav-link">Jumbotron</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/media-object.html" class="nav-link">Media object</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/modal.html" class="nav-link">Modal</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/navs.html" class="nav-link">Navs</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/navbar.html" class="nav-link">Navbar</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/omnisearch.html" class="nav-link">Omnisearch</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/pagination.html" class="nav-link">Pagination</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/popovers.html" class="nav-link">Popovers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/progress.html" class="nav-link">Progress</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/spinners.html" class="nav-link">Spinners</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/tables.html" class="nav-link">Tables</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/toasts.html" class="nav-link">Toasts</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/tooltips.html" class="nav-link">Tooltips</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/components/tongues.html" class="nav-link">Tongues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#navbar-plugins" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-plugins">
+              Plugins
+            </a>
+            <div class="collapse" id="navbar-plugins">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="../../docs/plugins/animate.html" class="nav-link">Animate</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/autosize.html" class="nav-link">Autosize</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/datepicker.html" class="nav-link">Datepicker</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/fancybox.html" class="nav-link">Fancybox</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/google-maps.html" class="nav-link">Google maps</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/input-mask.html" class="nav-link">Input mask</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/list.html" class="nav-link">List</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/masonry.html" class="nav-link">Masonry</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/notify.html" class="nav-link">Notify</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/quill.html" class="nav-link">Quill</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/select.html" class="nav-link">Select</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/sweet-alert.html" class="nav-link">Sweet alert</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/swiper.html" class="nav-link">Swiper</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/tags.html" class="nav-link">Tags</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../docs/plugins/typed.html" class="nav-link">Typed</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <!-- Heading -->
+        <h6 class="navbar-heading text-muted mt-4">Resources</h6>
+        <!-- Navigation -->
+        <ul class="navbar-nav mb-md-3">
+          <li class="nav-item">
+            <a class="nav-link" href="../../docs/support.html">
+              <i class="fas fa-question-circle"></i>Support
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com" target="_blank">
+              <i class="fab fa-twitter"></i>Bootstrap
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Page content -->
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <div class="col-lg-9 col-xl-8 offset-xl-1">
+          <div class="docs-content">
+            <div class="docs-page-title">
+              <h2>Grid</h2>
+            </div>
+            <p class="text-muted docs-lead">Use a powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
+            <a href="http://getbootstrap.com/docs/4.3/layout/grid" target="_blank">
+              <i class="fas fa-book mr-2"></i> Bootstrap Documentation</a>
+            <hr class="divider divider-fade" />
+            <h2 id="how-it-works">How it works</h2>
+            <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a> and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
+            <p><strong>New to or unfamiliar with flexbox?</strong> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">Read this CSS Tricks flexbox guide</a> for background, terminology, guidelines, and code snippets.</p>
+            <div class="docs-example-row">
+              <div class="docs-example">
+                <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="grid-result-tab" data-toggle="tab" href="#grid-result" role="tab" aria-controls="grid-result" aria-selected="true">
+                      <i class="fas fa-eye mr-2"></i>Result
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="grid-html-tab" data-toggle="tab" href="#grid-html" role="tab" aria-controls="grid-html" aria-selected="false">
+                      <i class="fas fa-code mr-2"></i>HTML
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <!-- Result -->
+                  <div id="grid-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="grid-result-tab">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm">
+                          <span>One of three columns</span>
+                        </div>
+                        <div class="col-sm">
+                          <span>One of three columns</span>
+                        </div>
+                        <div class="col-sm">
+                          <span>One of three columns</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- Code -->
+                  <div id="grid-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="grid-html-tab">
+                    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>One of three columns<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>One of three columns<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>One of three columns<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>The above example creates three equal-width columns on small, medium, large, and extra large devices using our predefined grid classes. Those columns are centered in the page with the parent <code class="highlighter-rouge">.container</code>.</p>
+            <h2 id="grid-options">Grid options</h2>
+            <p>While Bootstrap uses <code class="highlighter-rouge">em</code>s or <code class="highlighter-rouge">rem</code>s for defining most sizes, <code class="highlighter-rouge">px</code>s are used for grid breakpoints and container widths. This is because the viewport width is in pixels and does not change with the <a href="https://drafts.csswg.org/mediaqueries-3/#units">font size</a>.</p>
+            <p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="text-center">
+                    Extra small<br />
+                    <small>&lt;576px</small>
+                  </th>
+                  <th class="text-center">
+                    Small<br />
+                    <small>&ge;576px</small>
+                  </th>
+                  <th class="text-center">
+                    Medium<br />
+                    <small>&ge;768px</small>
+                  </th>
+                  <th class="text-center">
+                    Large<br />
+                    <small>&ge;992px</small>
+                  </th>
+                  <th class="text-center">
+                    Extra large<br />
+                    <small>&ge;1200px</small>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="text-nowrap" scope="row">Max container width</th>
+                  <td>None (auto)</td>
+                  <td>540px</td>
+                  <td>720px</td>
+                  <td>960px</td>
+                  <td>1140px</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">Class prefix</th>
+                  <td><code>.col-</code></td>
+                  <td><code>.col-sm-</code></td>
+                  <td><code>.col-md-</code></td>
+                  <td><code>.col-lg-</code></td>
+                  <td><code>.col-xl-</code></td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row"># of columns</th>
+                  <td colspan="5">12</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">Gutter width</th>
+                  <td colspan="5">30px (15px on each side of a column)</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">Nestable</th>
+                  <td colspan="5">Yes</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">Column ordering</th>
+                  <td colspan="5">Yes</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="auto-layout-columns">Auto-layout columns</h2>
+            <p>Utilize breakpoint-specific column classes for easy column sizing without an explicit numbered class like <code class="highlighter-rouge">.col-sm-6</code>.</p>
+            <h3 id="equal-width">Equal-width</h3>
+            <p>For example, here are two grid layouts that apply to every device and viewport, from <code class="highlighter-rouge">xs</code> to <code class="highlighter-rouge">xl</code>. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.</p>
+            <div class="docs-example-row">
+              <div class="docs-example">
+                <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="grid-equal-width-result-tab" data-toggle="tab" href="#grid-equal-width-result" role="tab" aria-controls="grid-equal-width-result" aria-selected="true">
+                      <i class="fas fa-eye mr-2"></i>Result
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="grid-equal-width-html-tab" data-toggle="tab" href="#grid-equal-width-html" role="tab" aria-controls="grid-equal-width-html" aria-selected="false">
+                      <i class="fas fa-code mr-2"></i>HTML
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <!-- Result -->
+                  <div id="grid-equal-width-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="grid-equal-width-result-tab">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <span>1 of 2</span>
+                        </div>
+                        <div class="col">
+                          <span>2 of 2</span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <span>1 of 3</span>
+                        </div>
+                        <div class="col">
+                          <span>2 of 3</span>
+                        </div>
+                        <div class="col">
+                          <span>3 of 3</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- Code -->
+                  <div id="grid-equal-width-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="grid-equal-width-html-tab">
+                    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>1 of 2<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>2 of 2<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>1 of 3<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>2 of 3<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>3 of 3<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>Equal-width columns can be broken into multiple lines, but there was a <a href="https://github.com/philipwalton/flexbugs#flexbug-11">Safari flexbox bug</a> that prevented this from working without an explicit <code class="highlighter-rouge">flex-basis</code> or <code class="highlighter-rouge">border</code>. There are workarounds for older browser versions, but they shouldn’t be necessary if you’re up-to-date.</p>
+            <div class="docs-example-row">
+              <div class="docs-example">
+                <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="grid-equal-width-broken-result-tab" data-toggle="tab" href="#grid-equal-width-broken-result" role="tab" aria-controls="grid-equal-width-broken-result" aria-selected="true">
+                      <i class="fas fa-eye mr-2"></i>Result
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="grid-equal-width-broken-html-tab" data-toggle="tab" href="#grid-equal-width-broken-html" role="tab" aria-controls="grid-equal-width-broken-html" aria-selected="false">
+                      <i class="fas fa-code mr-2"></i>HTML
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <!-- Result -->
+                  <div id="grid-equal-width-broken-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="grid-equal-width-broken-result-tab">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col"><span>Column</span></div>
+                        <div class="col"><span>Column</span></div>
+                        <div class="w-100"></div>
+                        <div class="col"><span>Column</span></div>
+                        <div class="col"><span>Column</span></div>
+                      </div>
+                    </div>
+                  </div><!-- Code -->
+                  <div id="grid-equal-width-broken-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="grid-equal-width-broken-html-tab">
+                    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;&lt;span&gt;</span>Column<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;&lt;span&gt;</span>Column<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"w-100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;&lt;span&gt;</span>Column<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;&lt;span&gt;</span>Column<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 id="setting-one-column-width">Setting one column width</h3>
+            <p>Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.</p>
+            <div class="docs-example-row">
+              <div class="docs-example">
+                <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="grid-one-col-width-result-tab" data-toggle="tab" href="#grid-one-col-width-result" role="tab" aria-controls="grid-one-col-width-result" aria-selected="true">
+                      <i class="fas fa-eye mr-2"></i>Result
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="grid-one-col-width-html-tab" data-toggle="tab" href="#grid-one-col-width-html" role="tab" aria-controls="grid-one-col-width-html" aria-selected="false">
+                      <i class="fas fa-code mr-2"></i>HTML
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <!-- Result -->
+                  <div id="grid-one-col-width-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="grid-one-col-width-result-tab">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <span>1 of 3</span>
+                        </div>
+                        <div class="col-6">
+                          <span>2 of 3 (wider)</span>
+                        </div>
+                        <div class="col">
+                          <span>3 of 3</span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <span>1 of 3</span>
+                        </div>
+                        <div class="col-5">
+                          <span>2 of 3 (wider)</span>
+                        </div>
+                        <div class="col">
+                          <span>3 of 3</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- Code -->
+                  <div id="grid-one-col-width-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="grid-one-col-width-html-tab">
+                    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>1 of 3<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>2 of 3 (wider)<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>3 of 3<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>1 of 3<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-5"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>2 of 3 (wider)<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>3 of 3<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 id="variable-width-content">Variable width content</h3>
+            <p>Use <code class="highlighter-rouge">col-{breakpoint}-auto</code> classes to size columns based on the natural width of their content.</p>
+            <div class="docs-example-row">
+              <div class="docs-example">
+                <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="grid-variable-width-result-tab" data-toggle="tab" href="#grid-variable-width-result" role="tab" aria-controls="grid-variable-width-result" aria-selected="true">
+                      <i class="fas fa-eye mr-2"></i>Result
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="grid-variable-width-html-tab" data-toggle="tab" href="#grid-variable-width-html" role="tab" aria-controls="grid-variable-width-html" aria-selected="false">
+                      <i class="fas fa-code mr-2"></i>HTML
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <!-- Result -->
+                  <div id="grid-variable-width-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="grid-variable-width-result-tab">
+                    <div class="container">
+                      <div class="row justify-content-md-center">
+                        <div class="col col-lg-2">
+                          <span>1 of 3</span>
+                        </div>
+                        <div class="col-md-auto">
+                          <span>Variable width content</span>
+                        </div>
+                        <div class="col col-lg-2">
+                          <span>3 of 3</span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <span>1 of 3</span>
+                        </div>
+                        <div class="col-md-auto">
+                          <span>Variable width content</span>
+                        </div>
+                        <div class="col col-lg-2">
+                          <span>3 of 3</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- Code -->
+                  <div id="grid-variable-width-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="grid-variable-width-html-tab">
+                    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-content-md-center"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-lg-2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>1 of 3<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Variable width content<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-lg-2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>3 of 3<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>1 of 3<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Variable width content<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col col-lg-2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>3 of 3<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 id="equal-width-multi-row">Equal-width multi-row</h3>
+            <p>Create equal-width columns that span multiple rows by inserting a <code class="highlighter-rouge">.w-100</code> where you want the columns to break to a new line. Make the breaks responsive by mixing the <code class="highlighter-rouge">.w-100</code> with some <a href="/docs//utilities/display/">responsive display utilities</a>.</p>
+            <div class="docs-example-row">
+              <div class="docs-example">
+                <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="grid-equal-multirow-result-tab" data-toggle="tab" href="#grid-equal-multirow-result" role="tab" aria-controls="grid-equal-multirow-result" aria-selected="true">
+                      <i class="fas fa-eye mr-2"></i>Result
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="grid-equal-multirow-html-tab" data-toggle="tab" href="#grid-equal-multirow-html" role="tab" aria-controls="grid-equal-multirow-html" aria-selected="false">
+                      <i class="fas fa-code mr-2"></i>HTML
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <!-- Result -->
+                  <div id="grid-equal-multirow-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="grid-equal-multirow-result-tab">
+                    <div class="row">
+                      <div class="col"><span>col</span></div>
+                      <div class="col"><span>col</span></div>
+                      <div class="w-100"></div>
+                      <div class="col"><span>col</span></div>
+                      <div class="col"><span>col</span></div>
+                    </div>
+                  </div><!-- Code -->
+                  <div id="grid-equal-multirow-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="grid-equal-multirow-html-tab">
+                    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;&lt;span&gt;</span>col<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;&lt;span&gt;</span>col<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"w-100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;&lt;span&gt;</span>col<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;&lt;span&gt;</span>col<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 id="responsive-classes">Responsive classes</h2>
+            <p>Bootstrap’s grid includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.</p>
+            <h3 id="all-breakpoints">All breakpoints</h3>
+            <p>For grids that are the same from the smallest of devices to the largest, use the <code class="highlighter-rouge">.col</code> and <code class="highlighter-rouge">.col-*</code> classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to <code class="highlighter-rouge">.col</code>.</p>
+            <div class="docs-example-row">
+              <div class="docs-example">
+                <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="grid-all-breakpoints-result-tab" data-toggle="tab" href="#grid-all-breakpoints-result" role="tab" aria-controls="grid-all-breakpoints-result" aria-selected="true">
+                      <i class="fas fa-eye mr-2"></i>Result
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="grid-all-breakpoints-html-tab" data-toggle="tab" href="#grid-all-breakpoints-html" role="tab" aria-controls="grid-all-breakpoints-html" aria-selected="false">
+                      <i class="fas fa-code mr-2"></i>HTML
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <!-- Result -->
+                  <div id="grid-all-breakpoints-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="grid-all-breakpoints-result-tab">
+                    <div class="row">
+                      <div class="col"><span>col</span></div>
+                      <div class="col"><span>col</span></div>
+                      <div class="col"><span>col</span></div>
+                      <div class="col"><span>col</span></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8"><span>col-8</span></div>
+                      <div class="col-4"><span>col-4</span></div>
+                    </div>
+                  </div><!-- Code -->
+                  <div id="grid-all-breakpoints-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="grid-all-breakpoints-html-tab">
+                    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;&lt;span&gt;</span>col<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;&lt;span&gt;</span>col<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;&lt;span&gt;</span>col<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;&lt;span&gt;</span>col<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-8"</span><span class="nt">&gt;&lt;span&gt;</span>col-8<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;&lt;span&gt;</span>col-4<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 id="stacked-to-horizontal">Stacked to horizontal</h3>
+            <p>Using a single set of <code class="highlighter-rouge">.col-sm-*</code> classes, you can create a basic grid system that starts out stacked and becomes horizontal at the small breakpoint (<code class="highlighter-rouge">sm</code>).</p>
+            <div class="docs-example-row">
+              <div class="docs-example">
+                <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="grid-stacked-horizontal-result-tab" data-toggle="tab" href="#grid-stacked-horizontal-result" role="tab" aria-controls="grid-stacked-horizontal-result" aria-selected="true">
+                      <i class="fas fa-eye mr-2"></i>Result
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="grid-stacked-horizontal-html-tab" data-toggle="tab" href="#grid-stacked-horizontal-html" role="tab" aria-controls="grid-stacked-horizontal-html" aria-selected="false">
+                      <i class="fas fa-code mr-2"></i>HTML
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <!-- Result -->
+                  <div id="grid-stacked-horizontal-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="grid-stacked-horizontal-result-tab">
+                    <div class="row">
+                      <div class="col-sm-8"><span>col-sm-8</span></div>
+                      <div class="col-sm-4"><span>col-sm-4</span></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm"><span>col-sm</span></div>
+                      <div class="col-sm"><span>col-sm</span></div>
+                      <div class="col-sm"><span>col-sm</span></div>
+                    </div>
+                  </div><!-- Code -->
+                  <div id="grid-stacked-horizontal-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="grid-stacked-horizontal-html-tab">
+                    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-8"</span><span class="nt">&gt;&lt;span&gt;</span>col-sm-8<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;&lt;span&gt;</span>col-sm-4<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm"</span><span class="nt">&gt;&lt;span&gt;</span>col-sm<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm"</span><span class="nt">&gt;&lt;span&gt;</span>col-sm<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm"</span><span class="nt">&gt;&lt;span&gt;</span>col-sm<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 id="mix-and-match">Mix and match</h3>
+            <p>Don’t want your columns to simply stack in some grid tiers? Use a combination of different classes for each tier as needed. See the example below for a better idea of how it all works.</p>
+            <div class="docs-example-row">
+              <div class="docs-example">
+                <ul class="nav nav-pills nav-example" id="tab-example" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="grid-mix-match-result-tab" data-toggle="tab" href="#grid-mix-match-result" role="tab" aria-controls="grid-mix-match-result" aria-selected="true">
+                      <i class="fas fa-eye mr-2"></i>Result
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="grid-mix-match-html-tab" data-toggle="tab" href="#grid-mix-match-html" role="tab" aria-controls="grid-mix-match-html" aria-selected="false">
+                      <i class="fas fa-code mr-2"></i>HTML
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <!-- Result -->
+                  <div id="grid-mix-match-result" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="grid-mix-match-result-tab">
+                    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+                    <div class="row">
+                      <div class="col-12 col-md-8"><span>.col-12 .col-md-8</span></div>
+                      <div class="col-6 col-md-4"><span>.col-6 .col-md-4</span></div>
+                    </div>
+                    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+                    <div class="row">
+                      <div class="col-6 col-md-4"><span>.col-6 .col-md-4</span></div>
+                      <div class="col-6 col-md-4"><span>.col-6 .col-md-4</span></div>
+                      <div class="col-6 col-md-4"><span>.col-6 .col-md-4</span></div>
+                    </div>
+                    <!-- Columns are always 50% wide, on mobile and desktop -->
+                    <div class="row">
+                      <div class="col-6"><span>.col-6</span></div>
+                      <div class="col-6"><span>.col-6</span></div>
+                    </div>
+                  </div><!-- Code -->
+                  <div id="grid-mix-match-html" class="tab-pane tab-example-html fade" role="tabpanel" aria-labelledby="grid-mix-match-html-tab">
+                    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Stack the columns on mobile by making one full-width and the other half-width --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-8"</span><span class="nt">&gt;&lt;span&gt;</span>.col-12 .col-md-8<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6 col-md-4"</span><span class="nt">&gt;&lt;span&gt;</span>.col-6 .col-md-4<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6 col-md-4"</span><span class="nt">&gt;&lt;span&gt;</span>.col-6 .col-md-4<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6 col-md-4"</span><span class="nt">&gt;&lt;span&gt;</span>.col-6 .col-md-4<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6 col-md-4"</span><span class="nt">&gt;&lt;span&gt;</span>.col-6 .col-md-4<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Columns are always 50% wide, on mobile and desktop --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;&lt;span&gt;</span>.col-6<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;&lt;span&gt;</span>.col-6<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xl-3 border-left">
+          <div class="h-100 p-4">
+            <div data-toggle="sticky" data-sticky-offset="120">
+              <h6 class="mb-3">Summary</h6>
+              <ul class="section-nav">
+                <li class="toc-entry toc-h2"><a href="#how-it-works">How it works</a></li>
+                <li class="toc-entry toc-h2"><a href="#grid-options">Grid options</a></li>
+                <li class="toc-entry toc-h2"><a href="#auto-layout-columns">Auto-layout columns</a>
+                  <ul>
+                    <li class="toc-entry toc-h3"><a href="#equal-width">Equal-width</a></li>
+                    <li class="toc-entry toc-h3"><a href="#setting-one-column-width">Setting one column width</a></li>
+                    <li class="toc-entry toc-h3"><a href="#variable-width-content">Variable width content</a></li>
+                    <li class="toc-entry toc-h3"><a href="#equal-width-multi-row">Equal-width multi-row</a></li>
+                  </ul>
+                </li>
+                <li class="toc-entry toc-h2"><a href="#responsive-classes">Responsive classes</a>
+                  <ul>
+                    <li class="toc-entry toc-h3"><a href="#all-breakpoints">All breakpoints</a></li>
+                    <li class="toc-entry toc-h3"><a href="#stacked-to-horizontal">Stacked to horizontal</a></li>
+                    <li class="toc-entry toc-h3"><a href="#mix-and-match">Mix and match</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Purpose Scripts -->
+  <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+  <script src="../../assets/js/purpose.core.js"></script>
+  <!-- Docs JS -->
+  <script src="../../assets/libs/highlightjs/highlight.pack.min.js"></script>
+  <script src="../../assets/libs/clipboard/dist/clipboard.min.js"></script>
+  <!-- Purpose JS -->
+  <script src="../../assets/js/purpose.js"></script>
+  <!-- Demo JS - remove it when starting your project -->
+  <script src="../../assets/js/demo.js"></script>
+</body>
+
+</html>

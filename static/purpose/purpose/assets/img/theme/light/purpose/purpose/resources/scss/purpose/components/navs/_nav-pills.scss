@@ -1,0 +1,102 @@
+//
+// Pills
+//
+
+
+.nav-pills-icon {
+    .nav-link {
+        &:not(.active) {
+            background-color: $nav-pills-link-bg;
+        }
+
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .nav-pills-circle {
+        padding: 0 50px;
+
+        .nav-item {
+            min-width: 200px;
+            background: transparent;
+            border: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        .nav-link {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            border-radius: 50%;
+            background: $nav-pills-link-bg;
+            color: color-yiq($nav-pills-link-bg);
+            z-index: 10;
+        }
+
+        &.nav-pills-connect {
+            .nav-item {
+                &:not(:last-child ) {
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: relative;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(50%, 50%);
+                        height: 1px;
+                        width: 50%;
+                        background: $nav-pills-link-bg;
+                        z-index: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    // .nav-pills-circle > li:last-child > a {
+    //     min-width: auto;
+    // }
+    // .nav-pills-circle > li > a
+    // .nav-pills-circle > li:last-child > a:before {
+    //     background: transparent;
+    // }
+    // .nav-pills-circle > li > a > .nav-pill {
+    //     position: relative;
+    //     display: block;
+    //     width: 100px;
+    //     height: 100px;
+    // }
+    // .nav-pills-circle > li > a > .nav-pill >
+    // .nav-pills-circle > li > a > .nav-pill > .nav-pill-circle > i {
+    //     display: block;
+    //     width: 80px;
+    //     height: 80px;
+    //     line-height: 80px;
+    //     font-size: 40px;
+    // }
+    //
+    // .nav-pills-circle a:hover .nav-pill .nav-pill-circle {
+    //     background: darken($nav-pill-bg, 15%);
+    // }
+    //
+    // .nav-pills-circle .active .nav-pill .nav-pill-circle,
+    // .nav-pills-circle a.active:hover .nav-pill .nav-pill-circle {
+    //     background: $color-base-1;
+    //     color: $color-base-text-1;
+    // }
+    //
+    // .nav-pills-circle > li > a > .nav-pill > .nav-pill-text {
+    //     display: block;
+    //     margin: 10px 0 20px 0;
+    //     color: $color-gray-light;
+    //     font-size: 13px;
+    // }
+}

@@ -1,0 +1,48 @@
+//
+// Process section
+// Connect sections through a dotter line
+//
+
+.section-process {
+    background: transparent;
+}
+
+.section-process-step {
+    position: relative;
+    padding: 4.5rem 0;
+
+    &:not(:last-child) {
+        &:before {
+            content: "";
+            display: block;
+            width: 360px;
+            height: 100px;
+            background: $section-process-step-bg no-repeat center;
+            background-size: 360px 100px;
+            transform: rotate(40deg);
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: -80px;
+
+            @include media-breakpoint-down(md) {
+                transform: rotate(90deg) scale(.7);
+                bottom: 20px;
+            }
+        }
+    }
+
+    &:nth-child(even) {
+        &:before {
+            background: $section-process-step-even-bg no-repeat center;
+            background-size: 360px 100px;
+            transform: rotate(-40deg);
+
+            @include media-breakpoint-down(md) {
+                transform: rotate(-90deg) scale(.7);
+                bottom: 20px;
+            }
+        }
+    }
+}

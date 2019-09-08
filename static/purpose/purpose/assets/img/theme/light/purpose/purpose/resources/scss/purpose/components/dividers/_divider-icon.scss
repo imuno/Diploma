@@ -1,0 +1,45 @@
+//
+// Divider icon
+//
+
+.divider-icon {
+    height: 20px;
+    background-image: $divider-icon-bg;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        max-width: calc(50% - (50px / 2));
+        width: 100%;
+        border-bottom: $divider-border-width solid $divider-border-color;
+    }
+
+    &:before {
+        right: calc(50% + (50px / 2));
+
+    }
+
+    &:after {
+        left: calc(50% + (50px / 2));
+    }
+}
+
+.divider-icon-fade {
+    &:before,
+    &:after {
+        border: 0;
+        height: $divider-border-width;
+    }
+
+    &:before {
+        background: radial-gradient(ellipse at right, $divider-border-color 0, rgba($white, 0) 75%);
+    }
+
+    &:after {
+        background: radial-gradient(ellipse at left, $divider-border-color 0, rgba($white, 0) 75%);
+    }
+}
