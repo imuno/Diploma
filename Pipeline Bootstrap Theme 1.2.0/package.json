@@ -29,7 +29,7 @@
     "jquery": "~3.4.1",
     "list.js": "~1.5.0",
     "popper.js": "~1.15.0",
-    "prismjs": "~1.16.0"
+    "prismjs": "~1.21.0"
   },
   "devDependencies": {
     "@babel/core": "~7.4.4",
