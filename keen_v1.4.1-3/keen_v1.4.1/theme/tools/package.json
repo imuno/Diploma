@@ -42,7 +42,7 @@
         "datatables.net-rowreorder-bs4": "^1.2.3",
         "datatables.net-scroller-bs4": "^1.4.4",
         "datatables.net-select-bs4": "^1.2.5",
-        "dompurify": "^1.0.9",
+        "dompurify": "^2.0.14",
         "dropzone": "^5.2.0",
         "dual-listbox": "^1.1.0",
         "es6-promise-polyfill": "^1.2.0",
